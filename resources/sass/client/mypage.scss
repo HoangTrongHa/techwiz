@@ -1,0 +1,122 @@
+.wrapTitle {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+.wrapTitleMyPage {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.wrapVideoTitle {
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+    font-size: 22px;
+}
+.wrapVideo {
+    display: flex;
+    justify-content: space-between;
+    .item {
+        width: 30%;
+        .titleVideo {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .video {
+            width: 100%;
+        }
+    }
+}
+
+.wrapTitleQuestion {
+    padding-top: 100px;
+    .titleQuestion {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .wrapContentQuestion {
+        width: 58%;
+        margin: 0 auto;
+        font-size: 22px;
+        padding-top: 40px;
+        font-weight: bold;
+        line-height: 40px;
+        margin-bottom: 3rem;
+    }
+}
+.wrapItemQuestion {
+    .itemQuestion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        .titleQuestion {
+            padding-right: 50px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .wrapLinkQuestion {
+            background: yellowgreen;
+            padding: 20px 65px;
+            margin-left: 50px;
+            color: white;
+            text-decoration: none;
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                color: white;
+            }
+        }
+
+        .hide-button {
+            pointer-events: none;
+            background-color: #ccc;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapVideoTitle {
+        padding: 30px 0;
+    }
+    .wrapVideo {
+        flex-direction: column;
+        .item {
+            width: 100%;
+            margin-bottom: 20px;
+
+            .video {
+                text-align: center;
+            }
+        }
+    }
+    .wrapTitleQuestion .wrapContentQuestion {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrapVideo {
+        .item {
+            overflow-x: hidden;
+        }
+    }
+    .wrapTitleQuestion {
+        padding-top: 30px;
+    }
+    .wrapItemQuestion .itemQuestion {
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .wrapItemQuestion .itemQuestion .titleQuestion {
+        padding-right: 0;
+    }
+    .wrapItemQuestion .itemQuestion .wrapLinkQuestion {
+        margin-left: 0;
+        padding: 8px 20px;
+        text-align: center;
+    }
+}

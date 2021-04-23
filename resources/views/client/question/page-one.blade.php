@@ -1,0 +1,152 @@
+@extends('client.app')
+@section('css')
+<link rel="stylesheet" href="{{ asset('assets/css/client/question-list.css') }}">
+@endsection
+@section("content")
+<form id='postQuestionPageOne' action="{{ route('postQuestionPageOne') }}" method='POST'>
+    @csrf
+    @method('POST')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content">
+                    <div class="content-header">
+                        <h1 class="content-title">
+                            0ヵ月時点
+                        </h1>
+                        <p class="content-desc">
+                            HARA PETA Projectに参加する前をイメージしてご回答ください。
+                        </p>
+                    </div>
+                    <div class="content-body">
+                        <form class="question">
+                            <div class="form-box">
+                                <h5 class="question-title">食</h5>
+                                <ul class="question-list">
+                                    <li class="question-item">
+                                        1. 食習慣
+                                        <ul class="question-child">
+                                            <li>
+                                                <span class="question-title">① 減量のための食べ方に気を付けていますか？</span>
+                                                <div class="awnser-list">
+                                                    @foreach (Config::get('dataquestion.question_1_1') as $key => $item)
+                                                    <div class="form-group">
+                                                        <input name="awnser[1][1]" value="{{ $item }}" type="radio" id="awnser{{ $key }}">
+                                                        <label for="awnser{{ $key }}">{{ $item }}</label>
+                                                    </div>     
+                                                    @endforeach
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="question-title">② 主食・主菜・副菜 ３つのお皿を揃える和食の食べ方をしていますか？</span>
+
+                                                <div class="awnser-list">
+                                                    @foreach (Config::get('dataquestion.question_1_2') as $key => $item)
+                                                    <div class="form-group">
+                                                        <input name="awnser[1][2]" value="{{ $item }}" type="radio" id="awnser1{{ $key }}">
+                                                        <label for="awnser1{{ $key }}">{{ $item }}</label>
+                                                    </div>     
+                                                    @endforeach
+                                
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="question-item">
+                                        2. 野菜
+                                        <ul class="question-child">
+                                            <li>
+                                                <span class="question-title">① 適正な野菜の摂取量は1日に350g以上です。このような習慣についてどのように思いますか？</span>
+
+                                                <div class="awnser-list">
+                                                    @foreach (Config::get('dataquestion.question_2_1') as $key => $item)
+                                                    <div class="form-group">
+                                                        <input name="awnser[2][1]" value="{{ $item }}" type="radio" id="awnser2{{ $key }}"
+                                                        >
+                                                        <label for="awnser2{{ $key }}">{{ $item }}</label>
+                                                    </div>     
+                                                    @endforeach
+                                        
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="question-item">
+                                        3. よく噛んで食べる
+                                        <ul class="question-child">
+                                            <li>
+                                                <span class="question-title">① 食事はよく噛んでゆっくり食べることが大切ですが、このような習慣についてどのように思いますか？</span>
+
+                                                <div class="awnser-list">
+                                                    @foreach (Config::get('dataquestion.question_2_1') as $key => $item)
+                                                    <div class="form-group">
+                                                        <input name="awnser[3][1]" value="{{ $item }}" type="radio" id="awnser3{{ $key }}"
+                                                        >
+                                                        <label for="awnser3{{ $key }}">{{ $item }}</label>
+                                                    </div>     
+                                                    @endforeach
+                                        
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="question-item">
+                                        4. 間食
+                                        <ul class="question-child">
+                                            <li>
+                                                <span class="question-title">① あなたは間食することについてどのように思いますか？</span>
+
+                                                <div class="awnser-list">
+                                                    @foreach (Config::get('dataquestion.question_2_1') as $key => $item)
+                                                    <div class="form-group">
+                                                        <input name="awnser[4][1]" value="{{ $item }}" type="radio" id="awnser4{{ $key }}">
+                                                        <label for="awnser4{{ $key }}">{{ $item }}</label>
+                                                    </div>     
+                                                    @endforeach
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form-box">
+                                <h5 class="question-title">運動</h5>
+                                <ul class="question-list">
+                                    <li class="question-item">
+                                        1. 食習慣
+                                        <ul class="question-child">
+                                            <li>
+                                                <span class="question-title">① 定期的に運動を行うことについてお答えください</span>
+
+                                                <div class="awnser-list">
+                                                    @foreach (Config::get('dataquestion.question_5_1') as $key => $item)
+                                                    <div class="form-group">
+                                                        <input name="awnser[5][1]" value="{{ $item }}" type="radio" id="awnser5{{ $key }}"
+                                                        >
+                                                        <label for="awnser5{{ $key }}">{{ $item }}</label>
+                                                    </div>     
+                                                    @endforeach
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="month" value="0ヶ月">
+                            <div class="form-link">
+                                <button class="backButton" onclick="goBack()" type="button">戻って</button>
+                                <button class="form-link-primary" type="submit">継続する</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@endsection
+
+@section("script")
+   
+@endsection
