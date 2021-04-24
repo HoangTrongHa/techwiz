@@ -12,12 +12,10 @@ const mix = require('laravel-mix');
  */
 
  mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/client/app.scss','public/assets/css/client')
     .sass('resources/sass/client/header.scss','public/assets/css/client')
     .sass('resources/sass/client/information.scss','public/assets/css/client')
     .sass('resources/sass/client/confirmInfor.scss','public/assets/css/client')
     .sass('resources/sass/client/mypage.scss','public/assets/css/client')
-    .sass('resources/sass/client/introduce.scss','public/assets/css/client')
     .sass('resources/sass/client/login.scss','public/assets/css/client')
     .sass('resources/sass/client/searchid.scss','public/assets/css/client')
     .sass('resources/sass/client/thanksPage.scss','public/assets/css/client')

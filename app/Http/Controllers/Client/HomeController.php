@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Client;
 use Carbon\Carbon;
 use App\Models\client\Question;
 use App\Http\Controllers\Controller;
+use App\Models\client\categories;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -18,12 +19,13 @@ class HomeController extends Controller
 
     public function redirectToMyPage()
     {
+        $categories = categories::get();
         $user = Auth::user();
         $currentTime = Carbon::now();
         $join_event = date('Y-m-d', strtotime($user->join_event));
         $threeMonth = date('Y-m-d', strtotime($join_event . '+ 3 months'));
         $sixMonth = date('Y-m-d', strtotime($join_event . '+ 6 months')); 
-        return view("client.mypage.index", compact('currentTime', 'join_event', 'threeMonth', 'sixMonth'));
+        return view("client.mypage.index", compact('currentTime', 'join_event', 'threeMonth', 'sixMonth','categories'));
     }
 
     private function diffTime()

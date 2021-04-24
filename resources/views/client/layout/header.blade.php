@@ -84,7 +84,6 @@
             </div>
           </li>
          </ul>
-          <script type="text/javascript" src="{{ asset('js.client.nav.js') }}"></script>
       </div><!-- end h_menu4 -->
      <div class="clear"></div>
   </div>
@@ -95,7 +94,6 @@
     position: relative;
     display: inline-block;
   }
-  
   .dropdown-content {
     display: none;
     position: absolute;

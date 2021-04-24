@@ -53,7 +53,7 @@
                     <h1>Protect the health of yourself and your family by working out together every day.</h1>
                 </div>
                 <div class="content-link">
-                    <a href="" class="button">I'm always fine.</a>
+                    <a href="" class="button">I am always fine.</a>
                 </div>
                 <div class="content-info">
                     <div class="content-table">
@@ -120,7 +120,7 @@
                             </div>
                             <div class="schedule-row">
                                 <div class="schedule-item schedule-big">
-                                    <p>How's your health today</p>
+                                    <p>How is your health today</p>
                                 </div>
                                 <div class="schedule-item"></div>
                                 <div class="schedule-item"><div class="circle"></div></div>

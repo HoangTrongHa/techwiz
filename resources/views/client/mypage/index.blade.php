@@ -57,33 +57,43 @@
                     Based on the results of this survey, we want to see what you can do to take better care of yourself, so please let us know your candid opinion. We are very happy.                </div>
             </div>
             <div class="wrapQuestionAndChanllen">
-            <div class="wrapItemQuestion">
-                <div class="itemQuestion">
-                    <div class="titleQuestion">
-                        0 month
+                <div class="wrapItemQuestion">
+                    <div class="itemQuestion">
+                        <div class="titleQuestion">
+                            0 month
+                        </div>
+                            <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
+                                Answer the question
+                            </a>
+                    
                     </div>
-                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
-                            Answer the question
-                        </a>
-                  
-                </div>
-                <div class="itemQuestion">
-                    <div class="titleQuestion">
-                        After 3 Months
+                    <div class="itemQuestion">
+                        <div class="titleQuestion">
+                            After 3 Months
+                        </div>
+                            <a href="{{ route('zero.two.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                                Answer the question
+                            </a>
                     </div>
-                        <a href="{{ route('zero.two.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
-                            Answer the question
-                        </a>
-                </div>
-                <div class="itemQuestion">
-                    <div class="titleQuestion">
-                        After 6 months
+                    <div class="itemQuestion">
+                        <div class="titleQuestion">
+                            After 6 months
+                        </div>
+                            <a href="" class="wrapLinkQuestion hide-button" id="threeMonths">
+                                Answer the question
+                            </a>
                     </div>
-                        <a href="" class="wrapLinkQuestion hide-button" id="threeMonths">
-                            Answer the question
-                        </a>
                 </div>
-            </div>
+                <div class="wrapUl">
+                    <h4>List Of Exercises</h4>
+                    <div class="wrapList">
+                        <ul class="blog-list">
+                            @foreach ($categories as $item)
+                            <li><a href="#">{{ $item->name }}</a></li>
+                            @endforeach
+                          </ul>
+                    </div>
+		   	    </div>
         </div>
     <input type="hidden" value="{{ $currentTime }}" id="currentTime">
     <input type="hidden" value="{{ $join_event }}" id="joinEvent">
