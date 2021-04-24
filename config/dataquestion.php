@@ -31,11 +31,11 @@ return [
         'Less than 6 months after implementing improvement'
     ],
     'question_4_1' => [
-        '関心はない',
-        '今すぐにでも実行したい',
-        '改善を実行して6ヵ月以上である',
-        '間食はやめたいと思うが、実行できない',
-        '改善を実行して6ヵ月未満である'
+        'No',
+        'Anytime',
+        'Sometimes',
+        '3 times a week',
+        'Free time'
     ],
     'question_5_1' => [
         'Not interested',

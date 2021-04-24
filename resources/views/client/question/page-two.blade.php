@@ -53,202 +53,142 @@
                                 <!-- Question mobile -->
                                <ul class="question-mobile">
                                 <li class="question-title">
-                                    会うと心が落ち着き安心できる人
+                                    Do you exercise every day?
                                 </li>
                                <li>
-                                  <span class="question-child">家族の中にいますか？</span>
+                                  <span class="question-child">Please select Yes or No answer？</span>
                                   <ul>
-                                      <li><input type="radio" name="answer2[1][1]" value="いる"> <label for="">いる</label></li>
-                                      <li><input type="radio" name="answer2[1][1]" value="いない"> <label for="">いない</label></li>
+                                      <li><input type="radio" name="answer2[1][1]" value="Yes"> <label for="">Yes</label></li>
+                                      <li><input type="radio" name="answer2[1][1]" value="No"> <label for="">No</label></li>
                                   </ul>
                                </li>
-                               <li>
-                                  <span class="question-child">家族以外の中にいますか？</span>
-                                  <ul>
-                                      <li><input type="radio" name="answer2[1][2]" value="いる"> <label for="">いる</label></li>
-                                      <li><input type="radio" name="answer2[1][2]" value="いない"> <label for="">いない</label></li>
-                                  </ul>
-                               </li>
+
                                </ul>
                                <!-- Question mobile -->
                                <ul class="question-mobile">
                                <li class="question-title">
-                                   常日頃、あなたの気持ちを敏感に察してくれる人
+                                   Do you have three main meals 1 side?
                                </li>
                                <li>
-                                   <span class="question-child">家族の中にいますか？</span>
+                                   <span class="question-child">Please select Yes or No answer？</span>
                                    <ul>
-                                       <li><input type="radio" name="answer2[2][1]" value="いる"> <label for="">いる</label></li>
-                                       <li><input type="radio" name="answer2[2][1]" value="いない"> <label for="">いない</label></li>
+                                       <li><input type="radio" name="answer2[2][1]" value="Yes "> <label for="">Yes</label></li>
+                                       <li><input type="radio" name="answer2[2][1]" value="No"> <label for="">No</label></li>
                                    </ul>
                                </li>
-                               <li>
-                                   <span class="question-child">家族以外の中にいますか？</span>
-                                   <ul>
-                                       <li><input type="radio" name="answer2[2][2]" value="いる"> <label for="">いる</label></li>
-                                       <li><input type="radio" name="answer2[2][2]" value="いない"> <label for="">いない</label></li>
-                                   </ul>
-                               </li>
+
                                </ul>
                                <!-- Question mobile -->
                                <ul class="question-mobile">
                                    <li class="question-title">
-                                       あなたを日頃評価し、認めてくれる人
+                                       Do you usually eat spicy food?
                                    </li>
                                    <li>
-                                       <span class="question-child">家族の中にいますか？</span>
+                                       <span class="question-child">Please select Yes or No answer？</span>
                                        <ul>
-                                           <li><input type="radio" name="answer2[3][1]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[3][1]" value="いない"> <label for="">いない</label></li>
+                                           <li><input type="radio" name="answer2[3][1]" value="Yes"> <label for="">Yes</label></li>
+                                           <li><input type="radio" name="answer2[3][1]" value="No"> <label for="">No</label></li>
                                        </ul>
                                    </li>
-                                   <li>
-                                       <span class="question-child">家族以外の中にいますか？</span>
-                                       <ul>
-                                           <li><input type="radio" name="answer2[3][2]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[3][2]" value="いない"> <label for="">いない</label></li>
-                                       </ul>
-                                   </li>
+
                                </ul>
                                <!-- Question mobile -->
                                <ul class="question-mobile">
                                    <li class="question-title">
-                                       あなたを信じてあなたの思うようにさせくれる人
+                                       Do you usually eat sweets?
                                    </li>
                                    <li>
-                                       <span class="question-child">家族の中にいますか？</span>
+                                       <span class="question-child">Please select Yes or No answer？</span>
                                        <ul>
-                                           <li><input type="radio" name="answer2[4][1]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[4][1]" value="いない"> <label for="">いない</label></li>
+                                           <li><input type="radio" name="answer2[4][1]" value="Yes"> <label for="">Yes</label></li>
+                                           <li><input type="radio" name="answer2[4][1]" value="No"> <label for="">No</label></li>
                                        </ul>
                                    </li>
-                                   <li>
-                                       <span class="question-child">家族以外の中にいますか？</span>
-                                       <ul>
-                                           <li><input type="radio" name="answer2[4][2]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[4][2]" value="いない"> <label for="">いない</label></li>
-                                       </ul>
-                                   </li>
+
                                </ul>
                                <!-- Question mobile -->
                                <ul class="question-mobile">
                                    <li class="question-title">
-                                       あなたが成長し、成功する事を我が事のように喜んでくれる人
+                                       Do you eat a lot of green vegetables?
                                    </li>
                                    <li>
-                                       <span class="question-child">家族の中にいますか？</span>
+                                       <span class="question-child">Please select Yes or No answer？</span>
                                        <ul>
-                                           <li><input type="radio" name="answer2[5][1]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[5][1]" value="いない"> <label for="">いない</label></li>
+                                           <li><input type="radio" name="answer2[5][1]" value="Yes"> <label for="">Yes</label></li>
+                                           <li><input type="radio" name="answer2[5][1]" value="No"> <label for="">No</label></li>
                                        </ul>
                                    </li>
-                                   <li>
-                                       <span class="question-child">家族以外の中にいますか？</span>
-                                       <ul>
-                                           <li><input type="radio" name="answer2[5][2]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[5][2]" value="いない"> <label for="">いない</label></li>
-                                       </ul>
-                                   </li>
+
                                </ul>
                                <!-- Question mobile -->
                                <ul class="question-mobile">
                                    <li class="question-title">
-                                       個人的な気持ちや秘密を打ち明けることができる人
+                                       Do you sleep enough 8 hours a day?
                                    </li>
                                    <li>
-                                       <span class="question-child">家族の中にいますか？</span>
+                                       <span class="question-child">Please select Yes or No answer？</span>
                                        <ul>
-                                           <li><input type="radio" name="answer2[6][1]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[6][1]" value="いない"> <label for="">いない</label></li>
+                                           <li><input type="radio" name="answer2[6][1]" value="Yes"> <label for="">Yes</label></li>
+                                           <li><input type="radio" name="answer2[6][1]" value="No"> <label for="">No</label></li>
                                        </ul>
                                    </li>
-                                   <li>
-                                       <span class="question-child">家族以外の中にいますか？</span>
-                                       <ul>
-                                           <li><input type="radio" name="answer2[6][2]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[6][2]" value="いない"> <label for="">いない</label></li>
-                                       </ul>
-                                   </li>
+
                                </ul>
                                <!-- Question mobile -->
                                <ul class="question-mobile">
                                    <li class="question-title">
-                                       お互いの考えや将来の事を話し合うことのできる人
+                                       Do you drink enough 1.5l of water per day?
                                    </li>
                                    <li>
-                                       <span class="question-child">家族の中にいますか？</span>
+                                       <span class="question-child">Please select Yes or No answer？</span>
                                        <ul>
-                                           <li><input type="radio" name="answer2[7][1]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[7][1]" value="いない"> <label for="">いない</label></li>
+                                           <li><input type="radio" name="answer2[7][1]" value="Yes"> <label for="">Yes</label></li>
+                                           <li><input type="radio" name="answer2[7][1]" value="No"> <label for="">No</label></li>
                                        </ul>
                                    </li>
-                                   <li>
-                                       <span class="question-child">家族以外の中にいますか？</span>
-                                       <ul>
-                                           <li><input type="radio" name="answer2[7][2]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[7][2]" value="いない"> <label for="">いない</label></li>
-                                       </ul>
-                                   </li>
+
                                </ul>
                                <!-- Question mobile -->
                                <ul class="question-mobile">
                                    <li class="question-title">
-                                       甘えられる人
+                                       Do you eat fruit every day?
                                    </li>
                                    <li>
-                                       <span class="question-child">家族の中にいますか？</span>
+                                       <span class="question-child">Please select Yes or No answer？</span>
                                        <ul>
-                                           <li><input type="radio" name="answer2[8][1]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[8][1]" value="いない"> <label for="">いない</label></li>
+                                           <li><input type="radio" name="answer2[8][1]" value="Yes"> <label for="">Yes</label></li>
+                                           <li><input type="radio" name="answer2[8][1]" value="No"> <label for="">No</label></li>
                                        </ul>
                                    </li>
-                                   <li>
-                                       <span class="question-child">家族以外の中にいますか？</span>
-                                       <ul>
-                                           <li><input type="radio" name="answer2[8][2]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[8][2]" value="いない"> <label for="">いない</label></li>
-                                       </ul>
-                                   </li>
+
                                </ul>
                                <!-- Question mobile -->
                                <ul class="question-mobile">
                                    <li class="question-title">
-                                       あなたの行動や考えに賛成し、支持してくれる人
+                                       Are you picky?
                                    </li>
                                    <li>
-                                       <span class="question-child">家族の中にいますか？</span>
+                                       <span class="question-child">Please select Yes or No answer？</span>
                                        <ul>
-                                           <li><input type="radio" name="answer2[9][1]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[9][1]" value="いない"> <label for="">いない</label></li>
+                                           <li><input type="radio" name="answer2[9][1]" value="Yes"> <label for="">Yes</label></li>
+                                           <li><input type="radio" name="answer2[9][1]" value="No"> <label for="">No</label></li>
                                        </ul>
                                    </li>
-                                   <li>
-                                       <span class="question-child">家族以外の中にいますか？</span>
-                                       <ul>
-                                           <li><input type="radio" name="answer2[9][2]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[9][2]" value="いない"> <label for="">いない</label></li>
-                                       </ul>
-                                   </li>
+
                                </ul>
                                <!-- Question mobile -->
                                <ul class="question-mobile">
                                    <li class="question-title">
-                                       気持ちの通じ合う人
+                                       Do you have a stomachache?
                                    </li>
                                    <li>
-                                       <span class="question-child">家族の中にいますか？</span>
+                                       <span class="question-child">Please select Yes or No answer？</span>
                                        <ul>
-                                           <li><input type="radio" name="answer2[10][1]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[10][1]" value="いない"> <label for="">いない</label></li>
+                                           <li><input type="radio" name="answer2[10][1]" value="Yes"> <label for="">Yes</label></li>
+                                           <li><input type="radio" name="answer2[10][1]" value="No"> <label for="">No</label></li>
                                        </ul>
                                    </li>
-                                   <li>
-                                       <span class="question-child">家族以外の中にいますか？</span>
-                                       <ul>
-                                           <li><input type="radio" name="answer2[10][2]" value="いる"> <label for="">いる</label></li>
-                                           <li><input type="radio" name="answer2[10][2]" value="いない"> <label for="">いない</label></li>
-                                       </ul>
-                                   </li>
+
                                </ul>
                             </div>
                             <div class="form-link">
