@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Client\QuestionController;
 use App\Http\Controllers\Client\InformationController;
 use App\Http\Controllers\Admin\LoginController as AdminLoginController;
+use App\Http\Controllers\Client\PageController;
 use App\Http\Controllers\Client\TermController;
 use App\Http\Controllers\Client\ThankPageController;
 
@@ -31,6 +32,7 @@ Route::group(["namespace" => "client"], function() {
     Route::get('/searchid', [SearchController::class, 'index'])->name('search');
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
     Route::post('/postSearchId', [SearchController::class, 'postSearchId'])->name('postSearchId');
+    Route::get('/about', [PageController::class, 'about'])->name('about');
     Route::group(["middleware" => ["checkUser"]], function () {
         Route::get('/confirmInformation', [ConfirmController::class, 'index'])->name('confirmInformation');
         Route::group(['middleware' => ['checkInfor']], function() {

@@ -11,7 +11,6 @@
   @yield('css')
 </head>
 <body>
-
   @if (\Request::segment(1) == 'admin')
     @include('client.layout.header-admin')
   @else
