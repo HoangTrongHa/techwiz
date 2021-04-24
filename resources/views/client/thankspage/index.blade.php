@@ -6,10 +6,10 @@
     <div class="container">
         <div id="thank">
             <h1 class="thank-title">HARA PETA Project</h1>
-            <h5 class="thank-desc">送信ありがとうございました</h5>
-            <p>資材到着までしばらくお待ちください。</p>
+            <h5 class="thank-desc">Thank you for sending!</h5>
+            <p>Please wait for a while until the materials arrive</p>
             <div class="form-link form-link-pt">
-                <a href="{{ route('home') }}" class="button button-first">TOPへ戻る</a>
+                <a href="{{ route('home') }}" class="button button-first">Return to TOP</a>
             </div>
         </div>
     </div>
