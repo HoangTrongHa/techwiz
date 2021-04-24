@@ -27,3 +27,7 @@
 #thank .button-first {
   margin-top: 320px;
 }
+
+.header {
+  display: none;
+}

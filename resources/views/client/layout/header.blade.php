@@ -47,13 +47,9 @@
          <ul class="nav">
            <li class="active"><a href="index.html">Home</a></li>
            <li><a href="{{ route('about') }}">About</a></li>
-           <li><a href="trainers.html">Trainers</a></li>
-           <li><a href="classes.html">Classes</a>
-
-           </li>
-           <li><a href="blog.html">Blog</a></li>
            <li><a href="{{ route('myPage') }}">Join us</a></li>
            <li><a href="{{ route('login') }}">Login</a></li>
+           <li><a href="{{ route('register') }}">Register</a></li>
          </ul>
           <script type="text/javascript" src="{{ asset('js.client.nav.js') }}"></script>
       </div><!-- end h_menu4 -->
@@ -71,9 +67,6 @@
          <ul class="nav">
            <li class="active"><a href="{{ route('home') }}">Home</a></li>
            <li><a href="{{ route('about') }}">About</a></li>
-           <li><a href="trainers.html">Trainers</a></li>
-           <li><a href="classes.html">Classes</a></li>
-           <li><a href="blog.html">Blog</a></li>
            <li><a href="{{ route('myPage') }}">Join us</a></li>
            <li>
             <div class="dropdown">

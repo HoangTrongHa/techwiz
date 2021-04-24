@@ -1,3 +1,7 @@
+.header {
+  display: none;
+}
+
 .wrappInformation .wrappFormInformation {
   padding: 50px 0;
 }

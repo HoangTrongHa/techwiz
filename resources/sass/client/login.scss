@@ -17,7 +17,9 @@ $mobile-font-size: 16px;
 $tablet-font-size: 18px;
 $pc-font-size: 22px;
 $text-color: #71716F;
-
+.header {
+    display: none;
+}
 #login {
     padding: 50px 0;
     color: $text-black;

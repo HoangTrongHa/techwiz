@@ -1,7 +1,6 @@
 @extends('client.app')
 @section('css')
 <link rel="stylesheet" href="{{ asset('assets/css/admin/detail.css') }}">
-
 @endsection
 @section("content")
     <div id="detail">

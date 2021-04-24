@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+.header {
+  display: none;
+}
+
 .content {
-  padding-bottom: 50px;
+  padding: 100px;
 }
 .content .content-header {
   text-align: center;

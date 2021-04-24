@@ -6,7 +6,7 @@
 <div id="alogin">
     <div class="container">
         <div class="login">
-            <h1 class="login-title">HARA PETA Project 管理画面</h1>
+           
             <p class="login-desc">Login</p>
 
             <form action="{{ route('post.login.admin') }}" method="POST" class="form-login">

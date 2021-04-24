@@ -6,9 +6,6 @@
     <div id="dashboard">
         <div class="container">
             <div class="dashboard">
-                <h1 class="dashboard-title">
-                    HARA PETA Project 管理画面
-                </h1>
                 <div class="dashboard-content tableFixHead">
                     <table>
                         <thead>

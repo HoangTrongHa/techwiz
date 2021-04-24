@@ -4,21 +4,6 @@
 @endsection
 @section("content")
 <div class="app">
-    <!-- Banner -->
-    <section class="banner">
-        <img src="{{ asset('assets/images/time.jpg') }}" alt="">
-        <div class="banner-info">
-            <div>
-                <h1 class="title">
-                    <img src="{{ asset('assets/images/icon-banner.jpg') }}" alt="">Fitness Daily
-                </h1>
-            </div>
-            <div>
-                <h2 class="desc">That is a new step</h2>
-            </div>
-        </div>
-    </section>
-
     <!-- Content -->
     <section class="content">
         <div class="container">
@@ -29,7 +14,7 @@
                         Fitness Daily
                     </h1>
                 </div>
-                <p class="content-header-desc" style="text-align: center ;color: #00afec "  >
+                <p class="content-header-desc" style="text-align: center ;color: #00afec ">
                     Healthcare today gives me a brighter hope of tomorrow.
                 </p>
                 <div class="content-header-icon">

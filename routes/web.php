@@ -28,6 +28,7 @@ use App\Http\Controllers\Client\ThankPageController;
 Route::get("/", [HomeController::class, 'index'])->name('home');
 Route::group(["namespace" => "client"], function() {
     Route::get('/login', [LoginController::class, 'index'])->name('login');
+    Route::get('/register', [LoginController::class, 'register'])->name('register');
     Route::post('/login', [LoginController::class, 'login'])->name('post.login');
     Route::get('/searchid', [SearchController::class, 'index'])->name('search');
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
