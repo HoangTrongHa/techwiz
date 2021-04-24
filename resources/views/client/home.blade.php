@@ -10,11 +10,11 @@
         <div class="banner-info">
             <div>
                 <h1 class="title">
-                    <img src="{{ asset('assets/images/icon-banner.jpg') }}" alt=""> KOWA HARA PETA Project
+                    <img src="{{ asset('assets/images/icon-banner.jpg') }}" alt="">Firness Daily
                 </h1>
             </div>
             <div>
-                <h2 class="desc">これは日本語のテキストです</h2>
+                <h2 class="desc">That is a new step</h2>
             </div>
         </div>
     </section>
@@ -25,12 +25,12 @@
             <div class="content-header">
                 <div class="content-header-top">
                     <img src="{{ asset('assets/images/icon-banner.jpg') }}" alt="">
-                    <h1 class="content-title">
-                        HARA PETA Project
+                    <h1 class="content-title" >
+                        Firness Daily
                     </h1>
                 </div>
-                <p class="content-header-desc">
-                    HARA PETA Project 母は一番強い女の人だと思います。母はいつも家族を愛していて、毎日わたしたちのために頑張っています。私にいいマナー老人を尊敬することや子供たちに譲ることなどを教えてくれています。母はいつも新設に他の人を扱うので、尊敬される。
+                <p class="content-header-desc" style="text-align: center ;color: #00afec "  >
+                    Healthcare today gives me a brighter hope of tomorrow.
                 </p>
                 <div class="content-header-icon">
                     <div class="item">
@@ -48,89 +48,79 @@
             <div class="content-body">
                 <div class="content-body-desc">
                     <p>
-                        母は花を植えることが好きなので、家の周りはたくさんの花の種類を植えています。またはコーヒーを飲むことや本を読むことや旅行が好きです。
+                        Please accompany us to get good health. Exercising daily health will bring us a comfortable spirit and a sustainable future.
                     </p>
-                    <h1>母とたくさんの素晴らしい景色に旅行したいです。</h1>
+                    <h1>Protect the health of yourself and your family by working out together every day.</h1>
                 </div>
                 <div class="content-link">
-                    <a href="" class="button">私はいつも元気で、</a>
+                    <a href="" class="button">I'm always fine.</a>
                 </div>
                 <div class="content-info">
                     <div class="content-table">
                         <div class="content-title">
                             <img src="./icon-banner.jpg" alt="">
-                            <h1>たいです</h1>
+                            <h1 style="text-align: center">Plan for you</h1>
                         </div>
                         <div class="content-row">
-                            <div class="content-col">たいです</div>
-                            <div class="content-col">たいですたいですたいですたいですたいですたいです</div>
+                            <div class="content-col">Diet</div>
+                            <div class="content-col">Please create a reasonable diet for you</div>
                         </div>
                         <div class="content-row">
-                            <div class="content-col">たいです</div>
+                            <div class="content-col">Movement mode</div>
                             <div class="content-col">
-                                <p>たいです</p>
-                                <p>たいですたいです</p>
-                                <p>たいですたいですたいですたいです</p>
+                                <p>Build for you a suitable exercise regimen</p>
                             </div>
                         </div>
                         <div class="content-row">
-                            <div class="content-col">たいです</div>
+                            <div class="content-col">Resting mode</div>
                             <div class="content-col">
-                                <p>たいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいですたいです</p>
+                                <p>Relaxation rest is one of the factors of good health</p>
                             </div>
                         </div>
-                        <div class="content-row">
-                            <div class="content-col">たいですたいです</div>
-                            <div class="content-col">
-                                <p>たいですたいです: たいですたいです</p>
-                                <p>たいですたいです: たいですたいですたいですたいです</p>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="content-link">
-                        <a href="" class="button">私はいつも元気で、</a>
+                        <a href="" class="button">You sure are always fine!</a>
                     </div>
                     <div class="content-table">
                         <div class="content-title">
                             <img src="./icon-banner.jpg" alt="">
-                            <h1>たいですたいです</h1>
+                            <h1>Change the status for each stage</h1>
                         </div>
 
                         <div class="timeline">
                             <div class="timeline-header">
-                                <span>0ヶ月</span>
-                                <span>3ヶ月</span>
-                                <span>6ヶ月</span>
+                                <span>0 months</span>
+                                <span>3 months</span>
+                                <span>6 months</span>
                             </div>
                             <div class="timeline-body">
                                 <div class="timeline-row">
-                                    <div class="timeline-item">私はい</div>
-                                    <div class="timeline-item">私はい私はい(私はい私はい)</div>
+                                    <div class="timeline-item">Improved health in the first level</div>
+                                    <div class="timeline-item">The important stage for perfect health</div>
                                 </div>
                                 <div class="timeline-row">
-                                    <div class="timeline-item timeline-child">私はい</div>
-                                    <div class="timeline-item timeline-child">私はい私はい(私はい私はい)</div>
+                                    <div class="timeline-item timeline-child">Physical exercise in the first stage</div>
+                                    <div class="timeline-item timeline-child">The most important stage to build perfect health</div>
                                 </div>
                                 <div class="timeline-row">
-                                    <div class="timeline-item timeline-full-w">私はい私はい(私はい私はい)</div>
+                                    <div class="timeline-item timeline-full-w">Perfect mentality, health and fitness best</div>
                                 </div>
-
-                                <p class="timeline-desc">私はい</p>
                             </div>
                         </div>
 
                         <div class="schedule">
                             <div style="background-color: #FFC000;" class="schedule-row">
                                 <div class="schedule-item schedule-big"></div>
-                                <div class="schedule-item">0 私は</div>
-                                <div class="schedule-item">0 私は</div>
-                                <div class="schedule-item">3 私は</div>
-                                <div class="schedule-item">6 私は</div>
-                                <div class="schedule-item">9 私は</div>
+                                <div class="schedule-item">0 month</div>
+                                <div class="schedule-item">0 month</div>
+                                <div class="schedule-item">3 months</div>
+                                <div class="schedule-item">6 months</div>
+                                <div class="schedule-item">9 months</div>
                             </div>
                             <div class="schedule-row">
                                 <div class="schedule-item schedule-big">
-                                    <p>私はいつも元気で、私はいつも元気で、</p>
+                                    <p>How's your health today</p>
                                 </div>
                                 <div class="schedule-item"></div>
                                 <div class="schedule-item"><div class="circle"></div></div>
@@ -140,18 +130,18 @@
                             </div>
                             <div class="schedule-row">
                                 <div class="schedule-item schedule-big">
-                                    <p>私はいつも元気で、私はいつも元気で、</p>
+                                    <p>Do you have muscle pain or pain after exercise</p>
                                 </div>
                                 <div class="schedule-item item-full-w">
                                     <div class="line"></div>
                                     <div class="line-content">
-                                        も元気で、
+                                        Improving
                                     </div>
                                 </div>
                             </div>
                             <div class="schedule-row">
                                 <div class="schedule-item schedule-big">
-                                    <p>私はいつも元気で、私はいつも元気で、</p>
+                                    <p>Is your first exercise complete</p>
                                 </div>
                                 <div class="schedule-item"></div>
                                 <div class="schedule-item"></div>
@@ -161,7 +151,7 @@
                             </div>
                             <div class="schedule-row">
                                 <div class="schedule-item schedule-big">
-                                    <p>私はいつも元気で、私はいつも元気で、</p>
+                                    <p>how is your diet!</p>
                                 </div>
                                 <div class="schedule-item"></div>
                                 <div class="schedule-item"><div class="circle"></div></div>
@@ -169,50 +159,23 @@
                                 <div class="schedule-item"><div class="circle"></div></div>
                                 <div class="schedule-item"><div class="circle"></div></div>
                             </div>
-                            <div class="schedule-row">
-                                <div class="schedule-item schedule-big schedule-fl">
-                                    <p>私はいつも元気で、私はいつも元気で、</p>
-                                    <ul>
-                                        <li>私はいつも元気で、</li>
-                                        <li>私はいつも元気で、</li>
-                                        <li>私はいつも元気で、</li>
-                                    </ul>
-                                </div>
-                                <div class="schedule-item"></div>
-                                <div class="schedule-item"><div class="circle"></div></div>
-                                <div class="schedule-item"></div>
-                                <div class="schedule-item"><div class="circle"></div></div>
-                                <div class="schedule-item"><div class="circle"></div></div>
-                            </div>
-                            <div class="schedule-row">
-                                <div class="schedule-item schedule-big">
-                                    <p>私はいつも元気で、私はいつも元気で、</p>
-                                </div>
-                                <div class="schedule-item"></div>
-                                <div class="schedule-item"></div>
-                                <div class="schedule-item"></div>
-                                <div class="schedule-item"></div>
-                                <div class="schedule-item"><div class="circle"></div></div>
-                            </div>
-                            <div class="schedule-note">
-                                <p>O : 私はいつも元気で</p>
-                            </div>
+
                         </div>
                     </div>
                     <div class="content-link">
-                        <a href="" class="button">私はいつも元気で、</a>
+                        <a href="" class="button">Good </a>
                     </div>
                     <div class="contact">
                         <div class="contact-top">
                             <div class="contact-left">
-                                私はいつも
+                               Email
                             </div>
                             <div class="contact-right">
                                 <h1>Phond2@op.madhere.co.jp</h1>
                             </div>
                         </div>
                         <div class="contact-mid">
-                            <p>私はいつも元気で、私はいつも元気で、私はいつも元気で、私はいつも元気で、</p>
+                            <p>Any questions please contact us. For a good health</p>
                         </div>
                     </div>
                 </div>
