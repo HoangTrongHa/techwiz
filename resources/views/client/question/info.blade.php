@@ -12,91 +12,91 @@
                 <div class="content">
                     <div class="content-header">
                         <h1 class="content-title">
-                            0ヵ月時点
+                            0 MONTHS
                         </h1>
                         <p class="content-desc">
-                            あなた自身についてお伺いします。あてはまるものを選択してください。
+                            I would like to ask you about yourself. Please select the one that applies.
                         </p>
                     </div>
-    
+
                     <!-- Form -->
                     <div class="content-body">
                             <div class="form-row">
-                                <div class="form-left">年齢：</div>
+                                <div class="form-left">Age：</div>
                                 <div class="form-right">
-                                    <input type="number" name="age">歳
+                                    <input type="number" name="age">age
                                 </div>
                             </div>
                             <div class="textError">
                                 <label id="age-error" class="error" for="age" style="color:red"></label>
                             </div>
                             <div class="form-row">
-                                <div class="form-left">婚姻の有無：</div>
+                                <div class="form-left">Marriage：</div>
                                 <div class="form-right">
                                     <div>
                                         <label>
-                                             <input name="relation" type="radio" value="既婚">
-                                    既婚</label>
-                                    </div>                                        
-                                    <div>
-                                        <label>
-                                            <input name="relation" type="radio" value="未婚">
-                                            未婚</label>
-                                        
+                                             <input name="relation" type="radio" value="married">
+                                            Married</label>
                                     </div>
                                     <div>
                                         <label>
-                                            <input name="relation" type="radio" value="離別または死別">
-                                            離別または死別</label>
-                                    
+                                            <input name="relation" type="radio" value="Unmarried">
+                                            Unmarried</label>
+
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input name="relation" type="radio" value="Divorce or bereavement">
+                                            Divorce or bereavement</label>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="textError">
-                                <label id="relation-error" class="error" for="relation" style="color:red"></label>           
+                                <label id="relation-error" class="error" for="relation" style="color:red"></label>
                             </div>
                             <div class="form-row">
-                                <div class="form-left">同居人：</div>
+                                <div class="form-left">Housemate：</div>
                                 <div class="form-right">
                                     <span>
-                                        <input name="roommate" type="radio" value="配偶者">配偶者
+                                        <input name="roommate" type="radio" value="配偶者">Housemate
                                     </span>
                                     <span>
-                                        <input name="roommate" type="radio" value="父">父
+                                        <input name="roommate" type="radio" value="father">father
                                     </span>
-    
+
                                     <span>
-                                        <input name="roommate" type="radio" value="母">母
-                                    </span>
-                                    <span>
-                                        <input name="roommate" type="radio" value="子">子
+                                        <input name="roommate" type="radio" value="mother">mother
                                     </span>
                                     <span>
-                                        <input name="roommate" type="radio" value="孫">孫
+                                        <input name="roommate" type="radio" value="Child">Child
                                     </span>
                                     <span>
-                                        <input name="roommate" type="radio" value="その他">その他
+                                        <input name="roommate" type="radio" value="Grandchild">Grandchild
                                     </span>
                                     <span>
-                                        <input name="roommate" type="radio" value="なし">なし
+                                        <input name="roommate" type="radio" value="Other">Other
+                                    </span>
+                                    <span>
+                                        <input name="roommate" type="radio" value="None">None
                                     </span>
                                 </div>
                             </div>
                             <div class="textError">
-                                <label id="roommate-error" class="error" for="roommate" style="color:red"></label>           
+                                <label id="roommate-error" class="error" for="roommate" style="color:red"></label>
                             </div>
                             <div class="form-row">
                                 <div class="wrapHistory">
-                                    <div class="form-left">食事療法歴:</div>
+                                    <div class="form-left">Diet history:</div>
                                     <div class="form-right">
                                         <div class="wrapInput">
                                             <div class="itemInput">
-                                                <input type="radio" value="なし" name="historyRadio" id="radioHistoryOne">
-                                                <label for="radioHistoryOne">なし</label>
+                                                <input type="radio" value="None" name="historyRadio" id="radioHistoryOne">
+                                                <label for="radioHistoryOne">None</label>
                                             </div>
                                             <div class="itemInput">
-                                                <input type="radio" value="あり" name="historyRadio" id="radioHistoryTwo" class="btnYes">
-                                                <label for="radioHistoryTwo">あり</label>
+                                                <input type="radio" value="Yes" name="historyRadio" id="radioHistoryTwo" class="btnYes">
+                                                <label for="radioHistoryTwo">Yes</label>
                                             </div>
                                         </div>
                                     </div>
@@ -109,18 +109,18 @@
                                         <div class="wrapInputSelec">
                                             <div class="itemInput">
                                                 <select name="yearpicker" class="yearpicker" id="yearpicker"></select>
-                                                <span class="mb-0">年</span>
+                                                <span class="mb-0">Year</span>
                                             </div>
                                             <div class="itemInput">
                                                 <select name="monthPicker" class="monthPicker" id="monthPicker"></select>
-                                                <span class="mb-0">ヵ月</span>
+                                                <span class="mb-0">Months</span>
                                             </div>
-                                            
+
                                         </div>
                                         <div class="wrapInputHistory">
-                                            <span>中断</span>
+                                            <span>Day</span>
                                             <input type="text" name="delayDay" class="delayDay" id="delayDay">
-                                            <span>年</span>
+                                            <span>Day</span>
                                         </div>
                                     </div>
                                 </div>
@@ -129,16 +129,16 @@
                             </div>
                             <div class="form-row">
                                 <div class="wrapHistory">
-                                    <div class="form-left">低たんぱく食歴:</div>
+                                    <div class="form-left">Low-protein diet:</div>
                                     <div class="form-right">
                                         <div class="wrapInput">
                                             <div class="itemInput">
-                                                <input type="radio" value="なし" name="diet" id="dietOne">
-                                                <label for="dietOne">なし</label>
+                                                <input type="radio" value="None" name="diet" id="dietOne">
+                                                <label for="dietOne">None</label>
                                             </div>
                                             <div class="itemInput">
-                                                <input type="radio" value="あり" name="diet" id="dietTwo" class="diet">
-                                                <label for="dietTwo">あり</label>
+                                                <input type="radio" value="Yes" name="diet" id="dietTwo" class="diet">
+                                                <label for="dietTwo">Yes</label>
                                             </div>
                                         </div>
                                     </div>
@@ -151,18 +151,18 @@
                                         <div class="wrapInputSelec">
                                             <div class="itemInput">
                                                 <select name="yearpickerDiet" class="yearpicker" id="yearpickerDiet"></select>
-                                                <span>年</span>
+                                                <span>Year</span>
                                             </div>
                                             <div class="itemInput">
                                                 <select name="monthPickerDiet" class="monthPicker" id="monthPickerDiet"></select>
-                                                <span>ヵ月</span>
+                                                    <span>Months</span>
                                             </div>
-                                            
+
                                         </div>
                                         <div class="wrapInputHistory">
-                                            <span>中断</span>
+                                            <span>Day</span>
                                             <input type="text" name='delayDayDiet'class="delayDay" id="delayDayDiet">
-                                            <span>年</span>
+                                            <span>day</span>
                                         </div>
                                     </div>
                                 </div>
@@ -170,25 +170,25 @@
                             <div class="textError">
                             </div>
                             <div class="form-row">
-                                <div class="form-left">調理担当者</div>
+                                <div class="form-left">Cook </div>
                                 <div class="form-right">
                                     <span>
-                                        <input id="cooking1" name="cooking" type="radio" value="本人">本人
-                                        <label for="cooking1">その他</label>
+                                        <input id="cooking1" name="cooking" type="radio" value="The person">The person
+                                        <label for="cooking1">Other</label>
                                     </span>
                                     <span>
-                                        <input id="cooking2" name="cooking" type="radio" value="家族">家族
-                                        <label for="cooking2">その他</label>
+                                        <input id="cooking2" name="cooking" type="radio" value="family">family
+                                        <label for="cooking2">Other</label>
                                     </span>
                                     <span>
-                                        <input id="cooking3" name="cooking" type="radio" value="その他" id="cooking">
-                                        <label for="cooking3">その他</label>
+                                        <input id="cooking3" name="cooking" type="radio" value="Other" id="cooking">
+                                        <label for="cooking3">Other</label>
                                     </span>
                                 </div>
                             </div>
                             <div class="form-link">
-                                <button class="backButton" onclick="goBack()" type="button">戻って</button>
-                                <button class="form-link-primary" type="submit">次へ</button>
+                                <button class="backButton" onclick="goBack()" type="button">Back</button>
+                                <button class="form-link-primary" type="submit">Next </button>
                             </div>
                     </div>
                 </div>
