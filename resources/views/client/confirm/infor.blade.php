@@ -79,14 +79,7 @@
                     </div>
                     <div class="answer">
                         <div class="wrapAnswerCity">
-                            <div class="wrapDistrict">
-                                <div class="titleAnswer">
-                                    City name
-                                </div>
-                                <div class="textAnswer">
-                                    {{ $dataInfor['district'] }}
-                                </div>
-                            </div>
+                            
                             <div class="wrapDistrict">
                                 <div class="titleAnswer">
                                     District name

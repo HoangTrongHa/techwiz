@@ -15,6 +15,6 @@ class Prefectures extends Model
     protected $table = "prefectures";
     
     protected $fillable = [
-        "name", "kanji"
+        "name"
     ];
 }

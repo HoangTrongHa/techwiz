@@ -23,7 +23,7 @@ class ConfirmController extends Controller
     public function postInforUser()
     {
         $dataInfor = session()->get('dataInfor');
-        $address = $dataInfor['district'].$dataInfor['city'].$dataInfor['address'];
+        $address = $dataInfor['city'].$dataInfor['address'];
         try {
             $cus = Auth::user();
             $dataUser = $cus->update([

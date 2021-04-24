@@ -88,25 +88,12 @@
                         <div class="wrapInputAndText">
                             <div class="wrapText">
                                 <div class="textTopInput">
-                                    City name
+                                    City name + District name
                                 </div>
-                                <div class="textTopInput">
-                                    District name
-                                </div>
+                                
                             </div>
                             <div class="wrapOption">
-                                <select class="prefectures" name="district" value=" {{ old('district') }}">
-                                    @foreach ($dataPrefectures as $item)
-                                    {{-- <option value="{{ $item->kanji }}">
-                                        {{ $item->kanji }}
-                                    </option> --}}
-                                    @if (old('district') == $item)
-                                        <option value="{{ $item->name }}" selected>{{ $item->name }}</option>
-                                    @else
-                                        <option value="{{ $item->name }}">{{ $item->name }}</option>
-                                    @endif
-                                    @endforeach
-                                </select>
+                                
                                 <div class="inforCity">
                                     <input type="text" name="city" value="{{ old('city') }}">
                                 </div>
