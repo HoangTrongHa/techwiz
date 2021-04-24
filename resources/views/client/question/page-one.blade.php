@@ -110,7 +110,7 @@
                                 </ul>
                             </div>
                             <div class="form-box">
-                                <h5 class="question-title">motion</h5>
+                                <h5 class="question-title">Motion</h5>
                                 <ul class="question-list">
                                     <li class="question-item">
                                         1. Eating habit
