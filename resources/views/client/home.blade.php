@@ -10,7 +10,7 @@
         <div class="banner-info">
             <div>
                 <h1 class="title">
-                    <img src="{{ asset('assets/images/icon-banner.jpg') }}" alt="">Firness Daily
+                    <img src="{{ asset('assets/images/icon-banner.jpg') }}" alt="">Fitness Daily
                 </h1>
             </div>
             <div>
@@ -26,7 +26,7 @@
                 <div class="content-header-top">
                     <img src="{{ asset('assets/images/icon-banner.jpg') }}" alt="">
                     <h1 class="content-title" >
-                        Firness Daily
+                        Fitness Daily
                     </h1>
                 </div>
                 <p class="content-header-desc" style="text-align: center ;color: #00afec "  >
