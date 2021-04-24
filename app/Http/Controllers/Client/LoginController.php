@@ -12,11 +12,12 @@ use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
     public function index() {
+        
         return view('client.login.index');
     }
 
     public function login(Request $request) {
-        
+
         if(Auth::check() === false ) {
             $validated = $request->validate([
                 'code' => 'required',
@@ -26,7 +27,7 @@ class LoginController extends Controller
                 Toastr::success('こんにちは'.Auth::user()->code, 'コーワ発表');
                 return redirect()->route('myPage');
             }
-            return redirect()->back()->withErrors(['カロママIDまたはパスワードが違います。']);   
+            return redirect()->back()->withErrors(['カロママIDまたはパスワードが違います。']);
         }
         return redirect()->route('home');
     }

@@ -76,13 +76,13 @@
                                 事便番号
                             </div>
                             <input type="number" name="zipCode" class="uintTextBox2"  value="{{ old('zipCode')}}"/>&nbsp;<span class="errmsg2" style="color: red;font-weight:100"></span>
-                        
+
                         </div>
                     </div>
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
@@ -101,9 +101,9 @@
                                         {{ $item->kanji }}
                                     </option> --}}
                                     @if (old('district') == $item)
-                                        <option value="{{ $item->kanji }}" selected>{{ $item->kanji }}</option>
+                                        <option value="{{ $item->name }}" selected>{{ $item->name }}</option>
                                     @else
-                                        <option value="{{ $item->kanji }}">{{ $item->kanji }}</option>
+                                        <option value="{{ $item->name }}">{{ $item->name }}</option>
                                     @endif
                                     @endforeach
                                 </select>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
@@ -133,7 +133,7 @@
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
