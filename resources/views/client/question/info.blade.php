@@ -59,7 +59,7 @@
                                 <div class="form-left">Housemate：</div>
                                 <div class="form-right">
                                     <span>
-                                        <input name="roommate" type="radio" value="配偶者">Housemate
+                                        <input name="roommate" type="radio" value="housemate">Housemate
                                     </span>
                                     <span>
                                         <input name="roommate" type="radio" value="father">father

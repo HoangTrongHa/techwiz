@@ -8,13 +8,13 @@ $(document).ready(function() {
         },
         messages: {
            name: {
-               required: '入力してください'
+               required: 'Value is required'
            },
            code: {
-               required: '入力してください'
+               required: 'Value is required'
            },
            email: {
-               required: '入力してください'
+               required: 'Value is required'
            }
         },
         onfocusout: function(element) {

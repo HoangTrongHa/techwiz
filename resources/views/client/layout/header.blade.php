@@ -20,15 +20,15 @@
          <div class="header-bottom_left">
              <i class="phone"> </i><span>1-200-346-2986</span>
          </div>
-         <div class="social">	
-            <ul>	
+         <div class="social">
+            <ul>
                <li class="facebook"><a href="#"><span> </span></a></li>
                <li class="twitter"><a href="#"><span> </span></a></li>
-               <li class="pinterest"><a href="#"><span> </span></a></li>	
+               <li class="pinterest"><a href="#"><span> </span></a></li>
                <li class="google"><a href="#"><span> </span></a></li>
                <li class="tumblr"><a href="#"><span> </span></a></li>
-               <li class="instagram"><a href="#"><span> </span></a></li>	
-               <li class="rss"><a href="#"><span> </span></a></li>							
+               <li class="instagram"><a href="#"><span> </span></a></li>
+               <li class="rss"><a href="#"><span> </span></a></li>
             </ul>
         </div>
         <div class="clear"></div>
@@ -49,7 +49,7 @@
            <li><a href="{{ route('about') }}">About</a></li>
            <li><a href="trainers.html">Trainers</a></li>
            <li><a href="classes.html">Classes</a>
-               
+
            </li>
            <li><a href="blog.html">Blog</a></li>
            <li><a href="{{ route('myPage') }}">Join us</a></li>
@@ -59,7 +59,7 @@
       </div><!-- end h_menu4 -->
      <div class="clear"></div>
   </div>
-</div> 
+</div>
 @else
 <div class="menu" id="menu">
   <div class="container">
@@ -95,7 +95,7 @@
     position: relative;
     display: inline-block;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;

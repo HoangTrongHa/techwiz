@@ -6,12 +6,12 @@
     <div class="container">
         <div class="wrapTitle">
             <span>
-                HARA PETA Project
+                Fitness Daily
             </span>
         </div>
         <div class="wrapTitleMyPage">
             <span>
-                Let is start with us
+                Let's start with us
             </span>
         </div>
         <div class="wrapVideoTitle">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="video">
                     <div id="video1">
-                   
+
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="video">
                     <div id="video2">
-                   
+
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="video">
                     <div id="video3">
-                   
+
                     </div>
                 </div>
             </div>
@@ -65,11 +65,11 @@
                         <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
                             Answer the question
                         </a>
-                  
+
                 </div>
                 <div class="itemQuestion">
                     <div class="titleQuestion">
-                        After 3 Months
+                        After 3 m   onths
                     </div>
                         <a href="{{ route('zero.two.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
                             Answer the question
