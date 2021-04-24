@@ -12,10 +12,10 @@
                 <div class="content">
                     <div class="content-header">
                         <h1 class="content-title">
-                            0ヵ月時点
+                            As of 0 months
                         </h1>
                         <p class="content-desc">
-                            次のような人があなたの周りにいますか？当てはまる項目を選択して下さい。
+                            What can you do below?Please select the applicable item
                         </p>
                     </div>
                     <!-- Form -->
@@ -25,14 +25,12 @@
                                 <thead>
                                     <tr>
                                         <td rowspan="2" class="question-w-40"></td>
-                                        <td class="table-w" colspan="2">家族の中にいますか？</td>
-                                        <td class="table-w" colspan="2">家族以外の中にいますか？</td>
+                                        <td class="table-w" colspan="2">Please select Yes or No answer</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center;">いる</td>
-                                        <td>いない</td>
-                                        <td>いる</td>
-                                        <td>いない</td>
+                                        <td style="text-align: center;">yes</td>
+                                        <td>No</td>
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -40,18 +38,13 @@
                                         <tr>
                                             <td>{{ $item }}</td>
                                             <td>
-                                                <label style="width: 100%; text-align: center; cursor: pointer;" for="anwser2{{ $key }}"><input type="radio" name="answer2[{{ $key }}][1]" value="いる" id="anwser2{{ $key }}"></label>
+                                                <label style="width: 100%; text-align: center; cursor: pointer;" for="anwser2{{ $key }}"><input type="radio" name="answer2[{{ $key }}][1]" value="Yes" id="anwser2{{ $key }}"></label>
                                             </td>
                                             <td>
-                                                <label style="width: 100%; text-align: center; cursor: pointer;" for="anwser3{{ $key }}"><input type="radio" name="answer2[{{ $key }}][1]" value="いない" id="anwser3{{ $key }}"></label>
+                                                <label style="width: 100%; text-align: center; cursor: pointer;" for="anwser3{{ $key }}"><input type="radio" name="answer2[{{ $key }}][1]" value="No" id="anwser3{{ $key }}"></label>
                                             </td>
-                                            <td>
-                                                <label style="width: 100%; text-align: center; cursor: pointer;" for="anwser4{{ $key }}"><input type="radio" name="answer2[{{ $key }}][2]" value="いる" id="anwser4{{ $key }}"></label>
-                                            </td>
-                                            <td>
-                                                <label style="width: 100%; text-align: center; cursor: pointer;" for="anwser5{{ $key }}"><input type="radio" name="answer2[{{ $key }}][2]" value="いない" id="anwser5{{ $key }}"></label>
-                                            </td>
-                                        </tr>  
+
+                                        </tr>
                                     @endforeach
                                 </tbody>
                             </table>
@@ -259,8 +252,8 @@
                                </ul>
                             </div>
                             <div class="form-link">
-                                <button class="backButton" onclick="goBack()" type="button">戻って</button>
-                                <button class="form-link-primary" type="submit">継続する</button>
+                                <button class="backButton" onclick="goBack()" type="button">Back</button>
+                                <button class="form-link-primary" type="submit">Continue</button>
                             </div>
                         </form>
                     </div>
