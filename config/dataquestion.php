@@ -2,33 +2,33 @@
 
 return [
     "question_1_1" => [
-        '関心はない',
-        '今すぐにでも実行したい',
-        '気をつけて6ヵ月以上である',
-        '気をつけたいと思うが、実行できない',
-        '気をつけて6ヵ月未満である'
+        'Not interested',
+        'I want to do it right now',
+        'Be careful for more than 6 months',
+        'I want to be careful, but I can\'t do it',
+        'Be careful less than 6 months'
     ],
     'question_1_2' => [
-        '関心はない',
-        '今すぐにでも実行したい',
-        '気をつけて6ヵ月以上である',
-        '知っているが、実行できない',
-        '気をつけて6ヵ月未満である'
+        'Never',
+        'I usually only eat 3 main courses',
+        'I only eat 3 side dishes',
+        'I dont know',
+        'Everything'
     ],
     'question_2_1' => [
-        '関心はない',
-        '今すぐにでも実行したい',
-        '改善を実行して6ヵ月以上である',
-        '摂取しなければいけないと思うが、実行できない',
-        '改善を実行して6ヵ月未満である'
+        'Not interested',
+        'I want to do it right now',
+        'I\'ve been doing it for over 6 months',
+        'I think i eating everything',
+        'i dont know'
     ],
     'question_3_1' => [
-        '関心はない',
-        '今すぐにでも実行したい',
-        '今すぐにでも実行したい',
-        '改善を実行して6ヵ月以上である',
-        'よく噛まなければいけないと思うが、実行できない',
-        '改善を実行して6ヵ月未満である'
+        'Not interested',
+        'I want to do it right now',
+        'I want to do it right now',
+        'More than 6 months of improvement',
+        'I think I have to chew well、Can\'t run',
+        'Less than 6 months after implementing improvement'
     ],
     'question_4_1' => [
         '関心はない',
@@ -38,11 +38,11 @@ return [
         '改善を実行して6ヵ月未満である'
     ],
     'question_5_1' => [
-        '関心はない',
-        '今すぐにでも実行したい',
-        '定期的な運動を実行して6ヵ月以上である',
-        '運動しなくてはいけないと思うが、実行できない',
-        '定期的な運動を実行して6ヵ月未満である'
+        'Not interested',
+        'I want to do it right now',
+        'Have been exercising regularly for more than 6 months',
+        'I think I have to exercise、Can\'t run',
+        'Less than 6 months of regular exercise'
     ],
     'title_question_page_2' => [
         '会うと心が落ち着き安心できる人	',
