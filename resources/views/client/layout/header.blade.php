@@ -1,125 +1,61 @@
-<div class="container topmenu">
-    <div class="wrapHeader">
-        <div class="headerLeft">
-            <a href="{{ route("home") }}"><img src="{{ asset("images/kowa_logo.svg") }}" alt="kowa"></a>
+<div class="header">
+    <div class="container">
+       <div class="header-text">
+         <h1>Perfect Fitness</h1>
+         <h2>Best Choice For your site</h2>
+         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+         <div class="banner_btn">
+             <a href="#">Read More</a>
+         </div>
+       </div>
+       <div class="header-arrow">
+          <a href="#menu" class="class scroll"><span> </span </a>
+       </div>
+     </div>
+   </div>
+ <!-- end header_top -->
+ <!-- start header_bottom -->
+   <div class="header-bottom">
+      <div class="container">
+         <div class="header-bottom_left">
+             <i class="phone"> </i><span>1-200-346-2986</span>
+         </div>
+         <div class="social">	
+            <ul>	
+               <li class="facebook"><a href="#"><span> </span></a></li>
+               <li class="twitter"><a href="#"><span> </span></a></li>
+               <li class="pinterest"><a href="#"><span> </span></a></li>	
+               <li class="google"><a href="#"><span> </span></a></li>
+               <li class="tumblr"><a href="#"><span> </span></a></li>
+               <li class="instagram"><a href="#"><span> </span></a></li>	
+               <li class="rss"><a href="#"><span> </span></a></li>							
+            </ul>
         </div>
-        @if ( Auth::check() == false)
-            <div class="headerRight hide-tl">
-                <div class="navBar">
-                    <a class="headerLink" href="{{ route('login') }}">
-                        今すぐ参加
-                    </a>
-                    <a class="headerLink" href="{{ route("myPage") }}">
-                        メンバーページ
-                    </a>
-                    <a class="headerLink">
-                        お問い合わせ
-                    </a>
-                </div>
-            </div>
-        @elseif (Request::is('admin/*'))
-                    <div class="headerRight hide-tl">
-                        <div class="navBar">
-                            <a class="headerLink" href="{{ route('login') }}">
-                                今すぐ参加
-                            </a>
-                            <a class="headerLink" href="{{ route("myPage") }}">
-                                メンバーページ
-                            </a>
-                            <a class="headerLink">
-                                お問い合わせ
-                            </a>
-                        </div>
-                    </div>
-                @else 
-                    <div class="headerRight hide-tl">
-                        <div class="navBar">
-                            <a class="headerLink" href=" {{ route('information') }}">
-                                会員ID: {{ Auth::user()->code }}
-                            </a>
-                            <a class="headerLink" href="#">
-                                お問い合わせ
-                            </a>
-                            <a class="headerLink" href="{{ route('logout') }}">
-                                ログアウト
-                            </a>
-                        </div>
-                    </div>
-        @endif
-
-        <div class="icon-menu hide-pc">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-</div>
-
-<div class="menu-tl hide-pc">
-    <div class="icon-menu">
-        <div class="top"></div>
-        <div class="mid"></div>
-        <div class="bot"></div>
-    </div>
-    <div class="menu-content">
-        @if ( Auth::check() == false)
-            <div class="headerRight">
-                <div class="navBar">
-                    <a class="headerLink" href="{{ route('login') }}">
-                        今すぐ参加
-                    </a>
-                    <a class="headerLink" href="{{ route("myPage") }}">
-                        メンバーページ
-                    </a>
-                    <a class="headerLink">
-                        お問い合わせ
-                    </a>
-                </div>
-            </div>
-        @elseif (Request::is('admin/*'))
-                    <div class="headerRight">
-                        <div class="navBar">
-                            <a class="headerLink" href="{{ route('login') }}">
-                                今すぐ参加
-                            </a>
-                            <a class="headerLink" href="{{ route("myPage") }}">
-                                メンバーページ
-                            </a>
-                            <a class="headerLink">
-                                お問い合わせ
-                            </a>
-                        </div>
-                    </div>
-                @else 
-                    <div class="headerRight">
-                        <div class="navBar">
-                            <a class="headerLink" href=" {{ route('information') }}">
-                                会員ID: {{ Auth::user()->code }}
-                            </a>
-                            <a class="headerLink" href="#">
-                                お問い合わせ
-                            </a>
-                            <a class="headerLink" href="{{ route('logout') }}">
-                                ログアウト
-                            </a>
-                        </div>
-                    </div>
-        @endif
-    </div>
-</div>
-
-{{-- <div class="topmenuSp">
-    <div class="wrapHeader">
-        <div class="headerLeft">
-            <a href="{{ route("home") }}" id="h1_kowa_logo"><img src="{{ asset("images/kowa_logo.svg") }}" width="178" height="77" alt="kowa"></a>
-        </div>
-        <div class="menuInner">
-            <div class="menu">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
-            </div>
-        </div>
-    </div>
-</div> --}}
-
+        <div class="clear"></div>
+     </div>
+   </div>
+ <!-- end header_bottom -->
+ <!-- start menu -->
+ <div class="menu" id="menu">
+   <div class="container">
+      <div class="logo">
+         <a href="index.html"><img src="{{ asset('images/logo.png') }}" alt=""/></a>
+      </div>
+      <div class="h_menu4"><!-- start h_menu4 -->
+        <a class="toggleMenu" href="#">Menu</a>
+          <ul class="nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="{{ route('about') }}">About</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li><a href="classes.html">Classes</a>
+                
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="{{ route('login') }}">Login</a></li>
+          </ul>
+           <script type="text/javascript" src="{{ asset('js.client.nav.js') }}"></script>
+       </div><!-- end h_menu4 -->
+      <div class="clear"></div>
+   </div>
+ </div>
