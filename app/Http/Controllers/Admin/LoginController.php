@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
     public function index() {
-        // dd(bcrypt(123));
+//         dd(bcrypt("admin"));
         return view('admin.login.index');
     }
 
@@ -26,6 +26,6 @@ class LoginController extends Controller
         if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
             return redirect()->route('admin.dashboard');
         }
-        return redirect()->back()->withErrors(['IDまたはパスワードが違います。']);   
+        return redirect()->back()->withErrors(['IDまたはパスワードが違います。']);
     }
 }

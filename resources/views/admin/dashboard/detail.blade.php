@@ -12,7 +12,7 @@
 
                 <div class="detail-content">
                     <div class="detail-row">
-                        <div class="detail-left">氏名</div>
+                        <div class="detail-left">Full name</div>
                         <div class="detail-right">{{ $user->name }}</div>
                     </div>
                     <div class="detail-row">
@@ -20,19 +20,19 @@
                         <div class="detail-right">{{ $user->email }}</div>
                     </div>
                     <div class="detail-row">
-                        <div class="detail-left">電話番号</div>
+                        <div class="detail-left">Phone Number</div>
                         <div class="detail-right">{{ $user->phone_number }}</div>
                     </div>
                     <div class="detail-row">
-                        <div class="detail-left">郵便番号</div>
+                        <div class="detail-left">Postal code</div>
                         <div class="detail-right">{{ $user->zip_code }}</div>
                     </div>
                     <div class="detail-row">
-                        <div class="detail-left">住所</div>
+                        <div class="detail-left">Street address</div>
                         <div class="detail-right">{{ $user->address }}</div>
                     </div>
                     <div class="detail-row">
-                        <div class="detail-left">発送状況</div>
+                        <div class="detail-left">Shipping status</div>
                         <div class="detail-right">
                             <form action="">
                                 <input type="checkbox"
@@ -47,38 +47,38 @@
                                     @endif
                                 >
                             </form>
-                            発送済み
+                            sent
                         </div>
                     </div>
                     <div class="detail-row">
-                        <div class="detail-left">０ヶ月アンケート</div>
+                        <div class="detail-left">0 month questionnaire</div>
                         <div class="detail-right">
-                            {{ $user->join_event != null ? '未回答' : '未実施' }}
+                            {{ $user->join_event != null ? 'Unanswered' : 'Not implemented' }}
                         </div>
                     </div>
                     <div class="detail-row">
-                        <div class="detail-left">3ヶ月アンケート</div>
+                        <div class="detail-left">3-month questionnaire</div>
                         <div class="detail-right">
                             @if ($user->join_event == null)
-                                {{ "未実施" }}
+                                {{ "Not implemented" }}
                             @else
-                                {{ $currentTime >= $threeMonth ? '未回答' : '未実施' }}
+                                {{ $currentTime >= $threeMonth ? 'Unanswered' : 'Not implemented' }}
                             @endif
                         </div>
                     </div>
                     <div class="detail-row">
-                        <div class="detail-left">6ヶ月アンケート</div>
+                        <div class="detail-left">6-month questionnaire</div>
                         <div class="detail-right">
                             @if ($user->join_event == null)
-                                {{ "未実施" }}
+                                {{ "Not implemented" }}
                             @else
-                            {{ $currentTime >= $sixMonth ? '未回答' : '未実施' }}
+                            {{ $currentTime >= $sixMonth ? 'Unanswered' : 'Not implemented' }}
                             @endif
                         </div>
                     </div>
                 </div>
                 <div class="detail-link">
-                    <a href="{{ route('admin.dashboard') }}">戻る</a>
+                    <a href="{{ route('admin.dashboard') }}">Return</a>
                 </div>
             </div>
         </div>
@@ -91,11 +91,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body" style="font-size: 22px">
-          <input type="checkbox" value="0" name="event" hidden checked> 資材を発送しますか？
+          <input type="checkbox" value="0" name="event" hidden checked> Do you want to ship the materials?
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">いいえ</button>
-          <button type="submit" class="btn btn-primary">はい</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+          <button type="submit" class="btn btn-primary">No</button>
         </div>
       </form>
     </div>

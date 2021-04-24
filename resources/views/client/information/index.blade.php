@@ -10,7 +10,7 @@
             </span>
         </div>
         <div class="titleSmall">
-            送付先情報入力
+            Enter shipping address information
         </div>
         <div class="wrappFormInformation">
             <form action="{{ route('postInfor') }}" id="informationForm" method="POST" enctype="multipart/form-data">
@@ -19,7 +19,7 @@
                 <div class="itemPost">
                     <div class="wrapSpanForm">
                         <span>
-                            氏名
+                            Full name
                         </span>
                     </div>
                     <div class="wrapInputSpan">
@@ -29,7 +29,7 @@
                 <div class="itemPost">
                     <div class="wrapSpanForm">
                         <span>
-                            メールアドレス
+                            Mail Address
                         </span>
                     </div>
                     <div class="wrapInputSpan">
@@ -39,10 +39,10 @@
                 <div class="itemPost">
                     <div class="wrapSpanForm">
                         <span>
-                            メールアドレス
+                            Mail Address
                         </span>
                         <div class="mailConfirm">
-                            確認
+                            Verification
                         </div>
                     </div>
                     <div class="wrapInputSpan">
@@ -52,11 +52,11 @@
                 <div class="itemPost">
                     <div class="wrapSpanForm">
                         <span>
-                            日中連絡可能な電話番号
+                            Phone Number
                         </span>
                         <br>
                         <div class="mailConfirm">
-                            ハイフン無し
+                            no hyphen
                         </div>
                     </div>
                     <div class="wrapInputSpan">
@@ -66,32 +66,32 @@
                 <div class="itemPost">
                     <div class="wrapSpanForm">
                         <span>
-                            送付先住所
+                            Delivery address
                         </span>
                         <br>
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
                             <div class="textTopInput">
-                                事便番号
+                                Flight number
                             </div>
                             <input type="number" name="zipCode" class="uintTextBox2"  value="{{ old('zipCode')}}"/>&nbsp;<span class="errmsg2" style="color: red;font-weight:100"></span>
-                        
+
                         </div>
                     </div>
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
                             <div class="wrapText">
                                 <div class="textTopInput">
-                                    地区名
+                                    City name
                                 </div>
                                 <div class="textTopInput">
-                                    市の名前
+                                    District name
                                 </div>
                             </div>
                             <div class="wrapOption">
@@ -101,9 +101,9 @@
                                         {{ $item->kanji }}
                                     </option> --}}
                                     @if (old('district') == $item)
-                                        <option value="{{ $item->kanji }}" selected>{{ $item->kanji }}</option>
+                                        <option value="{{ $item->name }}" selected>{{ $item->name }}</option>
                                     @else
-                                        <option value="{{ $item->kanji }}">{{ $item->kanji }}</option>
+                                        <option value="{{ $item->name }}">{{ $item->name }}</option>
                                     @endif
                                     @endforeach
                                 </select>
@@ -116,12 +116,12 @@
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
                             <div class="textTopInput">
-                                番地等
+                                Address, etc...
                             </div>
                             <div class="wrapOption">
                                 <div class="inforCity">
@@ -133,12 +133,12 @@
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
                             <div class="textTopInput">
-                                建物名
+                                Building name
                             </div>
                             <div class="wrapOption">
                                 <div class="inforCity">
@@ -149,8 +149,8 @@
                     </div>
                 </div>
                 <div class="form-link">
-                    <button onclick="goBack()" type="button">戻って</button>
-                    <button class="form-link-primary" type="submit">継続する</button>
+                    <button onclick="goBack()" type="button">Back</button>
+                    <button class="form-link-primary" type="submit">Continue</button>
                 </div>
             </form>
         </div>

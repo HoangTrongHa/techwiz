@@ -7,18 +7,18 @@
     <div class="container">
         <div class="login">
             <h1 class="login-title">HARA PETA Project 管理画面</h1>
-            <p class="login-desc">ログイン</p>
+            <p class="login-desc">Login</p>
 
             <form action="{{ route('post.login.admin') }}" method="POST" class="form-login">
                 @csrf
                 <div class="form-row">
-                    <label for="" class="form-label">ID</label>
+                    <label for="" class="form-label">Email</label>
                     <div class="form-input">
                         <input type="text" name="email">
                     </div>
                 </div>
                 <div class="form-row">
-                    <label for="" class="form-label">パスワード</label>
+                    <label for="" class="form-label">Password</label>
                     <div class="form-input">
                         <input type="password" name="password">
                     </div>
@@ -28,8 +28,8 @@
                         <div class="error"> {!! $errors->first() !!} </div>
                     @endif
                 </div>
-                <button class="button">ログイン</button> <br><br>
-                <a href="{{ route('home') }}" class="button">サービストップへ</a>
+                <button class="button">Login</button> <br><br>
+                <a href="{{ route('home') }}" class="button">To service top</a>
             </form>
         </div>
     </div>

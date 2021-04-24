@@ -9,7 +9,7 @@
                 HARA PETA Project
             </div>
             <div class="titleSmall">
-                送付先情報入力
+                Enter shipping address information
             </div>
         </div>
         <form action="{{ route("postInforUser") }}" method="POST" enctype="multipart/form-data">
@@ -18,7 +18,7 @@
                 <div class="wrapForm">
                     <div class="title">
                         <div>
-                            氏名
+                            Full name
                         </div>
                     </div>
                     <div class="answer">
@@ -30,7 +30,7 @@
                 <div class="wrapForm">
                     <div class="title">
                         <div>
-                            メールアドレス
+                            Mail Address
                         </div>
                     </div>
                     <div class="answer">
@@ -43,11 +43,11 @@
                     <div class="title">
                         <div class="wrapPhoneNumber">
                             <div class="spanTitle">
-                                日中連絡可能な電話番号
+                                Phone Number
 
                             </div>
                             <div class="tutorialTitle">
-                                ハイフン無し
+                                No hyphen
                             </div>
                         </div>
                     </div>
@@ -60,13 +60,13 @@
                 <div class="wrapForm">
                     <div class="title">
                         <div>
-                            送付先住所
+                            Delivery address
                         </div>
                     </div>
                     <div class="answer">
                         <div class="wrapAnswer">
                             <div class="titleAnswer">
-                                事便番号
+                                Flight number
                             </div>
                             <div class="textAnswer">
                                 {{ $dataInfor['zipCode'] }}
@@ -75,13 +75,13 @@
                     </div>
                 </div>
                 <div class="wrapForm">
-                    <div class="title">    
+                    <div class="title">
                     </div>
                     <div class="answer">
                         <div class="wrapAnswerCity">
                             <div class="wrapDistrict">
                                 <div class="titleAnswer">
-                                    地区名
+                                    City name
                                 </div>
                                 <div class="textAnswer">
                                     {{ $dataInfor['district'] }}
@@ -89,7 +89,7 @@
                             </div>
                             <div class="wrapDistrict">
                                 <div class="titleAnswer">
-                                    市の名前
+                                    District name
                                 </div>
                                 <div class="textAnswer">
                                     {{ $dataInfor['city'] }}
@@ -100,12 +100,12 @@
                 </div>
                 <div class="wrapForm">
                     <div class="title">
-                       
+
                     </div>
                     <div class="answer">
                         <div class="wrapAnswer">
                             <div class="titleAnswer">
-                                番地等
+                                Address, etc.
 
                             </div>
                             <div class="textAnswer">
@@ -116,12 +116,12 @@
                 </div>
                 <div class="wrapForm">
                     <div class="title">
-                       
+
                     </div>
                     <div class="answer">
                         <div class="wrapAnswer">
                             <div class="titleAnswer">
-                                建物名
+                                Building name
                             </div>
                             <div class="textAnswer">
                                 {{ $dataInfor['builDing'] }}
@@ -130,10 +130,10 @@
                     </div>
                 </div>
                 <div class="form-link">
-                    <button onclick="goBack()" type="button">戻って</button>
-                    <button class="form-link-primary" type="submit">継続する</button>
+                    <button onclick="goBack()" type="button">Back</button>
+                    <button class="form-link-primary" type="submit">Continue</button>
                 </div>
-        </form>  
+        </form>
     </div>
 @endsection
 
