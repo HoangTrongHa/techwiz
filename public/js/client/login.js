@@ -11,10 +11,10 @@ $(document).ready(function() {
         },
         messages: {
             code: {
-                required: "入力してください"
+                required: "Please enter your ID"
             },
             password: {
-                required: "入力してください"
+                required: "Enter password"
             }
         },
         onfocusout: function(element) {

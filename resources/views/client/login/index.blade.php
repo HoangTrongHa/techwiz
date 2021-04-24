@@ -4,16 +4,16 @@
 @endsection
 @section("content")
 <div id="login">
-    
+
     <div class="container">
         <div class="login">
-            <h1 class="login-title">HARA PETA Project</h1>
+            <h1 class="login-title">Fitness Daily</h1>
             <p class="login-desc">Member Login</p>
 
             <form method="POST" action="{{ route('post.login') }}" class="form-login">
                 @csrf
                 <div class="form-row">
-                    <label for="" class="form-label">Caromama Plus ID</label>
+                    <label for="" class="form-label" style="border-radius: 50%">ID</label>
                     <div class="form-input">
                         <input type="text" name="code">
                     </div>
@@ -21,7 +21,7 @@
                 <div class="form-row">
                     <label for="" class="form-label"></label>
                     <div class="form-input">
-                        <a href="{{ route('search') }}" class="note">Those who do not know the Caromama Plus ID</a>
+                        <a href="{{ route('search') }}" class="note">Did you forgot ID?</a>
                     </div>
                 </div>
                 <div class="form-row">

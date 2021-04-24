@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var messages = {
-    'nameVal': '入力してください',
+    'nameVal': 'Value is required',
     };
 
     $('#informationForm').validate({
@@ -25,7 +25,7 @@ $(document).ready(function() {
                 required: true,
             },
             city: {
-               required: true, 
+               required: true,
             },
             address: {
                 required: true,
@@ -34,25 +34,25 @@ $(document).ready(function() {
         messages: {
             name: messages.nameVal,
             email: {
-                required: "入力してください",
-                email: "有効なメールアドレスを入力してください",
+                required: "Value is required",
+                email: "Please enter a valid email address",
             },
             emailConfirm: {
-            required: "メールアドレスを入力してください。",
-            email: "有効なメールアドレスを入力してください。",
-            equalTo: "メールの確認がメールと一致しません",
+            required: "Please enter your e-mail address",
+            email: "Please enter a valid email address",
+            equalTo: "Email confirmation does not match email\n",
             },
             phoneNumber: {
-                required: "入力してください",
+                required: "Value is required",
             },
             zipCode: {
-                required: "入力してください",
+                required: "Value is required",
             },
             city: {
-                required: "入力してください",
+                required: "Value is required",
             },
             address: {
-                required: "入力してください",
+                required: "Value is required",
             }
         },
         onfocusout: function(element) {
@@ -65,7 +65,8 @@ $(document).ready(function() {
 $(document).ready(function () {
     $(".uintTextBox").keypress(function (e) {
        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-          $(".errmsg").html("番号を入力してください").show().fadeOut(3000);
+          $(".errmsg").html("\n" +
+              "Please enter the number").show().fadeOut(3000);
                  return false;
       }
      });
@@ -73,7 +74,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".uintTextBox2").keypress(function (e) {
        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-          $(".errmsg2").html("番号を入力してください").show().fadeOut(3000);
+          $(".errmsg2").html("Please enter the number\n").show().fadeOut(3000);
                  return false;
       }
      });

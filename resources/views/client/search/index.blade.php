@@ -6,37 +6,38 @@
 <div id="searchid">
     <div class="container">
         <div class="login">
-            <h1 class="login-title">HARA PETA Project</h1>
-            <p class="login-desc">会員ID検索</p>
+            <h1 class="login-title">Fitness Daily</h1>
+            <p class="login-desc">Member ID search</p>
 
             <form action="{{ route('postSearchId') }}" class="form-login form-search" method="POST">
                 @csrf
                 @method('POST')
                 <div class="form-row">
-                    <label for="" class="form-label">お名前（カナ）</label>
+                    <label for="" class="form-label">Name</label>
                     <div class="form-input">
                         <input type="text" name="name">
-                        <!-- <span class="error">空であってはなりません</span> -->
+
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="" class="form-label">
-                        カロママプラスお問い合わせ番号
-                        <p style="font-size: 14px" class="mb-0">確認方法は<a href="">こちら</a></p>
+                        Inquiry Number
+                        <p style="font-size: 14px" class="mb-0">How to check<a href="">Here</a></p>
                     </label>
                     <div class="form-input">
                         <input type="text" name="code">
-                        <!-- <span class="error">空であってはなりません</span> -->
+
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="" class="form-label">
-                        メールアドレス
-                        <p style="font-size: 14px" class="mb-0">カロママプラスに登録済みのもの</p>
+                        mail address
+                        <p style="font-size: 14px" class="mb-0">Registered with Caromama Plus
+                        </p>
                     </label>
                     <div class="form-input">
                         <input type="text" name="email">
-                        <!-- <span class="error">空であってはなりません</span> -->
+
                     </div>
                 </div>
                     <p class="search-error">
@@ -44,7 +45,7 @@
                             <div class="error"> {!! $errors->first() !!} </div>
                         @endif
                     </p>
-                <button class="button">検索する</button>
+                <button class="button">Search for</button>
             </form>
         </div>
     </div>
