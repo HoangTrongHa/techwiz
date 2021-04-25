@@ -91,7 +91,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #72D0F4;
+    background: linear-gradient(to bottom, #72d0f4 25%, #3399ff 79%);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -100,9 +100,27 @@
   .dropdown-content .linkDrop {
     color: white;
     text-decoration: none;
-      background-color: #72D0F4;
+    background-color: #72D0F4;
   }
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .fixed
+  {
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100%;
+  }
   </style>
+<script>
+    var stickyOffset = $('.menu').offset().top;
+
+    $(window).scroll(function(){
+        var sticky = $('.menu'),
+            scroll = $(window).scrollTop();
+
+        if (scroll >= stickyOffset) sticky.addClass('fixed');
+        else sticky.removeClass('fixed');
+    });
+</script>

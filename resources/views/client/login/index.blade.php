@@ -3,17 +3,15 @@
 <link rel="stylesheet" href="{{ asset('assets/css/client/login.css') }}">
 @endsection
 @section("content")
-<div id="login">
 
+<div id="login">
     <div class="container">
         <div class="login">
-            <h1 class="login-title">Fitness Daily</h1>
-            <p class="login-desc">Member Login</p>
-
+            <h1 class="login-desc" style="color: white">Member Login</h1>
             <form method="POST" action="{{ route('post.login') }}" class="form-login">
                 @csrf
                 <div class="form-row">
-                    <label for="" class="form-label" style="border-radius: 50%">ID</label>
+                    <label  class="form-label" style="color: white">ID</label>
                     <div class="form-input">
                         <input type="text" name="code">
                     </div>
@@ -21,11 +19,11 @@
                 <div class="form-row">
                     <label for="" class="form-label"></label>
                     <div class="form-input">
-                        <a href="{{ route('search') }}" class="note">Did you forgot ID?</a>
+                        <a href="{{ route('search') }}" class="note" style="color: white">Did you forgot ID?</a>
                     </div>
                 </div>
                 <div class="form-row">
-                    <label for="" class="form-label">Password</label>
+                    <label for="" class="form-label" style="color: white">Password</label>
                     <div class="form-input">
                         <input type="password" name="password">
                     </div>
