@@ -45,7 +45,7 @@
      <div class="h_menu4"><!-- start h_menu4 -->
        <a class="toggleMenu" href="#">Menu</a>
          <ul class="nav">
-           <li class="active"><a href="index.html">Home</a></li>
+           <li class="active"><a href="index.html" >Home</a></li>
            <li><a href="{{ route('about') }}">About</a></li>
            <li><a href="{{ route('myPage') }}">Join us</a></li>
            <li><a href="{{ route('login') }}">Login</a></li>

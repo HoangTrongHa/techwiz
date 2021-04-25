@@ -59,6 +59,11 @@ span.m_12 {
 .box1{
 	background:#72d0f4;
 	padding:8% 5% 4% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box1:hover , .box2:hover{
+    transform: scale(1.15);
+    transition: 2000ms;
 }
 .box1_left{
 	width: 42.5%;

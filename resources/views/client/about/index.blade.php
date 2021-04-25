@@ -12,14 +12,14 @@
            <div class="container">
             <div class="row about-top">
               <div class="col-md-5">
-               <img src="images/about_img1.jpg" class="img-responsive" alt=""/> 
+               <img src="images/about_img1.jpg" class="img-responsive" alt=""/>
               </div>
               <div class="col-md-7 about-left-text">
                 <h2>Lorem ipsum dolorsit!</h2>
                 <p>aliquam erat volutpat. Ut wisi enim ad minim veniam, quis <br>nostrud exerci tation ullamcorper suscipit lobortis.</p>
                 <h4>ullamcorper - <span class="m_12">Gymsport Responsible</span></h4>
               </div>
-              <div class="clear"></div>	
+              <div class="clear"></div>
             </div>
          </div>
        </div>
@@ -28,9 +28,9 @@
            <h3 class="m_2">Our Trainers</h3>
            <div class="row about_box">
                <div class="col-md-4">
-               <div class="box1">
+               <div class="box1" >
                    <div class="box1_left">
-                    <img src="images/about_img3.jpg" class="img-responsive" alt=""/>				  		
+                    <img src="images/about_img3.jpg" class="img-responsive" alt=""/>
                    <div class="desc1">
                      <h3>Lorem Ipsum<br><span class="m_text">Spinning</span></h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
@@ -57,7 +57,7 @@
              <div class="col-md-4">
                <div class="box2">
                    <div class="box1_left">
-                    <img src="images/about_img2.jpg" class="img-responsive" alt=""/>				  		
+                    <img src="images/about_img2.jpg" class="img-responsive" alt=""/>
                    <div class="desc2">
                      <h3>Lorem Ipsum<br><span class="m_text">Spinning</span></h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
@@ -84,7 +84,7 @@
              <div class="col-md-4">
                <div class="box1">
                    <div class="box1_left">
-                    <img src="images/about_img4.jpg" class="img-responsive" alt=""/>				  		
+                    <img src="images/about_img4.jpg" class="img-responsive" alt=""/>
                    <div class="desc1">
                      <h3>Lorem Ipsum<br><span class="m_text">Spinning</span></h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
@@ -114,7 +114,7 @@
            <div class="col-md-4">
                <div class="box2">
                    <div class="box1_left">
-                    <img src="images/about_img5.jpg" class="img-responsive" alt=""/>				  		
+                    <img src="images/about_img5.jpg" class="img-responsive" alt=""/>
                    <div class="desc2">
                      <h3>Lorem Ipsum<br><span class="m_text">Spinning</span></h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
@@ -141,7 +141,7 @@
              <div class="col-md-4">
               <div class="box1">
                    <div class="box1_left">
-                    <img src="images/about_img7.jpg" class="img-responsive" alt=""/>				  		
+                    <img src="images/about_img7.jpg" class="img-responsive" alt=""/>
                    <div class="desc1">
                      <h3>Lorem Ipsum<br><span class="m_text">Spinning</span></h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
@@ -168,7 +168,7 @@
              <div class="col-md-4">
                <div class="box2">
                    <div class="box1_left">
-                    <img src="images/about_img6.jpg" class="img-responsive" alt=""/>				  		
+                    <img src="images/about_img6.jpg" class="img-responsive" alt=""/>
                    <div class="desc2">
                      <h3>Lorem Ipsum<br><span class="m_text">Spinning</span></h3>
                      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
@@ -202,21 +202,21 @@
                <div class="join">
                     <h3>Why Join ?</h3>
                     <h4>sed diam nonummy nibh euismod</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br> nibh euismod tincidunt ut laoreet dolore magna . </p>	
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br> nibh euismod tincidunt ut laoreet dolore magna . </p>
                     <div class="btn3">
                     <a href="#">Join Today</a>
-                  </div>	
+                  </div>
                </div>
              </div>
               <div class="col-md-6">
                <div class="join-right">
                     <h3>Why Join ?</h3>
                     <h4>sed diam nonummy nibh euismod</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br> nibh euismod tincidunt ut laoreet dolore magna . </p>	
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br> nibh euismod tincidunt ut laoreet dolore magna . </p>
                     <div class="buttons_login">
                     <div class="btn4">
                     <a href="login.html">Log In</a>
-                  </div>	
+                  </div>
                   <div class="p-ww">
                    <form>
                     <input class="date" id="datepicker" type="text" value="View Calender" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'View Calender';}">
@@ -247,5 +247,5 @@
  </div>
 @endsection
 @section('script')
-    
+
 @endsection
