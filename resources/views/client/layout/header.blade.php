@@ -70,10 +70,10 @@
            <li><a href="{{ route('myPage') }}">Join us</a></li>
            <li>
             <div class="dropdown">
-              <a href="">{{ Auth::user()->code }}</a>
+              <a href=""> Welcome! {{ Auth::user()->code }}</a>
               <div class="dropdown-content">
-              <a class="linkDrop" href="{{ route('logout') }}">Log Out</a>
-              <a class="linkDrop" href="{{ route('editInformation', Auth::user()->id) }}">Personal Information</a>
+              <a class="linkDrop" href="{{ route('editInformation', Auth::user()->id) }}"><i class="far fa-user"> Info</i></a>
+              <a class="linkDrop" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out </a>
               </div>
             </div>
           </li>
@@ -91,15 +91,16 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #72D0F4;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
   }
   .dropdown-content .linkDrop {
-    color: black;
+    color: white;
     text-decoration: none;
+      background-color: #72D0F4;
   }
   .dropdown:hover .dropdown-content {
     display: block;
