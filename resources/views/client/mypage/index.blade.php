@@ -6,7 +6,7 @@
     <div class="container">
         <div class="wrapTitle">
             <span>
-                HARA PETA Project
+               Fitness Daily
             </span>
         </div>
         <div class="wrapTitleMyPage">

@@ -6,7 +6,7 @@
     <div class="container wrappInformation">
         <div class="titleInforMation">
             <span>
-                HARA PETA Project
+               Fitness Daily
             </span>
         </div>
         <div class="titleSmall">
@@ -90,10 +90,10 @@
                                 <div class="textTopInput">
                                     City name + District name
                                 </div>
-                                
+
                             </div>
                             <div class="wrapOption">
-                                
+
                                 <div class="inforCity">
                                     <input type="text" name="city" value="{{ old('city') }}">
                                 </div>

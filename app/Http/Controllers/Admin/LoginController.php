@@ -20,12 +20,12 @@ class LoginController extends Controller
             'password' => 'required'
             ],
             [
-                'email.email' => 'IDまたはパスワードが違います。'
+                'email.email' => 'The ID or password is incorrect。'
             ]
         );
         if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
             return redirect()->route('admin.dashboard');
         }
-        return redirect()->back()->withErrors(['IDまたはパスワードが違います。']);
+        return redirect()->back()->withErrors(['The ID or password is incorrect。']);
     }
 }
