@@ -11,22 +11,22 @@ $(document).ready(function() {
             roommate: {
                 required: true,
             },
-           
+
         },
         messages: {
             age: {
-                required: "入力してください",
-                maxlenght: '3文字を超えてはなりません',
+                required: "Please enter",
+                maxlenght: 'Must not exceed 3 characters',
             },
             relation: {
-                required: '入力してください',
+                required: 'Please enter',
             },
             roommate: {
-                required: '入力してください',
+                required: 'Please enter',
             },
-           
+
         },
-       
+
         onfocusout: function(element) {
             this.element(element);
         },
@@ -36,7 +36,7 @@ $(document).ready(function() {
         $('.yearpicker').append($('<option />').val(i).html(i))
     }
 
-    var monthNames = ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"];
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     for (var i = 0; i <= monthNames.length; i++) {
         $('.monthPicker').append(`<option value="${monthNames[i]}">${monthNames[i]}</option>`);
     }
