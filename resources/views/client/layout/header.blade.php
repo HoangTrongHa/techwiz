@@ -105,4 +105,22 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .fixed
+  {
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100%;
+  }
   </style>
+<script>
+    var stickyOffset = $('.menu').offset().top;
+
+    $(window).scroll(function(){
+        var sticky = $('.menu'),
+            scroll = $(window).scrollTop();
+
+        if (scroll >= stickyOffset) sticky.addClass('fixed');
+        else sticky.removeClass('fixed');
+    });
+</script>

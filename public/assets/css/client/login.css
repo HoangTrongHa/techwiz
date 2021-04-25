@@ -3,7 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+#login{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 800px;
+    background-image: url("/images/background-login.jpg");
+    opacity: 90%;
+    width: 100%;
+    box-sizing: border-box;
+}
 .header {
   display: none;
 }
