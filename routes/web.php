@@ -32,6 +32,8 @@ Route::group(["namespace" => "client"], function() {
     Route::post('/login', [LoginController::class, 'login'])->name('post.login');
     Route::get('/searchid', [SearchController::class, 'index'])->name('search');
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+    Route::get('/editInformation/{id}', [InformationController::class, 'editInformation'])->name('editInformation');
+    Route::post('/editInformation/{id}',[InformationController::class, 'postEditInformation'])->name('postEditInformation');
     Route::post('/postSearchId', [SearchController::class, 'postSearchId'])->name('postSearchId');
     Route::get('/about', [PageController::class, 'about'])->name('about');
     Route::group(["middleware" => ["checkUser"]], function () {
@@ -64,7 +66,7 @@ Route::group(["namespace" => "client"], function() {
         });
         Route::get('/thankyou', [ThankPageController::class, 'thankspage'])->name('thanks.info');
         Route::post('/postInformationafterTerm', [ConfirmController::class, 'postInforUser'])->name('postInforUser');
-        
+
     });
 
     Route::group(['namespace' => 'Admin'], function() {

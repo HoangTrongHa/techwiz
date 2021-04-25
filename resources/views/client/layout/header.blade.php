@@ -1,12 +1,15 @@
 <div class="header">
     <div class="container">
        <div class="header-text">
-         <h1>Fitness Daily</h1>
-         <h2>Best choice for your health</h2>
-           <p>Please protect yourself as references effort to protect yourself</p>
+         <h1>Fitness Daily Club</h1>
+         <h2>Best Choice For your site</h2>
+         <p>Our goal is to make health and fitness attainable, affordable and approachable.</p>
+         <div class="banner_btn">
+             <a style="text-decoration: none !important;" href="{{route('about')}}">Read More</a>
+         </div>
        </div>
        <div class="header-arrow">
-          <a href="#menu" class="class scroll"><span> </span </a>
+          <a href="#menu" class="class scroll"><span> </span> </a>
        </div>
      </div>
    </div>
@@ -15,7 +18,7 @@
    <div class="header-bottom">
       <div class="container">
          <div class="header-bottom_left">
-             <i class="phone"> </i><span> Hotline:1-200-346-2986</span>
+             <i class="phone"> </i><span>1-200-346-2986</span>
          </div>
          <div class="social">
             <ul>
@@ -37,12 +40,12 @@
  <div class="menu" id="menu">
   <div class="container">
      <div class="logo">
-        <a href="{{ route('home') }}"><img src="{{ asset('images/logooo.png') }}" alt=""/></a>
+        <a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt=""/></a>
      </div>
      <div class="h_menu4"><!-- start h_menu4 -->
-       <a class="toggleMenu" href="#">Menu</a>
-         <ul class="nav">
-           <li class="active"><a href="index.html" >Home</a></li>
+       <a class="toggleMenu" href="#" >Menu</a>
+         <ul class="nav" >
+           <li  class="active"><a style="text-decoration: none !important;" href="index.html" >Home</a></li>
            <li><a href="{{ route('about') }}">About</a></li>
            <li><a href="{{ route('myPage') }}">Join us</a></li>
            <li><a href="{{ route('login') }}">Login</a></li>
@@ -57,7 +60,7 @@
 <div class="menu" id="menu">
   <div class="container">
      <div class="logo">
-        <a href="{{ route('home') }}"><img src="{{ asset('images/logooo.png') }}" alt=""/></a>
+        <a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt=""/></a>
      </div>
      <div class="h_menu4"><!-- start h_menu4 -->
        <a class="toggleMenu" href="#">Menu</a>
@@ -67,9 +70,10 @@
            <li><a href="{{ route('myPage') }}">Join us</a></li>
            <li>
             <div class="dropdown">
-              <a href="">{{ Auth::user()->code }}</a>
+              <a href=""> Welcome! {{ Auth::user()->code }}</a>
               <div class="dropdown-content">
-              <a class="linkDrop" href="{{ route('logout') }}">Log Out</a>
+              <a class="linkDrop" href="{{ route('editInformation', Auth::user()->id) }}"><i class="far fa-user"> Info</i></a>
+              <a class="linkDrop" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out </a>
               </div>
             </div>
           </li>
@@ -87,15 +91,16 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background: linear-gradient(to bottom, #72d0f4 25%, #3399ff 79%);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
   }
   .dropdown-content .linkDrop {
-    color: black;
+    color: white;
     text-decoration: none;
+    background-color: #72D0F4;
   }
   .dropdown:hover .dropdown-content {
     display: block;
