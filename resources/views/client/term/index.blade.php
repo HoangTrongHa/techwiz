@@ -7,176 +7,30 @@
     <div class="container">
         <div class="term">
             <h1 class="term-title">
-                HARA PETA Project
+                Fitness Daily
             </h1>
-            <p class="term-desc">利用規約</p>
+            <p class="term-desc">Terms of use</p>
             <div class="term-content">
-                暗闇の中で一人で遠くに座っている
-                私は一人で、寒くて苦い
-                突然涙が唇の角で少し苦くなりました
-                それから別の日が過ぎました。
+            <p> 1.Because the details of the health management service of the clinic and the examination information are sensitive information, I have
+                As notified by the examination agency about this processing of personal information, I fully understand and agree to this. </p><br>
 
-                ここで誰かを探して驚いた彼は知らない
-                ここで誰かを見つけて急いで
-                少し暗闇を集めて、暖かく静かな時間を見つけましょう
-                誰かを見つけるためのある冬の日。
+            <p> 2.Purpose of providing personal information: To provide health care services to those who require self-administration and
+                Take precautions as well as those with disease (and suspected disease), to provide post-examination management based on cancer screening results, as well as to provide post-examination management related to TB pulmonary tuberculosis. </p><br>
 
-                [DK：]
-                突然霧に戻った
-                苦労して、私はあなたを夢見ていたと思いました
-                毎日はまだ野生です
-                誰が知っている、待ってください。
+            <p>3.Time to store and use personal information: 2 years  </p><br>
 
-                そして闇が終わると
-                混乱は夢を消し続ける
-                彼が一人でさまよったとき
-                漠然とした懐かしさを見つけましょう。
-                暗闇の中で一人で遠くに座っている
-                私は一人で、寒くて苦い
-                突然涙が唇の角で少し苦くなりました
-                それから別の日が過ぎました。
+            <p> 4.Your personal information will be used only within the medical scope and will be kept strictly confidential under the Information Protection Law.
+                Personal and Basic Law on Health Exam. This information will not be used for other purposes or provided to other agencies. </p><br>
 
-                ここで誰かを探して驚いた彼は知らない
-                ここで誰かを見つけて急いで
-                少し暗闇を集めて、暖かく静かな時間を見つけましょう
-                誰かを見つけるためのある冬の日。
-
-                [DK：]
-                突然霧に戻った
-                苦労して、私はあなたを夢見ていたと思いました
-                毎日はまだ野生です
-                誰が知っている、待ってください。
-
-                そして闇が終わると
-                混乱は夢を消し続ける
-                彼が一人でさまよったとき
-                漠然とした懐かしさを見つけましょう。
-                暗闇の中で一人で遠くに座っている
-                私は一人で、寒くて苦い
-                突然涙が唇の角で少し苦くなりました
-                それから別の日が過ぎました。
-
-                ここで誰かを探して驚いた彼は知らない
-                ここで誰かを見つけて急いで
-                少し暗闇を集めて、暖かく静かな時間を見つけましょう
-                誰かを見つけるためのある冬の日。
-
-                [DK：]
-                突然霧に戻った
-                苦労して、私はあなたを夢見ていたと思いました
-                毎日はまだ野生です
-                誰が知っている、待ってください。
-
-                そして闇が終わると
-                混乱は夢を消し続ける
-                彼が一人でさまよったとき
-                漠然とした懐かしさを見つけましょう。
-                暗闇の中で一人で遠くに座っている
-                私は一人で、寒くて苦い
-                突然涙が唇の角で少し苦くなりました
-                それから別の日が過ぎました。
-
-                ここで誰かを探して驚いた彼は知らない
-                ここで誰かを見つけて急いで
-                少し暗闇を集めて、暖かく静かな時間を見つけましょう
-                誰かを見つけるためのある冬の日。
-
-                [DK：]
-                突然霧に戻った
-                苦労して、私はあなたを夢見ていたと思いました
-                毎日はまだ野生です
-                誰が知っている、待ってください。
-
-                そして闇が終わると
-                混乱は夢を消し続ける
-                彼が一人でさまよったとき
-                漠然とした懐かしさを見つけましょう。
-                暗闇の中で一人で遠くに座っている
-                私は一人で、寒くて苦い
-                突然涙が唇の角で少し苦くなりました
-                それから別の日が過ぎました。
-
-                ここで誰かを探して驚いた彼は知らない
-                ここで誰かを見つけて急いで
-                少し暗闇を集めて、暖かく静かな時間を見つけましょう
-                誰かを見つけるためのある冬の日。
-
-                [DK：]
-                突然霧に戻った
-                苦労して、私はあなたを夢見ていたと思いました
-                毎日はまだ野生です
-                誰が知っている、待ってください。
-
-                そして闇が終わると
-                混乱は夢を消し続ける
-                彼が一人でさまよったとき
-                漠然とした懐かしさを見つけましょう。
-                暗闇の中で一人で遠くに座っている
-                私は一人で、寒くて苦い
-                突然涙が唇の角で少し苦くなりました
-                それから別の日が過ぎました。
-
-                ここで誰かを探して驚いた彼は知らない
-                ここで誰かを見つけて急いで
-                少し暗闇を集めて、暖かく静かな時間を見つけましょう
-                誰かを見つけるためのある冬の日。
-
-                [DK：]
-                突然霧に戻った
-                苦労して、私はあなたを夢見ていたと思いました
-                毎日はまだ野生です
-                誰が知っている、待ってください。
-
-                そして闇が終わると
-                混乱は夢を消し続ける
-                彼が一人でさまよったとき
-                漠然とした懐かしさを見つけましょう。
-                暗闇の中で一人で遠くに座っている
-                私は一人で、寒くて苦い
-                突然涙が唇の角で少し苦くなりました
-                それから別の日が過ぎました。
-
-                ここで誰かを探して驚いた彼は知らない
-                ここで誰かを見つけて急いで
-                少し暗闇を集めて、暖かく静かな時間を見つけましょう
-                誰かを見つけるためのある冬の日。
-
-                [DK：]
-                突然霧に戻った
-                苦労して、私はあなたを夢見ていたと思いました
-                毎日はまだ野生です
-                誰が知っている、待ってください。
-
-                そして闇が終わると
-                混乱は夢を消し続ける
-                彼が一人でさまよったとき
-                漠然とした懐かしさを見つけましょう。
-                暗闇の中で一人で遠くに座っている
-                私は一人で、寒くて苦い
-                突然涙が唇の角で少し苦くなりました
-                それから別の日が過ぎました。
-
-                ここで誰かを探して驚いた彼は知らない
-                ここで誰かを見つけて急いで
-                少し暗闇を集めて、暖かく静かな時間を見つけましょう
-                誰かを見つけるためのある冬の日。
-
-                [DK：]
-                突然霧に戻った
-                苦労して、私はあなたを夢見ていたと思いました
-                毎日はまだ野生です
-                誰が知っている、待ってください。
-
-                そして闇が終わると
-                混乱は夢を消し続ける
-                彼が一人でさまよったとき
-                漠然とした懐かしさを見つけましょう。
+            <p>  5.You have the right to refuse to give personal information to a third party, in which case you may be excluded.
+                from the list of beneficiaries of health management services of the health station.</p><br>
+            <p> 6.We love you to keep up to date with accurate personal information, health information and your fitness needs. </p><br>
             </div>
 
-            <p class="term-confirm">上記の利用規約に同意しますか？</p>
+            <p class="term-confirm">Do you agree with the above terms and conditions？</p>
             <div class="form-link form-link-pt">
-                <button onclick="window.location.href=' {{ route('home') }}'" type="button">しない</button>
-                <button class="form-link-primary" type="button"  onclick="window.location.href=' {{ route('post.term') }}'">する</button>
+                <button onclick="window.location.href=' {{ route('home') }}'" type="button">Do not </button>
+                <button class="form-link-primary" type="button"  onclick="window.location.href=' {{ route('post.term') }}'">I do</button>
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@
     <div class="wrapConfirmInfor container">
         <div class="wrapTitle">
             <div class="titleBig">
-                HARA PETA Project
+                Fitness Daily
             </div>
             <div class="titleSmall">
                 Enter shipping address information
@@ -79,7 +79,7 @@
                     </div>
                     <div class="answer">
                         <div class="wrapAnswerCity">
-                            
+
                             <div class="wrapDistrict">
                                 <div class="titleAnswer">
                                     District name

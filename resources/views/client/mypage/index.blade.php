@@ -6,7 +6,7 @@
     <div class="container">
         <div class="wrapTitle">
             <span>
-                HARA PETA Project
+               Fitness Daily
             </span>
         </div>
         <div class="wrapTitleMyPage">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="video">
                     <div id="video1">
-                   
+
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="video">
                     <div id="video2">
-                   
+
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="video">
                     <div id="video3">
-                   
+
                     </div>
                 </div>
             </div>
@@ -65,7 +65,6 @@
                             <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
                                 Answer the question
                             </a>
-                    
                     </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">
@@ -79,7 +78,7 @@
                         <div class="titleQuestion">
                             After 6 months
                         </div>
-                            <a href="" class="wrapLinkQuestion hide-button" id="threeMonths">
+                            <a href="{{ route('zero.three.question') }}" class="wrapLinkQuestion hide-button" id="threeMonths">
                                 Answer the question
                             </a>
                     </div>

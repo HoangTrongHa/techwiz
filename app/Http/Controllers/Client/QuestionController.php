@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Log;
 
 class QuestionController extends Controller
 {
-   
+
     public function info() {
         return view('client.question.info');
     }
@@ -29,12 +29,12 @@ class QuestionController extends Controller
                 'item_id' => 'infor',
                 ]);
             }
-            Toastr::success('こんにちは'.Auth::user()->code, 'コーワ発表');
+            Toastr::success('Hello'.Auth::user()->code, 'Fitness Daily Announcement');
             return redirect()->route('zero.one.question');
         } catch (Exception $e) {
             Log::info($e);
             DB::rollBack();
-            Toastr::error('エラーが発生しました。もう一度確認してください', 'コーワ発表');
+            Toastr::error('An error has occurred。Please check again', 'Fitness Daily Announcement');
             return back();
         }
     }
@@ -44,7 +44,7 @@ class QuestionController extends Controller
         $check2 = Question::where('group_question',2)->first();
         $check3 = Question::where('group_question',3)->first();
         if(!empty($check1) && !empty($check2) && !empty($check3)) {
-            Toastr::warning('質問に回答しました', 'コーワ発表');
+            Toastr::warning('Answered the question', 'Fitness Daily Announcement');
             return redirect()->route('myPage');
         }
         return view('client.question.page-one');
@@ -57,7 +57,7 @@ class QuestionController extends Controller
     }
 
     public function zeroMonthPageTwo() {
-        
+
         return view('client.question.page-two');
     }
 

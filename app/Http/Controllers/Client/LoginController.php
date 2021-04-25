@@ -43,7 +43,6 @@ class LoginController extends Controller
     {
         return view('client.register.index');   
     }
-
     public function postRegiester(Request $request)
     {
       
@@ -68,5 +67,6 @@ class LoginController extends Controller
             Toastr::error('Đã có lỗi xảy ra','Xin chào');
 
         }
+
     }
 }

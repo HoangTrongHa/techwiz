@@ -6,7 +6,7 @@
     <div id="detail">
         <div class="container">
             <div class="detail">
-                <h1 class="detail-title">HARA PETA Project 管理画面</h1>
+                <h1 class="detail-title">Fitness Daily</h1>
                 <h2 class="detail-title">{{ $user->code }}</h2>
 
                 <div class="detail-content">
@@ -116,7 +116,7 @@
         },
         messages: {
             event: {
-                required: "入力してください"
+                required: "Please enter"
             }
         },
         onfocusout: function(element) {
