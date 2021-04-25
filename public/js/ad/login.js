@@ -11,10 +11,10 @@ $(document).ready(function() {
         },
         messages: {
             email: {
-                required: "Value is required"
+                required: "Please enter"
             },
             password: {
-                required: "Value is required"
+                required: "Please enter"
             }
         },
         onfocusout: function(element) {

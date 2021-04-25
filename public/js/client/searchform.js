@@ -8,13 +8,13 @@ $(document).ready(function() {
         },
         messages: {
            name: {
-               required: 'Value is required'
+               required: 'Please enter'
            },
            code: {
-               required: 'Value is required'
+               required: 'Please enter'
            },
            email: {
-               required: 'Value is required'
+               required: 'Please enter'
            }
         },
         onfocusout: function(element) {

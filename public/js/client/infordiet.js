@@ -15,19 +15,17 @@ $(document).ready(function() {
         },
         messages: {
             age: {
-                required: "Value is required",
-                maxlenght: '\n' +
-                    'Must not exceed 3 characters',
+                required: "Please enter",
+                maxlenght: 'Must not exceed 3 characters',
             },
             relation: {
-                required: 'Value is required',
+                required: 'Please enter',
             },
             roommate: {
-                required: 'Value is required',
+                required: 'Please enter',
             },
 
         },
-
         onfocusout: function(element) {
             this.element(element);
         },
@@ -37,7 +35,7 @@ $(document).ready(function() {
         $('.yearpicker').append($('<option />').val(i).html(i))
     }
 
-    var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     for (var i = 0; i <= monthNames.length; i++) {
         $('.monthPicker').append(`<option value="${monthNames[i]}">${monthNames[i]}</option>`);
     }
