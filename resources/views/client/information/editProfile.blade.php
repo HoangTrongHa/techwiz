@@ -54,7 +54,7 @@
     </style>
 @endsection
 @section("content")
-    <form action="{{route('postEditInformation',Auth::user()->id)}}" method="POST">
+    <form action="{{route('postEditInformation',Auth::user()->id)}}" method="POST" enctype="multipart/form-data">
     @csrf
     @method('Post')
 <div class="container bootstrap snippet wrapEditProfile">
@@ -64,18 +64,21 @@
     <div class="row">
   		<div class="col-sm-3"><!--left col-->
       <div class="text-center">
-        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+        @if(Auth::user()->avatar == null)
+        <img id="output" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+        @else
+        <img src="{{Storage::URL(Auth::user()->avatar)}}"class="avatar img-circle img-thumbnail" alt="avatar">
+        @endif
         <h6>Upload a different photo...</h6>
-{{--        <input type="file" class="text-center center-block file-upload">--}}
           <div class="wrapper">
               <div class="file-upload">
-                  <input type="file" />
-                  <i class="fas fa-arrow-up" style="font-size: 30px"></i>
+                <input class="text-center center-block file-upload" name="photo" type="file" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
+
+                <i class="fas fa-arrow-up" style="font-size: 30px"></i>
               </div>
               Upload file
           </div>
       </div></hr><br>
-
 
         </div><!--/col-3-->
     	<div class="col-sm-9">
@@ -282,26 +285,19 @@
     </div><!--/row--></form>
 @endsection
 @section("script")
-    <script>
-        $(document).ready(function() {
+$(document).ready(function() {
 
-
-            var readURL = function(input) {
-                if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-
-                    reader.onload = function (e) {
-                        $('.avatar').attr('src', e.target.result);
-                    }
-
-                    reader.readAsDataURL(input.files[0]);
-                }
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('.avatar').attr('src', e.target.result);
             }
-
-
-            $(".file-upload").on('change', function(){
-                readURL(this);
-            });
-        });
-    </script>
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $(".file-upload").on('change', function(){
+        readURL(this);
+    });
+});
 @endsection

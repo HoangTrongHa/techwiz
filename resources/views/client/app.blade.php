@@ -11,6 +11,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="{{ asset('assets/css/client/introduce.css') }}">
   <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{{asset('js/app.js')}}"></script>
+  <script src="{{asset('js/client/app.js')}}"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+  <script src="{{asset('js/client/nav/js')}}"></script>
+  <script src="http://www.youtube.com/player_api"></script>
   @yield('css')
 </head>
 <body>
@@ -24,14 +32,7 @@
     @yield('content')
   </div>
   @include('client.layout.footer')
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="{{asset('js/app.js')}}"></script>
-  <script src="{{asset('js/client/app.js')}}"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-  <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
-  <script src="{{asset('js/client/nav/js')}}"></script>
-  <script src="http://www.youtube.com/player_api"></script>
+  
   <script>
     toastr.options = {
     "closeButton": true,

@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class InformationController extends Controller
 {
@@ -33,13 +34,16 @@ class InformationController extends Controller
     }
 
     public function postEditInformation($id,Request $request) {
-        
+        if($request->hasFile('photo')) {
+            $dataFile = Storage::disk()->put('public/client', $request->file("photo"));
+        }
         $user = User::findOrFail($id)->update([
            'name' => $request->first_name,
             'phone_number' => $request->phone,
             'address' => $request->address,
             'email' => $request->email,
-            'password' => bcrypt($request->password)
+            'password' => bcrypt($request->password),
+            'avatar' => isset($dataFile) ? $dataFile : null
         ]);
         Toastr::success('Cập nhật thành công','Thông Báo');
         return redirect()->route('home');

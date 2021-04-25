@@ -35,6 +35,7 @@ class User extends Authenticatable
         'join_event',
         'term_of_service',
         'bmi',
+        'avatar'
     ];
 
     /**
