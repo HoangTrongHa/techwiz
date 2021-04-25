@@ -88,11 +88,11 @@ class ConfirmController extends Controller
                     ]);
                 }
             }
-            Toastr::success('The answer was sent successfully', 'コーワ発表');
+            Toastr::success('The answer was sent successfully', 'Fitness Daily Announcement');
             return redirect()->route('thanks.question');
         } catch (Exception $e) {
             Log::info($e);
-            Toastr::error('質問をお答えください。', 'KOWA');
+            Toastr::error('Please answer the question。', 'Fitness Daily');
             return back();
         }
     }

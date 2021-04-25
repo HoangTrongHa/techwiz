@@ -23,10 +23,10 @@ class LoginController extends Controller
                 'password' => 'required'
             ]);
             if (Auth::attempt(['code' => $request->code, 'password' => $request->password])) {
-                Toastr::success('こんにちは'.Auth::user()->code, 'コーワ発表');
+                Toastr::success('Hello'.Auth::user()->code, 'Fitness Daily Announcement');
                 return redirect()->route('myPage');
             }
-            return redirect()->back()->withErrors(['カロママIDまたはパスワードが違います。']);
+            return redirect()->back()->withErrors(['Caromam ID or password is wrong。']);
         }
         return redirect()->route('home');
     }
@@ -35,9 +35,9 @@ class LoginController extends Controller
         Auth::logout();
         return redirect()->route('home');
     }
-    
+
     public function register()
     {
-        
+
     }
 }
