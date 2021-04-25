@@ -11,6 +11,7 @@ use App\Http\Controllers\Client\QuestionController;
 use App\Http\Controllers\Client\InformationController;
 use App\Http\Controllers\Admin\LoginController as AdminLoginController;
 use App\Http\Controllers\Client\PageController;
+use App\Http\Controllers\Client\ProgramController;
 use App\Http\Controllers\Client\TermController;
 use App\Http\Controllers\Client\ThankPageController;
 
@@ -29,6 +30,7 @@ Route::get("/", [HomeController::class, 'index'])->name('home');
 Route::group(["namespace" => "client"], function() {
     Route::get('/login', [LoginController::class, 'index'])->name('login');
     Route::get('/register', [LoginController::class, 'register'])->name('register');
+    Route::post('/postRegiester', [LoginController::class, 'postRegiester'])->name('postRegiester');
     Route::post('/login', [LoginController::class, 'login'])->name('post.login');
     Route::get('/searchid', [SearchController::class, 'index'])->name('search');
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
@@ -42,10 +44,10 @@ Route::group(["namespace" => "client"], function() {
             Route::get('/term', [TermController::class, 'index'])->name('term');
             Route::get('/post-term', [TermController::class, 'postConfirm'])->name('post.term');
             Route::get("/information", [InformationController::class, 'index'])->name('information');
-            Route::post('/postInforMation',[InformationController::class, 'postInfor'])->name('postInfor');
         });
-        Route::group(["middleware" => ["checkHome"]], function () {
+
             Route::get('/myPage', [HomeController::class, 'redirectToMyPage'])->name('myPage');
+            Route::get('/program/{id}', [ProgramController::class, 'index'])->name('program');
             Route::get('/question', [QuestionController::class, 'oneMonth'])->name('oneMonth');
             Route::get('/info', [QuestionController::class, 'info'])->name('user.info');
             Route::post('/inforQuestion', [QuestionController::class, 'postInfo'])->name('user.postInfo');
@@ -63,12 +65,9 @@ Route::group(["namespace" => "client"], function() {
                 // Route::get('/thanksPageQuestion',[ThankPageController::class, 'index'])->name('thankspage');
                 Route::get('/thanks', [ThankPageController::class, 'thanks'])->name('thanks.question');
             });
-        });
-        Route::get('/thankyou', [ThankPageController::class, 'thankspage'])->name('thanks.info');
         Route::post('/postInformationafterTerm', [ConfirmController::class, 'postInforUser'])->name('postInforUser');
-
     });
-
+    Route::get('/thankyou', [ThankPageController::class, 'thankspage'])->name('thanks.info');
     Route::group(['namespace' => 'Admin'], function() {
         Route::get('/admin', [AdminLoginController::class, 'index'])->name('admin');
         Route::post('/admin', [AdminLoginController::class, 'login'])->name('post.login.admin');

@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers\Client;
 
+use Exception;
 use App\Models\User;
-use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Http\Request;
 use App\Models\client\Prefectures;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
+use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Support\Facades\Auth;
 
 class InformationController extends Controller
@@ -21,8 +24,7 @@ class InformationController extends Controller
     }
 
     public function postInfor (Request $request) {
-        session()->put('dataInfor',$request->all());
-        return redirect()->route('confirmInformation');
+       
     }
 
     public function editInformation($id)

@@ -15,7 +15,7 @@
             </span>
         </div>
         <div class="wrappFormInformation">
-            <form action="{{ route('postInfor') }}" id="informationForm" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('postRegiester') }}" id="informationForm" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('POST')
                 <div class="itemPost">

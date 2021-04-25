@@ -34,6 +34,7 @@ class User extends Authenticatable
         'subcriber',
         'join_event',
         'term_of_service',
+        'bmi',
     ];
 
     /**

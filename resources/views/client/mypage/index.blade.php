@@ -89,7 +89,7 @@
                     <div class="wrapList">
                         <ul class="blog-list">
                             @foreach ($categories as $item)
-                            <li><a href="#">{{ $item->name }}</a></li>
+                            <li><a href="{{ route('program',$item->id) }}">{{ $item->name }}</a></li>
                             @endforeach
                           </ul>
                     </div>
@@ -102,6 +102,5 @@
 @endsection
 
 @section("script")
-<script src="http://www.youtube.com/player_api"></script>
 <script src="{{ asset('js/client/mypage.js') }}"></script>
 @endsection

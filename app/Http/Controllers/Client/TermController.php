@@ -18,6 +18,7 @@ class TermController extends Controller
             'term_of_service' => Carbon::now()
         ]);
 
-        return redirect()->route('information');
+        return redirect()->route('myPage');
     }
 }
+  
