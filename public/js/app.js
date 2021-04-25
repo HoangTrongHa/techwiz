@@ -19087,32 +19087,6 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
-/***/ "./resources/sass/client/introduce.scss":
-/*!**********************************************!*\
-  !*** ./resources/sass/client/introduce.scss ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./resources/sass/client/login.scss":
-/*!******************************************!*\
-  !*** ./resources/sass/client/login.scss ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "./resources/sass/client/searchid.scss":
 /*!*********************************************!*\
   !*** ./resources/sass/client/searchid.scss ***!
@@ -19230,10 +19204,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/sass/client/app.scss":
-/*!****************************************!*\
-  !*** ./resources/sass/client/app.scss ***!
-  \****************************************/
+/***/ "./resources/sass/client/editProfile.scss":
+/*!************************************************!*\
+  !*** ./resources/sass/client/editProfile.scss ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19286,6 +19260,19 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************************!*\
   !*** ./resources/sass/client/mypage.scss ***!
   \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/sass/client/login.scss":
+/*!******************************************!*\
+  !*** ./resources/sass/client/login.scss ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19599,11 +19586,12 @@ process.umask = function() { return 0; };
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
+/******/ 			"assets/css/client/login": 0,
 /******/ 			"assets/css/client/mypage": 0,
 /******/ 			"assets/css/client/confirmInfor": 0,
 /******/ 			"assets/css/client/information": 0,
 /******/ 			"assets/css/client/header": 0,
-/******/ 			"assets/css/client/app": 0,
+/******/ 			"assets/css/client/editProfile": 0,
 /******/ 			"assets/css/client/question-list": 0,
 /******/ 			"assets/css/client/info": 0,
 /******/ 			"assets/css/admin/detail": 0,
@@ -19612,9 +19600,7 @@ process.umask = function() { return 0; };
 /******/ 			"assets/css/admin/style": 0,
 /******/ 			"assets/css/client/term": 0,
 /******/ 			"assets/css/client/thanksPage": 0,
-/******/ 			"assets/css/client/searchid": 0,
-/******/ 			"assets/css/client/login": 0,
-/******/ 			"assets/css/client/introduce": 0
+/******/ 			"assets/css/client/searchid": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -19662,23 +19648,22 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/header.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/information.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/confirmInfor.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/mypage.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/introduce.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/login.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/searchid.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/thanksPage.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/term.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/admin/style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/admin/alogin.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/admin/dashboard.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/admin/detail.scss")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/info.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/app","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid","assets/css/client/login","assets/css/client/introduce"], () => (__webpack_require__("./resources/sass/client/question-list.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/header.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/information.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/confirmInfor.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/mypage.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/login.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/searchid.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/thanksPage.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/term.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/admin/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/admin/alogin.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/admin/dashboard.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/admin/detail.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/info.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/question-list.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/client/login","assets/css/client/mypage","assets/css/client/confirmInfor","assets/css/client/information","assets/css/client/header","assets/css/client/editProfile","assets/css/client/question-list","assets/css/client/info","assets/css/admin/detail","assets/css/admin/dashboard","assets/css/admin/alogin","assets/css/admin/style","assets/css/client/term","assets/css/client/thanksPage","assets/css/client/searchid"], () => (__webpack_require__("./resources/sass/client/editProfile.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
