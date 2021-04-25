@@ -4,7 +4,7 @@
 @endsection
 @section("content")
 <div class="main">
-    <div class="about_banner_img"><img src="images/about_img.jpg" class="img-responsive" alt=""/></div>
+    <div class="about_banner_img"><img src="images/about_img.jpg" class="img-responsive" style="width: 100%" alt=""/></div>
       <div class="about_banner_wrap">
            <h1 class="m_11">About Us</h1>
         </div>
@@ -15,9 +15,8 @@
                <img src="images/about_img1.jpg" class="img-responsive" alt=""/>
               </div>
               <div class="col-md-7 about-left-text">
-                <h2>Ankur Rohilla</h2>
-                <p>aliquam erat volutpat. Ut wisi enim ad minim veniam, quis <br>nostrud exerci tation ullamcorper suscipit lobortis.</p>
-                <h4>ullamcorper - <span class="m_12">Gymsport Responsible</span></h4>
+                  <h2>Come Join
+                      the Fitness Daily Family.</h2>
               </div>
               <div class="clear"></div>
             </div>
@@ -189,52 +188,14 @@
      </div>
      <div class="login">
            <div class="row login_details">
-            <div class="col-md-6">
-               <div class="join">
-                    <h3>Why Join ?</h3>
-                    <h4>sed diam nonummy nibh euismod</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br> nibh euismod tincidunt ut laoreet dolore magna . </p>
-                    <div class="btn3">
-                    <a href="#">Join Today</a>
-                  </div>
-               </div>
-             </div>
-              <div class="col-md-6">
-               <div class="join-right">
-                    <h3>Why Join ?</h3>
-                    <h4>sed diam nonummy nibh euismod</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br> nibh euismod tincidunt ut laoreet dolore magna . </p>
-                    <div class="buttons_login">
-                    <div class="btn4">
-                    <a href="login.html">Log In</a>
-                  </div>
-                  <div class="p-ww">
-                   <form>
-                    <input class="date" id="datepicker" type="text" value="View Calender" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'View Calender';}">
-                   </form>
-                  </div>
-                  <div class="clear"></div>
-                  <!---strat-date-piker---->
-               <script src="js/jquery-ui.js"></script>
-               <script>
-               $(function() {
-                 $( "#datepicker" ).datepicker();
-               });
-               </script>
-               </div>
-               </div>
-             </div>
+            <div class="col-md-12" style="color: white;text-align: center">
+               <h4> Ready to try a Fitness Daily workout?</h4>
+                <button class="btn btn-lg btn-info"><a href="{{route('login')}}" style="color: white !important;text-align: center;text-decoration: none">Get Started Now</a></button>
+            </div>
+           </div>
              <div class="clear"></div>
         </div>
    </div>
-   <div class="testimonial">
-          <div class="container">
-              <i class="quot"> </i>
-              <p>diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendreri</p>
-              <p class="ceo">quis nostrud, <span class="ceo1">tation - ullamcorper</span></p>
-          </div>
-    </div>
-
  </div>
 @endsection
 @section('script')
