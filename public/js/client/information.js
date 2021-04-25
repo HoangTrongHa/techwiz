@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var messages = {
-    'nameVal': 'Value is required',
+    'nameVal': 'Please enter',
     };
 
     $('#informationForm').validate({
@@ -34,25 +34,25 @@ $(document).ready(function() {
         messages: {
             name: messages.nameVal,
             email: {
-                required: "Value is required",
+                required: "Please enter",
                 email: "Please enter a valid email address",
             },
             emailConfirm: {
-            required: "Please enter your e-mail address",
-            email: "Please enter a valid email address",
-            equalTo: "Email confirmation does not match email\n",
+            required: "Please enter your e-mail address。",
+            email: "Please enter a valid email address。",
+            equalTo: "Email confirmation does not match email",
             },
             phoneNumber: {
-                required: "Value is required",
+                required: "Please enter",
             },
             zipCode: {
-                required: "Value is required",
+                required: "Please enter",
             },
             city: {
-                required: "Value is required",
+                required: "Please enter",
             },
             address: {
-                required: "Value is required",
+                required: "Please enter",
             }
         },
         onfocusout: function(element) {
@@ -65,8 +65,7 @@ $(document).ready(function() {
 $(document).ready(function () {
     $(".uintTextBox").keypress(function (e) {
        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-          $(".errmsg").html("\n" +
-              "Please enter the number").show().fadeOut(3000);
+          $(".errmsg").html("Please enter the number").show().fadeOut(3000);
                  return false;
       }
      });
@@ -74,7 +73,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".uintTextBox2").keypress(function (e) {
        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-          $(".errmsg2").html("Please enter the number\n").show().fadeOut(3000);
+          $(".errmsg2").html("Please enter the number").show().fadeOut(3000);
                  return false;
       }
      });

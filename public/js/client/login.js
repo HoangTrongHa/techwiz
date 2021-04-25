@@ -11,11 +11,11 @@ $(document).ready(function() {
         },
         messages: {
             code: {
-                required: "Please enter your ID"
+                required: "Please enter"
             },
             password: {
-                required: "Enter password"
-            }
+                required: "Please enter"
+                        }
         },
         onfocusout: function(element) {
             this.element(element);
