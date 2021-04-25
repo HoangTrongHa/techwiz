@@ -1,12 +1,9 @@
 <div class="header">
     <div class="container">
        <div class="header-text">
-         <h1>Perfect Fitness</h1>
-         <h2>Best Choice For your site</h2>
-         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-         <div class="banner_btn">
-             <a href="#">Read More</a>
-         </div>
+         <h1>Fitness Daily</h1>
+         <h2>Best choice for your health</h2>
+           <p>Please protect yourself as references effort to protect yourself</p>
        </div>
        <div class="header-arrow">
           <a href="#menu" class="class scroll"><span> </span </a>
@@ -18,7 +15,7 @@
    <div class="header-bottom">
       <div class="container">
          <div class="header-bottom_left">
-             <i class="phone"> </i><span>1-200-346-2986</span>
+             <i class="phone"> </i><span> Hotline:1-200-346-2986</span>
          </div>
          <div class="social">
             <ul>
@@ -40,7 +37,7 @@
  <div class="menu" id="menu">
   <div class="container">
      <div class="logo">
-        <a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt=""/></a>
+        <a href="{{ route('home') }}"><img src="{{ asset('images/logooo.png') }}" alt=""/></a>
      </div>
      <div class="h_menu4"><!-- start h_menu4 -->
        <a class="toggleMenu" href="#">Menu</a>
@@ -60,7 +57,7 @@
 <div class="menu" id="menu">
   <div class="container">
      <div class="logo">
-        <a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt=""/></a>
+        <a href="{{ route('home') }}"><img src="{{ asset('images/logooo.png') }}" alt=""/></a>
      </div>
      <div class="h_menu4"><!-- start h_menu4 -->
        <a class="toggleMenu" href="#">Menu</a>

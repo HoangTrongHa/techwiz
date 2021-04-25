@@ -50,7 +50,7 @@ class ConfirmController extends Controller
     }
 
     public function postConfirmquestion(Request $request)
-    {   
+    {
         $dataQuestion1 = $request->session()->get('answerArr');
         $dataQuestion2 = $request->session()->get('answerArr2');
         $dataQuestion3 = $request->session()->get('answerArr3');
@@ -88,7 +88,7 @@ class ConfirmController extends Controller
                     ]);
                 }
             }
-            Toastr::success('回答は正常に送信されました', 'コーワ発表');
+            Toastr::success('The answer was sent successfully', 'コーワ発表');
             return redirect()->route('thanks.question');
         } catch (Exception $e) {
             Log::info($e);

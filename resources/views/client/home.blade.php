@@ -156,7 +156,7 @@
                                Email
                             </div>
                             <div class="contact-right">
-                                <h1>Phond2@op.madhere.co.jp</h1>
+                                <h1>fitness.daily@gmail.com</h1>
                             </div>
                         </div>
                         <div class="contact-mid">
