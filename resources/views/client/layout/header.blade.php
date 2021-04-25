@@ -91,7 +91,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #72D0F4;
+    background: linear-gradient(to bottom, #72d0f4 25%, #3399ff 79%);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -100,7 +100,7 @@
   .dropdown-content .linkDrop {
     color: white;
     text-decoration: none;
-      background-color: #72D0F4;
+    background-color: #72D0F4;
   }
   .dropdown:hover .dropdown-content {
     display: block;
