@@ -76,13 +76,13 @@
                                 事便番号
                             </div>
                             <input type="number" name="zipCode" class="uintTextBox2"  value="{{ old('zipCode')}}"/>&nbsp;<span class="errmsg2" style="color: red;font-weight:100"></span>
-                        
+
                         </div>
                     </div>
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
@@ -116,7 +116,7 @@
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
@@ -133,7 +133,7 @@
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
