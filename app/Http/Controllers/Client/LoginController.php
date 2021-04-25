@@ -38,6 +38,6 @@ class LoginController extends Controller
     
     public function register()
     {
-        
+        return view('client.register.index');   
     }
 }
