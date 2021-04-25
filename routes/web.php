@@ -32,6 +32,7 @@ Route::group(["namespace" => "client"], function() {
     Route::post('/login', [LoginController::class, 'login'])->name('post.login');
     Route::get('/searchid', [SearchController::class, 'index'])->name('search');
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+    Route::get('/editInformation/{id}', [InformationController::class, 'editInformation'])->name('editInformation');
     Route::post('/postSearchId', [SearchController::class, 'postSearchId'])->name('postSearchId');
     Route::get('/about', [PageController::class, 'about'])->name('about');
     Route::group(["middleware" => ["checkUser"]], function () {

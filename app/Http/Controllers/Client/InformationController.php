@@ -23,8 +23,8 @@ class InformationController extends Controller
         return redirect()->route('confirmInformation');
     }
 
-    public function updateUser()
+    public function editInformation($id)
     {
-        
+        return view('client.information.editProfile');
     }
 }

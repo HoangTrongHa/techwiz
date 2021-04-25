@@ -73,6 +73,7 @@
               <a href="">{{ Auth::user()->code }}</a>
               <div class="dropdown-content">
               <a class="linkDrop" href="{{ route('logout') }}">Log Out</a>
+              <a class="linkDrop" href="{{ route('editInformation', Auth::user()->id) }}">Personal Information</a>
               </div>
             </div>
           </li>

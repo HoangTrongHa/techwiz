@@ -26,6 +26,7 @@ const mix = require('laravel-mix');
     .sass('resources/sass/admin/detail.scss', 'public/assets/css/admin/detail.css')
     .sass('resources/sass/client/info.scss', 'public/assets/css/client/info.css')
     .sass('resources/sass/client/question-list.scss', 'public/assets/css/client/question-list.css')
+    .sass('resources/sass/client/editProfile.scss', 'public/assets/css/client')
     .options({
      processCssurls: false
  });
