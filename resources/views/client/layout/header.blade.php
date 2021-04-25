@@ -1,15 +1,15 @@
 <div class="header">
     <div class="container">
        <div class="header-text">
-         <h1>Perfect Fitness</h1>
+         <h1>Fitness Daily Club</h1>
          <h2>Best Choice For your site</h2>
-         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+         <p>Our goal is to make health and fitness attainable, affordable and approachable.</p>
          <div class="banner_btn">
-             <a href="#">Read More</a>
+             <a style="text-decoration: none !important;" href="{{route('about')}}">Read More</a>
          </div>
        </div>
        <div class="header-arrow">
-          <a href="#menu" class="class scroll"><span> </span </a>
+          <a href="#menu" class="class scroll"><span> </span> </a>
        </div>
      </div>
    </div>
@@ -43,9 +43,9 @@
         <a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt=""/></a>
      </div>
      <div class="h_menu4"><!-- start h_menu4 -->
-       <a class="toggleMenu" href="#">Menu</a>
-         <ul class="nav">
-           <li class="active"><a href="index.html" >Home</a></li>
+       <a class="toggleMenu" href="#" >Menu</a>
+         <ul class="nav" >
+           <li  class="active"><a style="text-decoration: none !important;" href="index.html" >Home</a></li>
            <li><a href="{{ route('about') }}">About</a></li>
            <li><a href="{{ route('myPage') }}">Join us</a></li>
            <li><a href="{{ route('login') }}">Login</a></li>
