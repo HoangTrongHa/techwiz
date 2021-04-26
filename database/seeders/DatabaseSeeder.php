@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             AdminSeeder::class,
             CategorySeeder::class,
+            VideoSeeder::class
         ]);
     }
 }
