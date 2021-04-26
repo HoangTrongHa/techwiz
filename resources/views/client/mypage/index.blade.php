@@ -89,6 +89,11 @@
                             </a>
                     </div>
                 </div>
+                @if (Auth::user()->status_view == null)
+                <div class="wrapUl">
+                    <h4>Please tell us a little bit about you. Answer the questions by clicking the "Answer the question" button.</h4>
+		   	    </div>
+                @else
                 <div class="wrapUl">
                     <h4>List Of Exercises</h4>
                     <div class="wrapList">
@@ -99,6 +104,7 @@
                           </ul>
                     </div>
 		   	    </div>
+                @endif
         </div>
     <input type="hidden" value="{{ $currentTime }}" id="currentTime">
     <input type="hidden" value="{{ $join_event }}" id="joinEvent">
