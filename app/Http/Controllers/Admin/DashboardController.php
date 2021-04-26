@@ -2,15 +2,19 @@
 
 namespace App\Http\Controllers\Admin;
 
+use Exception;
 use Carbon\Carbon;
 use App\Models\User;
+use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
+use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class DashboardController extends Controller
 {
     public function index() {
-        $users = User::all();
+        $users = User::get();
 
         $currentTime = date('Y-m-d', strtotime(Carbon::now()));
         
@@ -28,11 +32,26 @@ class DashboardController extends Controller
     }
 
     public function postChecked($param) {
-        $user = User::where('code', $param)->update([
-            'join_event' => Carbon::now()
-        ]);
+        try {
+            $user = User::where('code', $param)->first();
+            $email = $user->email;
+            $user->update([
+                'join_event' => Carbon::now(),
+                'password' => bcrypt(123456789),
+                'code' => 'kw'.substr($user->zipcode, 0, 4)
+            ]);
+            Mail::send('mail.index', [
+                'user' => $user, 
+            ], function($message)  use ($user,$email) {
+                $message->to('ha9a1ltt@gmail.com')->subject('We Are Contacting You From The Fitness Daily Company');
+            });
 
-        if ($user) {
+        Toastr::success('Successfully sent confirmation mail','Notification');
+        return redirect()->back();
+        } catch (Exception $e) {
+            Log::info($e);
+            dd($e);
+            Toastr::error('An error has occurred, please check again','Notification');
             return redirect()->back();
         }
     }
