@@ -3,17 +3,18 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Client\AuthController;
 use App\Http\Controllers\Client\HomeController;
+use App\Http\Controllers\Client\PageController;
+use App\Http\Controllers\Client\TermController;
 use App\Http\Controllers\Client\LoginController;
 use App\Http\Controllers\Client\SearchController;
 use App\Http\Controllers\Client\ConfirmController;
+use App\Http\Controllers\Client\PaymentController;
+use App\Http\Controllers\Client\ProgramController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Client\QuestionController;
+use App\Http\Controllers\Client\ThankPageController;
 use App\Http\Controllers\Client\InformationController;
 use App\Http\Controllers\Admin\LoginController as AdminLoginController;
-use App\Http\Controllers\Client\PageController;
-use App\Http\Controllers\Client\ProgramController;
-use App\Http\Controllers\Client\TermController;
-use App\Http\Controllers\Client\ThankPageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,8 @@ use App\Http\Controllers\Client\ThankPageController;
 */
 
 Route::get("/", [HomeController::class, 'index'])->name('home');
+Route::get('/payment', [PaymentController::class, 'index']);
+Route::post('/transaction', [PaymentController::class, 'makePayment'])->name('make-payment');
 Route::group(["namespace" => "client"], function () {
     Route::get('/login', [LoginController::class, 'index'])->name('login');
     Route::get('/register', [LoginController::class, 'register'])->name('register');
@@ -68,16 +71,11 @@ Route::group(["namespace" => "client"], function () {
         Route::post('/postInformationafterTerm', [ConfirmController::class, 'postInforUser'])->name('postInforUser');
     });
     Route::get('/thankyou', [ThankPageController::class, 'thankspage'])->name('thanks.info');
-    Route::group(['namespace' => 'Admin'], function() {
-        Route::get('/admin', [AdminLoginController::class, 'index'])->name('admin');
-        Route::post('/admin', [AdminLoginController::class, 'login'])->name('post.login.admin');
-        Route::group(['middleware' => ['check.admin.login'], 'prefix' => 'admin'], function() {
 });
-
 Route::group(['namespace' => 'Admin'], function () {
     Route::get('/admin', [AdminLoginController::class, 'index'])->name('admin');
     Route::post('/admin', [AdminLoginController::class, 'login'])->name('post.login.admin');
-    Route::group(['middleware' => ['check.admin.login'], 'prefix' => 'admin'], function () {
+    Route::group(['middleware' => ['check.admin.login']], function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
         Route::get('/detail/{param}', [DashboardController::class, 'detail'])->name('admin.detail.user');
         Route::post('/detail/{param}', [DashboardController::class, 'postChecked'])->name('admin.checked');

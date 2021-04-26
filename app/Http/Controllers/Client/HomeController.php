@@ -44,4 +44,8 @@ class HomeController extends Controller
         $month2 = date('m', $ts2);
         return (($year2 - $year1) * 12) + ($month2 - $month1);
     }
+
+    public function payment() {
+        return view('client.index');
+    }
 }

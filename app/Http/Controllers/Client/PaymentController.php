@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers\Client;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Validator;
-use Stripe;
-use Session;
+use App\Http\Controllers\Controller;
 
 class PaymentController extends Controller
 {

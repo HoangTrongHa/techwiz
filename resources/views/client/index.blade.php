@@ -8,9 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
 </head>
-
 <body>
-
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -23,11 +21,11 @@
                         </div>
                         @endif
 
-                        <form role="form" action="{{ route('make-payment') }}" method="post" class="stripe-payment"
+                        <form role="form" action="{{ route('make-payment') }}" method="POST" class="stripe-payment"
                             data-cc-on-file="false" data-stripe-publishable-key="{{ config('app.stripe_key') }}"
                             id="stripe-payment">
                             @csrf
-
+                            @method('POST')
                             <div class='form-row row'>
                                 <div class='col-xs-12 form-group required'>
                                     <label class='control-label'>Name on Card</label> <input class='form-control'
@@ -67,7 +65,6 @@
                             <div class="row">
                                 <button class="btn btn-success btn-lg btn-block" type="submit">Pay</button>
                             </div>
-
                         </form>
                     </div>
                 </div>
