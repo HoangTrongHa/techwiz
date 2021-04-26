@@ -14,6 +14,7 @@ class HomeController extends Controller
 {
     public function index()
     {
+//        dd(bcrypt("linh"));
        return view("client.home");
     }
 
@@ -24,7 +25,7 @@ class HomeController extends Controller
         $currentTime = Carbon::now();
         $join_event = date('Y-m-d', strtotime($user->join_event));
         $threeMonth = date('Y-m-d', strtotime($join_event . '+ 3 months'));
-        $sixMonth = date('Y-m-d', strtotime($join_event . '+ 6 months')); 
+        $sixMonth = date('Y-m-d', strtotime($join_event . '+ 6 months'));
         return view("client.mypage.index", compact('currentTime', 'join_event', 'threeMonth', 'sixMonth','categories'));
     }
 
@@ -33,7 +34,7 @@ class HomeController extends Controller
         $getTime = Auth::user()->join_event;
         if ($getTime == null) {
            return 0;
-        } 
+        }
         $getTimeNow = Carbon::now();
         $ts1 = strtotime($getTime);
         $ts2 = strtotime($getTimeNow);

@@ -17,7 +17,7 @@ class DashboardController extends Controller
         $users = User::get();
 
         $currentTime = date('Y-m-d', strtotime(Carbon::now()));
-        
+
         return view('admin.dashboard.index', compact('users', 'currentTime'));
     }
 
@@ -41,7 +41,7 @@ class DashboardController extends Controller
                 'code' => 'kw'.substr($user->zipcode, 0, 4)
             ]);
             Mail::send('mail.index', [
-                'user' => $user, 
+                'user' => $user,
             ], function($message)  use ($user,$email) {
                 $message->to('ha9a1ltt@gmail.com')->subject('We Are Contacting You From The Fitness Daily Company');
             });
@@ -50,7 +50,7 @@ class DashboardController extends Controller
         return redirect()->back();
         } catch (Exception $e) {
             Log::info($e);
-            dd($e);
+//            dd($e);
             Toastr::error('An error has occurred, please check again','Notification');
             return redirect()->back();
         }

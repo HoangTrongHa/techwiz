@@ -13,7 +13,7 @@
          </div>
          <div class="col-md-4">
              <div class="f-logo">
-                 <img src="images/logooo.png" alt=""/>
+                 <img width="180px" height="70px" src="images/logooo.png" alt=""/>
              </div>
              <p class="m_9">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
              <p class="address">Phone : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="m_10">1-200-346-2986</span></p>
