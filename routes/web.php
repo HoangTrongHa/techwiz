@@ -26,7 +26,7 @@ use App\Http\Controllers\Client\ThankPageController;
 */
 
 Route::get("/", [HomeController::class, 'index'])->name('home');
-Route::group(["namespace" => "client"], function() {
+Route::group(["namespace" => "client"], function () {
     Route::get('/login', [LoginController::class, 'index'])->name('login');
     Route::get('/register', [LoginController::class, 'register'])->name('register');
     Route::post('/login', [LoginController::class, 'login'])->name('post.login');
@@ -38,19 +38,19 @@ Route::group(["namespace" => "client"], function() {
     Route::get('/about', [PageController::class, 'about'])->name('about');
     Route::group(["middleware" => ["checkUser"]], function () {
         Route::get('/confirmInformation', [ConfirmController::class, 'index'])->name('confirmInformation');
-        Route::group(['middleware' => ['checkInfor']], function() {
+        Route::group(['middleware' => ['checkInfor']], function () {
             Route::get('/term', [TermController::class, 'index'])->name('term');
             Route::get('/post-term', [TermController::class, 'postConfirm'])->name('post.term');
             Route::get("/information", [InformationController::class, 'index'])->name('information');
-            Route::post('/postInforMation',[InformationController::class, 'postInfor'])->name('postInfor');
+            Route::post('/postInforMation', [InformationController::class, 'postInfor'])->name('postInfor');
         });
         Route::group(["middleware" => ["checkHome"]], function () {
             Route::get('/myPage', [HomeController::class, 'redirectToMyPage'])->name('myPage');
             Route::get('/question', [QuestionController::class, 'oneMonth'])->name('oneMonth');
             Route::get('/info', [QuestionController::class, 'info'])->name('user.info');
             Route::post('/inforQuestion', [QuestionController::class, 'postInfo'])->name('user.postInfo');
-            Route::get('/confirmQuestionInfor',[QuestionController::class, 'confirmInfor'])->name('confirmInfor');
-            Route::group(['middleware' => ['dietInformation']], function() {
+            Route::get('/confirmQuestionInfor', [QuestionController::class, 'confirmInfor'])->name('confirmInfor');
+            Route::group(['middleware' => ['dietInformation']], function () {
                 Route::get('/question-page-1', [QuestionController::class, 'zeroMonthPageOne'])->name('zero.one.question');
                 Route::post('/postQuestionPageOne', [QuestionController::class, 'postQuestionPageOne'])->name('postQuestionPageOne');
                 Route::get('/question-page-2', [QuestionController::class, 'zeroMonthPageTwo'])->name('zero.two.question');
@@ -66,16 +66,15 @@ Route::group(["namespace" => "client"], function() {
         });
         Route::get('/thankyou', [ThankPageController::class, 'thankspage'])->name('thanks.info');
         Route::post('/postInformationafterTerm', [ConfirmController::class, 'postInforUser'])->name('postInforUser');
-
     });
+});
 
-    Route::group(['namespace' => 'Admin'], function() {
-        Route::get('/admin', [AdminLoginController::class, 'index'])->name('admin');
-        Route::post('/admin', [AdminLoginController::class, 'login'])->name('post.login.admin');
-        Route::group(['middleware' => ['check.admin.login'], 'prefix' => 'admin'], function() {
+Route::group(['namespace' => 'Admin'], function () {
+    Route::get('/admin', [AdminLoginController::class, 'index'])->name('admin');
+    Route::post('/admin', [AdminLoginController::class, 'login'])->name('post.login.admin');
+    // Route::group(['middleware' => ['check.admin.login'], 'prefix' => 'admin'], function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
         Route::get('/detail/{param}', [DashboardController::class, 'detail'])->name('admin.detail.user');
         Route::post('/detail/{param}', [DashboardController::class, 'postChecked'])->name('admin.checked');
-        });
-    });
+    // });
 });

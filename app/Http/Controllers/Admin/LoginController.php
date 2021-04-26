@@ -5,27 +5,32 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
+use Validator;
 
 class LoginController extends Controller
 {
-    public function index() {
-//         dd(bcrypt("admin"));
-        return view('admin.login.index');
+    public function index()
+    {
+        return view('admin.login.login');
     }
 
-    public function login(Request $request) {
-        $validated = $request->validate(
+    public function login(Request $request)
+    {
+        $validator = Validator::make(
+            $request->all(),
             [
-            'email' => 'required|email',
-            'password' => 'required'
-            ],
-            [
-                'email.email' => 'IDまたはパスワードが違います。'
+                'email' => 'required|email',
+                'password' => 'required'
             ]
         );
+        if ($validator->fails()) {
+            return Redirect::back()->withInput()->withErrors($validator);
+        }
         if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
             return redirect()->route('admin.dashboard');
+        } else {
+            return Redirect::back()->withInput()->withErrors($validator);
         }
-        return redirect()->back()->withErrors(['IDまたはパスワードが違います。']);
     }
 }

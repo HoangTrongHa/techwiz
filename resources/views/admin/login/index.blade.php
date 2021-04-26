@@ -1,4 +1,4 @@
-@extends('client.app')
+@extends('admin.layout')
 @section('css')
 <link rel="stylesheet" href="{{ asset('assets/css/admin/alogin.css') }}">
 @endsection
