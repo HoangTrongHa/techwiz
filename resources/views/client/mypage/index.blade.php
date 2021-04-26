@@ -62,9 +62,15 @@
                         <div class="titleQuestion">
                             0 month
                         </div>
-                            <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
-                                Answer the question
-                            </a>
+                        @if (Auth::user()->status_view == null)
+                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
+                            Answer the question
+                        </a>
+                        @else
+                        <a href="#" class="wrapLinkQuestion hide-button" id="oneMonths">
+                            Answered
+                        </a>
+                        @endif    
                     </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">

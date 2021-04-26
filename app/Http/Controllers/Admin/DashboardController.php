@@ -23,11 +23,9 @@ class DashboardController extends Controller
 
     public function detail($param) {
         $user = User::where('code', $param)->first();
-
         $threeMonth = date('Y-m-d', strtotime($user->join_event . '+ 3 months'));
         $sixMonth = date('Y-m-d', strtotime($user->join_event . '+ 6 months'));
         $currentTime = date('Y-m-d', strtotime(Carbon::now()));
-
         return view('admin.dashboard.detail', compact('user', 'threeMonth', 'sixMonth', 'currentTime'));
     }
 
@@ -47,7 +45,7 @@ class DashboardController extends Controller
             });
 
         Toastr::success('Successfully sent confirmation mail','Notification');
-        return redirect()->back();
+        return redirect()->route('admin.dashboard');
         } catch (Exception $e) {
             Log::info($e);
             dd($e);
