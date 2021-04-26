@@ -10,7 +10,7 @@
                     <table>
                         <thead>
                             <tr class="bg-primary text-white">
-                                <th scope="col">ID</th>
+                                <th scope="col">NameD</th>
                                 <th scope="col">Consent date</th>
                                 <th scope="col">Material shipping date</th>
                                 <th scope="col">0-month survey questionnaire</th>
@@ -21,7 +21,7 @@
                         <tbody>
                             @foreach($users as $user)
                             <tr>
-                                <td data-label="ID" class="text-left"><a class="dashboard-link" href="{{ route('admin.detail.user', $user->code) }}">{{ $user->code }}</a></td>
+                                <td data-label="ID" class="text-left"><a class="dashboard-link" href="{{ route('admin.detail.user', $user->code) }}">{{ $user->name }}</a></td>
                                 <td data-label="Consent date">
                                     {{ ($user->term_of_service != null) ? date('Y-m-d', strtotime($user->term_of_service)) : 'Disagree' }}
                                 </td>

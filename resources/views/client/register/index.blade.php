@@ -149,7 +149,7 @@
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
                             <div class="textTopInput">
-                                Please enter the height
+                                Please enter the height (cm)
                             </div>
                             <input type="number" name="height" id="height" class="uintTextBox2"/>&nbsp;<span class="errmsg2" style="color: red;font-weight:100"></span>
                         
@@ -199,12 +199,17 @@
     </div>
 @endsection
 @section('script')
+
 <script>
     $(document).on("change keyup blur", "#weight", function() {
         var main = $('#height').val();
-        var disc = $('#weight').val();
-        var discont = disc / (main * 2);
+        var width = $('#weight').val();
+        var met = main / 100;
+
+        var discont = width / ((met) * (met));
         $('#bmi').val(discont);
     });
 </script>
+<script src="{{ asset('js/client/information.js') }}">
+
 @endsection
