@@ -1,6 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
-    "/assets/css/client/login.css": "/assets/css/client/login.css",
+    "/assets/css/client/searchid.css": "/assets/css/client/searchid.css",
     "/assets/css/client/mypage.css": "/assets/css/client/mypage.css",
     "/assets/css/client/confirmInfor.css": "/assets/css/client/confirmInfor.css",
     "/assets/css/client/information.css": "/assets/css/client/information.css",
@@ -13,6 +13,5 @@
     "/assets/css/admin/alogin.css": "/assets/css/admin/alogin.css",
     "/assets/css/admin/style.css": "/assets/css/admin/style.css",
     "/assets/css/client/term.css": "/assets/css/client/term.css",
-    "/assets/css/client/thanksPage.css": "/assets/css/client/thanksPage.css",
-    "/assets/css/client/searchid.css": "/assets/css/client/searchid.css"
+    "/assets/css/client/thanksPage.css": "/assets/css/client/thanksPage.css"
 }

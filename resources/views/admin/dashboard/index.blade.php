@@ -1,6 +1,5 @@
 
 @extends('admin.base')
-
 @section('content')
 <div class="container-fluid">
     <div class="fade-in">
@@ -37,7 +36,6 @@
                                     </td>
                                     <td data-label="3 participants 3 months">
                                         @if ($user->join_event == null)
->>>>>>> feature/admin
                                         {{ 'Not implemented' }}
                                         @else
                                         {{
