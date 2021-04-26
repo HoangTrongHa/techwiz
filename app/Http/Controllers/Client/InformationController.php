@@ -25,7 +25,7 @@ class InformationController extends Controller
     }
 
     public function postInfor (Request $request) {
-       
+
     }
 
     public function editInformation($id)
@@ -45,7 +45,7 @@ class InformationController extends Controller
             'password' => bcrypt($request->password),
             'avatar' => isset($dataFile) ? $dataFile : null
         ]);
-        Toastr::success('Cập nhật thành công','Thông Báo');
+        Toastr::success('Update successful','Notification');
         return redirect()->route('home');
     }
 }
