@@ -47,6 +47,7 @@ class LoginController extends Controller
     {
       
         $address = $request->city.$request->address;
+        $bmi = ($request->weight)/( ($request->weight) * ($request->weight) );
         try {
             User::insert([
                 'code' => 1,
@@ -55,10 +56,10 @@ class LoginController extends Controller
                 'phone_number' => $request->phoneNumber,
                 'zip_code' => $request->zipCode,
                 'address' => $address,
-                'bmi' => ($request->weight/($request->weight*2))
+                'bmi' => $bmi,
             ]);
             DB::commit();
-            Toastr::success('Cảm ơn bạn đã tham gia với chúng tôi. Chúng tôi sẽ liên hệ với bạn một cách sớm nhất','Xin chào'.$request->name);
+            Toastr::success('Thank you for joining us. We will contact you as soon as possible','Hello'.$request->name);
             return redirect()->route('thanks.info');
         } catch (Exception $e) {
             Log::info($e);
