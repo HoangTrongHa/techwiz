@@ -83,7 +83,7 @@
                             </a>
                     </div>
                 </div>
-                <div class="wrapUl">
+                <div class="wrapUl" style="background: linear-gradient(to bottom, #72d0f4 25%, #3399ff 79%);">
                     <h4>List Of Exercises</h4>
                     <div class="wrapList">
                         <ul class="blog-list">
