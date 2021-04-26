@@ -3,19 +3,43 @@
 <link rel="stylesheet" href="{{ asset('assets/css/client/mypage.css') }}">
 @endsection
 @section("content")
+    <div class="about_banner_img col-xl-12 col-md-12"><img src="images/blog_img1.jpg" class="img-responsive" style="width: 100%" alt=""/></div>
+    <div class="about_banner_wrap col-xl-12 col-md-12">
+        <h1 class="m_11">Join Us</h1>
+    </div>
+    <div class="about-wrapper col-xl-12 col-md-12">
+        <div class="container" style="color: white">
+            <div class="row about-top">
+                <div class="col-md-5">
+                    <img src="images/c7.jpg" class="img-responsive" alt=""/>
+                </div>
+                <div class="col-md-7 about-left-text">
+                    <div class="wrapTitle">
+                        <div>LET'S DO IT WITH US</div>
+                    </div>
+                    <div class="wrapTitleMyPage">
+                         <span>Welcome to the 6 month workout challenge to improve your health. We have 3 stages for you to set your fitness goals. Help us understand more about your health and daily routine. Remember to come back periodically to updated us of the situation.
+                             <br/><p style="font-size: 30px">Thank you so much.</p>
+                         </span>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <div class="wrapTitle">
-            <span>
-               Fitness Daily
-            </span>
-        </div>
-        <div class="wrapTitleMyPage">
-            <span>
-                Let is start with us
-            </span>
-        </div>
+{{--        <div class="wrapTitle">--}}
+{{--            <div>LET'S DO IT WITH US</div>--}}
+{{--        </div>--}}
+{{--        <div class="wrapTitleMyPage">--}}
+{{--            <span>--}}
+{{--                Welcome to the 6 month workout challenge to improve your health. We have 3 stages for you to set your fitness goals. Help us understand more about your health and daily routine. Remember to come back periodically to updated us of the situation.--}}
+{{--                <br/><p style="font-size: 30px">Thank you so much.</p>--}}
+{{--            </span>--}}
+{{--        </div>--}}
+
         <div class="wrapVideoTitle">
-            Three Basic Exercises To Advanced
+           <h3><b>Three Basic Exercises To Advanced</b></h3>
         </div>
         <div class="wrapVideo">
             <div class="item">
@@ -70,7 +94,7 @@
                         <a href="#" class="wrapLinkQuestion hide-button" id="oneMonths">
                             Answered
                         </a>
-                        @endif    
+                        @endif
                     </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">
