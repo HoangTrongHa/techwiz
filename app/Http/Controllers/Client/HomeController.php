@@ -22,6 +22,9 @@ class HomeController extends Controller
     {
         
         $user = Auth::user();
+        if ($user->status_view == null) {
+            $categories = null;
+        }
         if ($user->status_view == 1) {
             $categories = categories::where('rules',1)->get();
         }
