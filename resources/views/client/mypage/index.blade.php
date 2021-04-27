@@ -62,9 +62,15 @@
                         <div class="titleQuestion">
                             0 month
                         </div>
-                            <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
-                                Answer the question
-                            </a>
+                        @if (Auth::user()->status_view == null)
+                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
+                            Answer the question
+                        </a>
+                        @else
+                        <a href="#" class="wrapLinkQuestion hide-button" id="oneMonths">
+                            Answered
+                        </a>
+                        @endif    
                     </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">
@@ -83,7 +89,7 @@
                             </a>
                     </div>
                 </div>
-                <div class="wrapUl">
+                <div class="wrapUl" style="background: linear-gradient(to bottom, #72d0f4 25%, #3399ff 79%);">
                     <h4>List Of Exercises</h4>
                     <div class="wrapList">
                         <ul class="blog-list">

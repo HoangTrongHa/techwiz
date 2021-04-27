@@ -18,7 +18,7 @@
    <div class="header-bottom">
       <div class="container">
          <div class="header-bottom_left">
-             <i class="phone"> </i><span>1-200-346-2986</span>
+             <i class="phone"> </i><span>Phone: 1-200-346-2986</span>
          </div>
          <div class="social">
             <ul>
@@ -40,7 +40,7 @@
  <div class="menu" id="menu">
   <div class="container">
      <div class="logo">
-        <a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt=""/></a>
+        <a href="{{ route('home') }}"><img  height="70px" width="180px" src="{{ asset('images/logooo.png') }}" alt=""/></a>
      </div>
      <div class="h_menu4"><!-- start h_menu4 -->
        <a class="toggleMenu" href="#" >Menu</a>
@@ -60,7 +60,7 @@
 <div class="menu" id="menu">
   <div class="container">
      <div class="logo">
-        <a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" alt=""/></a>
+        <a href="{{ route('home') }}"><img height="70px" width="180px"  src="{{ asset('images/logooo.png') }}" alt=""/></a>
      </div>
      <div class="h_menu4"><!-- start h_menu4 -->
        <a class="toggleMenu" href="#">Menu</a>

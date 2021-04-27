@@ -54,6 +54,9 @@ class ConfirmController extends Controller
         $dataQuestion1 = $request->session()->get('answerArr');
         $dataQuestion2 = $request->session()->get('answerArr2');
         $dataQuestion3 = $request->session()->get('answerArr3');
+        Auth::user()->update([
+            'status_view' => 1
+        ]);
         try {
             foreach( $dataQuestion1 as $questionId=>$item ) {
                 foreach( $item as $itemId=>$value ) {
