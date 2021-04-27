@@ -17,11 +17,6 @@ class AdminSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         DB::table('admin')->truncate();
         DB::table('admin')->insert([
-            [
-            'name' => 'seed',
-            'email' => 'seed@gmail.com',
-            'password' => bcrypt(123)
-            ],
             ['name' => 'admin',
             'email' => 'admin@gmail.com',
             'password' => bcrypt(123)

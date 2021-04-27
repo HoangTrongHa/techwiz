@@ -20,14 +20,9 @@ class UserSeeder extends Seeder
             [
             'name' => 'seed',
             'email' => 'seed@gmail.com',
-            'code' => '12',
+            'code' => 'user_demo',
             'phone_number'=>'0123456',
-            ],
-            [
-                'name' => 'nghia',
-                'email' => 'nghia@gmail.com',
-                'code' => '14',
-                'phone_number'=>'0123456',
+            'password'=>bcrypt(123),
             ],
         ]);
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');

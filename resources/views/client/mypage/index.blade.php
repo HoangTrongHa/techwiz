@@ -28,16 +28,6 @@
         </div>
     </div>
     <div class="container">
-{{--        <div class="wrapTitle">--}}
-{{--            <div>LET'S DO IT WITH US</div>--}}
-{{--        </div>--}}
-{{--        <div class="wrapTitleMyPage">--}}
-{{--            <span>--}}
-{{--                Welcome to the 6 month workout challenge to improve your health. We have 3 stages for you to set your fitness goals. Help us understand more about your health and daily routine. Remember to come back periodically to updated us of the situation.--}}
-{{--                <br/><p style="font-size: 30px">Thank you so much.</p>--}}
-{{--            </span>--}}
-{{--        </div>--}}
-
         <div class="wrapVideoTitle">
            <h3><b>Three Basic Exercises To Advanced</b></h3>
         </div>
@@ -108,7 +98,7 @@
                         <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
                             Answer the question
                         </a>
-                        @endif    
+                        @endif
                     </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">
@@ -122,7 +112,7 @@
                         <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
                             Answer the question
                         </a>
-                        @endif 
+                        @endif
                     </div>
                 </div>
                 @if (Auth::user()->status_view == null)
