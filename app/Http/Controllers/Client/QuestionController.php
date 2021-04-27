@@ -33,6 +33,7 @@ class QuestionController extends Controller
             return redirect()->route('zero.one.question');
         } catch (Exception $e) {
             Log::info($e);
+            dd($e);
             DB::rollBack();
             Toastr::error('An error has occurred。Please check again', 'Fitness Daily Announcement');
             return back();

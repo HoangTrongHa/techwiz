@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-md-7 about-left-text">
                     <div class="wrapTitle">
-                        <div>LET'S DO IT WITH US</div>
+                        <div>LET is DO IT WITH US</div>
                     </div>
                     <div class="wrapTitleMyPage">
                          <span>Welcome to the 6 month workout challenge to improve your health. We have 3 stages for you to set your fitness goals. Help us understand more about your health and daily routine. Remember to come back periodically to updated us of the situation.
@@ -74,47 +74,90 @@
                 <div class="wrapItemQuestion">
                     <div class="itemQuestion">
                         <div class="titleQuestion">
-                            0 month
+                            0ヶ月
                         </div>
-                        @if (Auth::user()->status_view == null)
-                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
-                            Answer the question
-                        </a>
-                        @else
-                        <a href="#" class="wrapLinkQuestion hide-button" id="oneMonths" style="background: #cccccc">
-                            Answered
-                        </a>
-                        @endif
+                        {{-- 0 m --}}
+                            @if(empty(Auth::user()->join_event))
+                                <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
+                                    公開前
+                                </a>
+                            @else 
+                                @if (Auth::user()->status_view !== 1 && Auth::user()->status_view < 2)
+                                <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion" id="oneMonths">
+                                    回答する
+                                </a>
+                                @else 
+                                <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="oneMonths">
+                                    回答済み
+                                </a>
+                                @endif
+                            @endif
+                            {{-- End 0 m --}}
                     </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">
-                            After 3 Months
+                            3ヶ月
                         </div>
-                        @if (Auth::user()->status_view == 2 || Auth::user()->status_view == 3)
-                        <a href="#" class="wrapLinkQuestion hide-button" id="oneMonths">
-                            Answered
-                        </a>
-                        @else
-                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
-                            Answer the question
-                        </a>
-                        @endif
-                    </div>
+                            @if (empty(Auth::user()->join_event))
+                                <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                                    公開前
+                                </a>
+                            @else
+                                @if($currentTime < $threeMonth)
+                                    <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                                        公開前
+                                    </a>
+                                @endif
+                                @if ($currentTime > $threeMonth)
+                                    @if (Auth::user()->status_view == 1)
+                                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion" id="twoMonths">
+                                            回答する
+                                        </a>
+                                    @endif
+                                    @if (Auth::user()->status_view == 2)
+                                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
+                                            回答済み
+                                        </a>
+                                    @endif
+                                    @if (Auth::user()->status_view > 2)
+                                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
+                                            回答済み
+                                        </a>
+                                    @endif
+                                @endif
+                            @endif
+                            
+                        </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">
-                            After 6 months
+                            6ヶ月
                         </div>
-                        @if (Auth::user()->status_view == 3)
-                        <a href="#" class="wrapLinkQuestion hide-button" id="oneMonths">
-                            Answered
-                        </a>
-                        @else
-                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
-                            Answer the question
-                        </a>
-                        @endif
+                            @if (empty(Auth::user()->join_event))
+                                <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                                    公開前
+                                </a>
+                            @else
+                                @if($currentTime < $sixMonth)
+                                    <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                                        公開前
+                                    </a>
+                                @endif
+                                @if ($currentTime > $sixMonth)
+                                    @if (Auth::user()->status_view === 3)
+                                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
+                                            回答済み
+                                        </a>
+                                    @else
+                                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion" id="twoMonths">
+                                            回答する
+                                        </a>
+                                    @endif
+                                @endif
+                            @endif
+                    
                     </div>
-                </div>
+            </div>
+            
                 @if (Auth::user()->status_view == null)
                 <div class="wrapUl" style="background: linear-gradient(to bottom, #72d0f4 25%, #3399ff 79%);">
                     <h4>Please tell us a little bit about you. Answer the questions by clicking the "Answer the question" button.</h4>
