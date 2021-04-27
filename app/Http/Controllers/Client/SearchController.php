@@ -29,8 +29,7 @@ class SearchController extends Controller
                 }
             }
 
-            return redirect()->back()->withErrors('The corresponding ID was not found。<br>
-            ご不明の場合<a href="">selfcare@kowa.co.jp</a>Please contact。');
+            return redirect()->back()->withErrors('The corresponding ID was not found Please contact。');
 
         } catch (\Exception $e) {
             Log::error($e);

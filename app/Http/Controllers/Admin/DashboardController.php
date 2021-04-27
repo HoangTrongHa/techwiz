@@ -22,7 +22,8 @@ class DashboardController extends Controller
     }
 
     public function detail($param) {
-        $user = User::where('code', $param)->first();
+        $user = User::where('id', $param)->first();
+        dd($user);
         $threeMonth = date('Y-m-d', strtotime($user->join_event . '+ 3 months'));
         $sixMonth = date('Y-m-d', strtotime($user->join_event . '+ 6 months'));
         $currentTime = date('Y-m-d', strtotime(Carbon::now()));
@@ -36,7 +37,7 @@ class DashboardController extends Controller
             $user->update([
                 'join_event' => Carbon::now(),
                 'password' => bcrypt(123456789),
-                'code' => 'kw'.substr($user->zipcode, 0, 4)
+                'code' => 'kw'.substr($user->zip_code, 0, 4)
             ]);
             Mail::send('mail.index', [
                 'user' => $user,
