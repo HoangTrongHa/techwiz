@@ -78,7 +78,7 @@
                         </div>
                         {{-- 0 m --}}
                             @if(empty(Auth::user()->join_event))
-                                <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
+                                <a href="" class="wrapLinkQuestion hide-button" id="oneMonths">
                                     Before release
                                 </a>
                             @else
@@ -87,7 +87,7 @@
                                     To answer
                                 </a>
                                 @else
-                                <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="oneMonths">
+                                <a href="" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="oneMonths">
                                     Answered
                                 </a>
                                 @endif
@@ -99,28 +99,28 @@
                             3 months
                         </div>
                             @if (empty(Auth::user()->join_event))
-                                <a href="{{ route('afterThree') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                                <a href="" class="wrapLinkQuestion hide-button" id="twoMonths">
                                     Before release
                                 </a>
                             @else
                                 @if($currentTime < $threeMonth)
-                                    <a href="{{ route('afterThree') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                                    <a href="" class="wrapLinkQuestion hide-button" id="twoMonths">
                                         Before release
                                     </a>
                                 @endif
                                 @if ($currentTime > $threeMonth)
                                     @if (Auth::user()->status_view == 1)
-                                        <a href="{{ route('afterThree') }}" class="wrapLinkQuestion" id="twoMonths">
+                                        <a href="" class="wrapLinkQuestion" id="twoMonths">
                                             To answer
                                         </a>
                                     @endif
                                     @if (Auth::user()->status_view == 2)
-                                        <a href="{{ route('afterThree') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
+                                        <a href="" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
                                             To answer
                                         </a>
                                     @endif
                                     @if (Auth::user()->status_view > 2)
-                                        <a href="{{ route('afterThree') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
+                                        <a href="" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
                                             Answered
                                         </a>
                                     @endif
@@ -133,21 +133,22 @@
                             6 months
                         </div>
                             @if (empty(Auth::user()->join_event))
-                                <a href="{{ route('afterThree') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                                <a href="" class="wrapLinkQuestion hide-button" id="twoMonths">
                                     Before release
                                 </a>
                             @else
                                 @if($currentTime < $sixMonth)
-                                    <a href="{{ route('afterThree') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                                    <a href="" class="wrapLinkQuestion hide-button" id="twoMonths">
                                         Before release
                                     </a>
                                 @endif
                                 @if ($currentTime > $sixMonth)
-                                    @if (Auth::user()->status_view === 3)
-                                        <a href="{{ route('afterThree') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
+                                    @if (Auth::user()->status_view == 3)
+                                        <a href="" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
                                             Answered
                                         </a>
                                     @else
+
                                         <a href="{{ route('afterThree') }}" class="wrapLinkQuestion" id="twoMonths">
                                             To answer
                                         </a>

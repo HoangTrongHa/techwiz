@@ -143,6 +143,7 @@ class ConfirmController extends Controller
                 return redirect()->route('thanks.question');
             } catch (Exception $e) {
                 Log::info($e);
+                dd($e);
                 Toastr::error('Please answer the question。', 'Fitness Daily');
                 return back();
             }
@@ -190,6 +191,7 @@ class ConfirmController extends Controller
                 return redirect()->route('thanks.question');
             } catch (Exception $e) {
                 Log::info($e);
+                dd($e);
                 Toastr::error('Please answer the question。', 'Fitness Daily');
                 return back();
             }
