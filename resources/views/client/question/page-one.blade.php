@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="{{ asset('assets/css/client/question-list.css') }}">
 @endsection
 @section("content")
+
 <form id='postQuestionPageOne' action="{{ route('postQuestionPageOne') }}" method='POST'>
     @csrf
     @method('POST')

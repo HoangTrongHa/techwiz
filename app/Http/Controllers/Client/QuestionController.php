@@ -91,6 +91,6 @@ class QuestionController extends Controller
         $user = Auth::user()->update([
             'bmiafterthree' => $req->result
         ]);
-        return redirect()-> route('myPage');
+        return redirect()->route('oneQuestionAfterThree');
     }
 }

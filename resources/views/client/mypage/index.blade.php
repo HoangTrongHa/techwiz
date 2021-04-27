@@ -67,7 +67,7 @@
                             Answer the question
                         </a>
                         @else
-                        <a href="#" class="wrapLinkQuestion hide-button" id="oneMonths">
+                        <a href="#" class="wrapLinkQuestion hide-button" id="oneMonths" style="background: #cccccc">
                             Answered
                         </a>
                         @endif    
@@ -76,17 +76,29 @@
                         <div class="titleQuestion">
                             After 3 Months
                         </div>
-                        <a href="{{ route('afterThree') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                        @if (Auth::user()->status_view == 2 || Auth::user()->status_view == 3)
+                        <a href="#" class="wrapLinkQuestion hide-button" id="oneMonths">
+                            Answered
+                        </a>
+                        @else
+                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
                             Answer the question
                         </a>
+                        @endif    
                     </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">
                             After 6 months
                         </div>
-                            <a href="{{ route('zero.three.question') }}" class="wrapLinkQuestion hide-button" id="threeMonths">
-                                Answer the question
-                            </a>
+                        @if (Auth::user()->status_view == 3)
+                        <a href="#" class="wrapLinkQuestion hide-button" id="oneMonths">
+                            Answered
+                        </a>
+                        @else
+                        <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
+                            Answer the question
+                        </a>
+                        @endif 
                     </div>
                 </div>
                 @if (Auth::user()->status_view == null)

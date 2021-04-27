@@ -22,8 +22,17 @@ class HomeController extends Controller
     {
         
         $user = Auth::user();
+        if ($user->status_view == null) {
+            $categories = null;
+        }
         if ($user->status_view == 1) {
             $categories = categories::where('rules',1)->get();
+        }
+        if ($user->status_view == 2) {
+            $categories = categories::where('rules',2)->get();
+        }
+        if ($user->status_view == 3) {
+            $categories = categories::where('rules',3)->get();
         }
         $currentTime = Carbon::now();
         $join_event = date('Y-m-d', strtotime($user->join_event));
