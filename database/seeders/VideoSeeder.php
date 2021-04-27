@@ -19,7 +19,7 @@ class VideoSeeder extends Seeder
         DB::table('videos')->insert([
             [
                 'id' => '1',
-                'link_id' => 'https://www.youtube.com/watch?v=OOe_HrNnQWw',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/OOe_HrNnQWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '1',
                 'content'=>'In today video, Coach Austin takes you through the set-up, execution,
                 and common mistakes made during the Standing DB Shoulder Press.',
@@ -27,14 +27,14 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '2',
-                'link_id' => 'https://www.youtube.com/watch?v=hbE9iMNjLDQ',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/hbE9iMNjLDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '2',
                 'content'=>'In this Fitness Central series we will be focussing on the Dumbbell Push Press.',
                 'title'=>'Dumbbell Push Press - Fitness Gym Training'
             ],
             [
                 'id' => '3',
-                'link_id' => 'https://www.youtube.com/watch?v=IODxDxX7oi4',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/IODxDxX7oi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '3',
                 'content'=>'Being able to bench press a lot has nothing to do with being good at football,
                  but increasing upper body and core strength can help us be stronger in challenges and more
@@ -43,14 +43,14 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '4',
-                'link_id' => 'https://www.youtube.com/watch?v=T1u5yYDszjI',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/T1u5yYDszjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '4',
                 'content'=>'The single leg toe touch is an excellent lower body exercise that is great for the glutes and balance.',
                 'title'=>'How To Do A SINGLE LEG TOE TOUCH | Exercise Demonstration Video and Guide'
             ],
             [
                 'id' => '5',
-                'link_id' => 'https://www.youtube.com/watch?v=0_bTYQCxgMg',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/0_bTYQCxgMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '5',
                 'content'=>'Not sure what to do at the gym? Opt for this leg toning move from Women Health that helps strengthen and
                 lengthen the muscles in your lower body.',
@@ -58,7 +58,7 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '6',
-                'link_id' => 'https://www.youtube.com/watch?v=DNx0PYv7_L8',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/DNx0PYv7_L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '6',
                 'content'=>'All right, the next exercise is leg flutters or flutter kicks. And basically what you’re going to do
                 is you’re going to lay down on your back.',
@@ -66,7 +66,7 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '7',
-                'link_id' => 'https://www.youtube.com/watch?v=A-cFYWvaHr0',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/A-cFYWvaHr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '7',
                 'content'=>'Squat jumps are the perfect move to combine the strength portion of a squat with the plyometric
                  portion of a jump, but do you know how to do them the right way?',
@@ -74,7 +74,7 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '8',
-                'link_id' => 'https://www.youtube.com/watch?v=Ix_SFZVDy0I',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ix_SFZVDy0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '8',
                 'content'=>'How to perform a Curtsy Lunge An amazing body weight exercise to target your legs and your
                 core. The curtsy lunge is a little more challenging than your regular lunge but once you perfect it
@@ -83,7 +83,7 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '9',
-                'link_id' => 'https://www.youtube.com/watch?v=bhG02zNNJas',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/bhG02zNNJas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '9',
                 'content'=>'In today’s video, Serene demonstrates different variations of doing a reverse plank.
                 Try this in your workout routine and let us know how you like it!',
@@ -91,7 +91,7 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '10',
-                'link_id' => 'https://www.youtube.com/watch?v=XeN4pEZZJNI',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/XeN4pEZZJNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '10',
                 'content'=>'Side planks are a key part of just about every core workout, but do you know how to do them
                  the right way? ',
@@ -99,7 +99,7 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '11',
-                'link_id' => 'https://www.youtube.com/watch?v=Ua2CToaFKvY',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ua2CToaFKvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '11',
                 'content'=>'Many folks come into our office who are looking to add variety and to increase the intensity
                  of their leg workouts.',
@@ -107,7 +107,7 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '12',
-                'link_id' => 'https://www.youtube.com/watch?v=oSNHVD0zT3Q',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/oSNHVD0zT3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '12',
                 'content'=>'The body saw exercise is an all core workout but focuses mainly on your lower abs. It is
                  similar to the ab wheel exercises, making you move while contracting your core muscles.',
@@ -115,14 +115,14 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '13',
-                'link_id' => 'https://www.youtube.com/watch?v=nfPM4S24chs',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/nfPM4S24chs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '13',
                 'content'=>'David King Fitness The Sprawl',
                 'title'=>'DavidKingFitness.com DK PUSH The Sprawl David King Demonstration of Burpees little workout brother The Sprawl'
             ],
             [
                 'id' => '14',
-                'link_id' => 'https://www.youtube.com/watch?v=zRXjVU3Bv1M',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/zRXjVU3Bv1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '14',
                 'content'=>'Burpees are one of the most challenging moves in the fitness world. Charlee Atkins is here to
                  tell you how to do a burpee the right way! ',
@@ -130,7 +130,7 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '15',
-                'link_id' => 'https://www.youtube.com/watch?v=QQ6_CjuOg6o',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/QQ6_CjuOg6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '15',
                 'content'=>'This Jumping Jack cardio workout is going to help torch some calories and get you sweating!
                 I love creating fun ways to help us with weight loss,
@@ -139,14 +139,14 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '16',
-                'link_id' => 'https://www.youtube.com/watch?v=wgOuR7YrwtM',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/wgOuR7YrwtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '16',
                 'content'=>'Personal trainers, Luke Sniewski and Tanner Martty, show you how to perform the bird dog exercise.',
                 'title'=>'Bird Dog Core Exercise'
             ],
             [
                 'id' => '17',
-                'link_id' => 'https://www.youtube.com/watch?v=RPS_4lgIpr4',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/RPS_4lgIpr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '17',
                 'content'=>'XFIT Daily hits you with intense, full-body workouts five days a week. Trainers Jason Charchan
                 and Michael Patarino lead you through a grueling series of fat-burning cardio movements ',
@@ -154,7 +154,7 @@ class VideoSeeder extends Seeder
             ],
             [
                 'id' => '18',
-                'link_id' => 'https://www.youtube.com/watch?v=DVXT7xBA_jU',
+                'link_id' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/DVXT7xBA_jU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
                 'categories_id' => '18',
                 'content'=>'XFIT Daily hits you with intense, full-body workouts five days a week. Trainers Jason Charchan
                 and Michael Patarino lead you through a grueling series of fat-burning cardio movements.',
