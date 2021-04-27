@@ -89,7 +89,8 @@ class QuestionController extends Controller
     public function updateBmi(Request $req)
     {
         $user = Auth::user()->update([
-            
+            'bmiafterthree' => $req->result
         ]);
+        return redirect()-> route('myPage');
     }
 }
