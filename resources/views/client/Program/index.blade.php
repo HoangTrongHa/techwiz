@@ -23,12 +23,12 @@
         </div>
         <div class="media">
             <div class="responsive-video col-xl-7 col-md-7 col-sm-12 col-xs-12 " id="player">
-                <iframe src="{{ $video->link_id }}" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                <iframe width="710" height="388" src="{{ $video->link_id }}"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
                 </iframe>
-            </div>
+           </div>
         </div>
     </div>
 </div>
