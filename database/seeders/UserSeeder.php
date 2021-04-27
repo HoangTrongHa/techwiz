@@ -23,6 +23,8 @@ class UserSeeder extends Seeder
             'code' => 'user_demo',
             'phone_number'=>'0123456',
             'password'=>bcrypt(123),
+            'zip_code'=>'40000',
+            'address'=>'8 Ton That Thuyet, Ha Noi'
             ],
         ]);
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
