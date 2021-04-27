@@ -90,11 +90,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body" style="font-size: 22px">
-                        <input type="checkbox" value="0" name="event" hidden checked> Do you want to ship the materials?
+                        <input type="checkbox" value="0" name="event" hidden checked> Accept this User?
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
-                        <button type="submit" class="btn btn-primary">No</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                        <button type="submit" class="btn btn-primary">Accept</button>
                     </div>
                 </form>
             </div>
