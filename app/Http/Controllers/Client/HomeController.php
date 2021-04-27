@@ -20,13 +20,16 @@ class HomeController extends Controller
 
     public function redirectToMyPage()
     {
-        $categories = categories::get();
+        
         $user = Auth::user();
+        if ($user->status_view == 1) {
+            $categories = categories::where('rules',1)->get();
+        }
         $currentTime = Carbon::now();
         $join_event = date('Y-m-d', strtotime($user->join_event));
         $threeMonth = date('Y-m-d', strtotime($join_event . '+ 3 months'));
         $sixMonth = date('Y-m-d', strtotime($join_event . '+ 6 months'));
-        return view("client.mypage.index", compact('currentTime', 'join_event', 'threeMonth', 'sixMonth','categories'));
+        return view("client.mypage.index", compact('user','currentTime', 'join_event', 'threeMonth', 'sixMonth','categories'));
     }
 
     private function diffTime()

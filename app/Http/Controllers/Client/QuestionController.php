@@ -81,5 +81,15 @@ class QuestionController extends Controller
         return view('client.question.page-four');
     }
 
+    public function afterThree ()
+    {
+        return view('client.checkbmi.index');
+    }
 
+    public function updateBmi(Request $req)
+    {
+        $user = Auth::user()->update([
+            
+        ]);
+    }
 }

@@ -76,9 +76,9 @@
                         <div class="titleQuestion">
                             After 3 Months
                         </div>
-                            <a href="{{ route('zero.two.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
-                                Answer the question
-                            </a>
+                        <a href="{{ route('afterThree') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
+                            Answer the question
+                        </a>
                     </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">

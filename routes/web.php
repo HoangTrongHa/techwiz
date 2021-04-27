@@ -62,6 +62,8 @@ Route::group(["namespace" => "client"], function() {
                 Route::get('/question-page-4', [QuestionController::class, 'zeroMonthPageFour'])->name('zero.four.question');
                 Route::get('/confirmquestion', [ConfirmController::class, 'confirmquestion'])->name('confirmquestion');
                 Route::post('/postQuestionConfirm', [ConfirmController::class, 'postConfirmquestion'])->name('postConfirmquestion');
+                Route::get('/checkBim', [QuestionController::class, 'afterThree'])->name('afterThree');
+                Route::post('/updateBmi',[QuestionController::class, 'updateBmi'])->name('updateBmi');
                 // Route::get('/thanksPageQuestion',[ThankPageController::class, 'index'])->name('thankspage');
                 Route::get('/thanks', [ThankPageController::class, 'thanks'])->name('thanks.question');
             });
