@@ -70,7 +70,7 @@
            <li><a href="{{ route('myPage') }}">Join us</a></li>
            <li>
             <div class="dropdown">
-              <a href=""> Welcome! {{ Auth::user()->code }}</a>
+              <a href=""> Welcome! {{ Auth::user()->name }}</a>
               <div class="dropdown-content">
               <a class="linkDrop" href="{{ route('editInformation', Auth::user()->id) }}"><i class="far fa-user"> Info</i></a>
               <a class="linkDrop" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out </a>
