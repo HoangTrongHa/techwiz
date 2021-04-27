@@ -74,90 +74,90 @@
                 <div class="wrapItemQuestion">
                     <div class="itemQuestion">
                         <div class="titleQuestion">
-                            0ヶ月
+                            0 months
                         </div>
                         {{-- 0 m --}}
                             @if(empty(Auth::user()->join_event))
                                 <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="oneMonths">
-                                    公開前
+                                    Before release
                                 </a>
-                            @else 
+                            @else
                                 @if (Auth::user()->status_view == null && Auth::user()->status_view < 2)
                                 <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion" id="oneMonths">
-                                    回答する
+                                    To answer
                                 </a>
-                                @else 
+                                @else
                                 <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="oneMonths">
-                                    回答済み
+                                    Answered
                                 </a>
                                 @endif
                             @endif
-                            {{-- End 0 m --}}
+
                     </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">
-                            3ヶ月
+                            3 months
                         </div>
                             @if (empty(Auth::user()->join_event))
                                 <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
-                                    公開前
+                                    Before release
                                 </a>
                             @else
                                 @if($currentTime < $threeMonth)
                                     <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
-                                        公開前
+                                        Before release
                                     </a>
                                 @endif
                                 @if ($currentTime > $threeMonth)
                                     @if (Auth::user()->status_view == 1)
                                         <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion" id="twoMonths">
-                                            回答する
+                                            To answer
                                         </a>
                                     @endif
                                     @if (Auth::user()->status_view == 2)
                                         <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
-                                            回答済み
+                                            To answer
                                         </a>
                                     @endif
                                     @if (Auth::user()->status_view > 2)
                                         <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
-                                            回答済み
+                                            Answered
                                         </a>
                                     @endif
                                 @endif
                             @endif
-                            
+
                         </div>
                     <div class="itemQuestion">
                         <div class="titleQuestion">
-                            6ヶ月
+                            6 months
                         </div>
                             @if (empty(Auth::user()->join_event))
                                 <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
-                                    公開前
+                                    Before release
                                 </a>
                             @else
                                 @if($currentTime < $sixMonth)
                                     <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" id="twoMonths">
-                                        公開前
+                                        Before release
                                     </a>
                                 @endif
                                 @if ($currentTime > $sixMonth)
                                     @if (Auth::user()->status_view === 3)
                                         <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion hide-button" style="background: #8bbde2" id="twoMonths">
-                                            回答済み
+                                            Answered
                                         </a>
                                     @else
                                         <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion" id="twoMonths">
-                                            回答する
+                                            To answer
                                         </a>
                                     @endif
                                 @endif
                             @endif
-                    
+
                     </div>
             </div>
-            
+
                 @if (Auth::user()->status_view == null)
                 <div class="wrapUl" style="background: linear-gradient(to bottom, #72d0f4 25%, #3399ff 79%);">
                     <h4>Please tell us a little bit about you. Answer the questions by clicking the "Answer the question" button.</h4>

@@ -92,10 +92,9 @@
                                 <div class="textTopInput">
                                     City name + District name
                                 </div>
-                                
+
                             </div>
                             <div class="wrapOption">
-                                
                                 <div class="inforCity">
                                     <input type="text" name="city" value="{{ old('city') }}">
                                 </div>
@@ -137,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="itemPost">
                     <div class="wrapSpanForm">
                         <span>
@@ -151,13 +150,13 @@
                                 Please enter the height (cm)
                             </div>
                             <input type="number" name="height" id="height" class="uintTextBox2"/>&nbsp;<span class="errmsg2" style="color: red;font-weight:100"></span>
-                        
+
                         </div>
                     </div>
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
@@ -174,7 +173,7 @@
                 </div>
                 <div class="itemPost">
                     <div class="wrapSpanForm">
-                        
+
                     </div>
                     <div class="wrapInputSpan">
                         <div class="wrapInputAndText">
