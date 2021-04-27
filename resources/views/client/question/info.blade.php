@@ -12,7 +12,7 @@
                 <div class="content">
                     <div class="content-header">
                         <h1 class="content-title">
-                            0 MONTHS
+                            List Questions
                         </h1>
                         <p class="content-desc">
                             I would like to ask you about yourself. Please select the one that applies.
