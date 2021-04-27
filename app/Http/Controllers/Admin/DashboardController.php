@@ -23,7 +23,6 @@ class DashboardController extends Controller
 
     public function detail($param) {
         $user = User::where('id', $param)->first();
-        dd($user);
         $threeMonth = date('Y-m-d', strtotime($user->join_event . '+ 3 months'));
         $sixMonth = date('Y-m-d', strtotime($user->join_event . '+ 6 months'));
         $currentTime = date('Y-m-d', strtotime(Carbon::now()));
