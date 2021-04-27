@@ -5,24 +5,29 @@
 @section("content")
 <div class="main">
     <div class="about_banner_img"><img src="images/about_img.jpg" class="img-responsive" style="width: 100%" alt=""/></div>
-      <div class="about_banner_wrap">
+    <div class="about_banner_wrap">
            <h1 class="m_11">About Us</h1>
         </div>
-        <div class="about-wrapper">
+    <div class="about-wrapper">
            <div class="container">
             <div class="row about-top">
               <div class="col-md-5">
                <img src="images/about_img1.jpg" class="img-responsive" alt=""/>
               </div>
               <div class="col-md-7 about-left-text">
-                  <h2>Come Join
-                      the Fitness Daily Family.</h2>
+                  <h2>Our goal is to make health and fitness attainable, affordable and approachable.</h2>
               </div>
               <div class="clear"></div>
             </div>
          </div>
        </div>
-       <div class="container">
+    <div class="container">
+        <div class="title">
+            Created to help you live a better, happier, healthier life.
+        </div>
+        <div class="content">We believe fitness should be accessible to everyone, everywhere, regardless of income level or access to a gym. That's why we offer hundreds of free, full-length workout videos, the most affordable and effective workout programs on the web, meal plans, and helpful health, nutrition and fitness information.</div>
+    </div>
+    <div class="container">
         <div class="about_trainer">
            <h3 class="m_2">Our Trainers</h3>
            <div class="row about_box">
@@ -186,7 +191,7 @@
           </div>
         </div>
      </div>
-     <div class="login">
+    <div class="login">
            <div class="row login_details">
             <div class="col-md-12" style="color: white;text-align: center">
                <h4> Ready to try a Fitness Daily workout?</h4>
