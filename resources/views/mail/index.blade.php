@@ -8,10 +8,10 @@
 </head>
 <body>
      <span>
-         Passwork : {{ $user->password }}
+         Passwork : 123456789
      </span>
      <span>
-        Passwork : {{ $user->code }}
+        code : {{ $user->code }}
     </span>
 </body>
 </html>
