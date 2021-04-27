@@ -12,6 +12,7 @@ use App\Http\Controllers\Client\InformationController;
 use App\Http\Controllers\Admin\LoginController as AdminLoginController;
 use App\Http\Controllers\Client\PageController;
 use App\Http\Controllers\Client\ProgramController;
+use App\Http\Controllers\Client\QuestionafterthreeController;
 use App\Http\Controllers\Client\TermController;
 use App\Http\Controllers\Client\ThankPageController;
 
@@ -64,6 +65,8 @@ Route::group(["namespace" => "client"], function() {
                 Route::post('/postQuestionConfirm', [ConfirmController::class, 'postConfirmquestion'])->name('postConfirmquestion');
                 Route::get('/checkBim', [QuestionController::class, 'afterThree'])->name('afterThree');
                 Route::post('/updateBmi',[QuestionController::class, 'updateBmi'])->name('updateBmi');
+                Route::get('/oneQuestionAfterThree',[QuestionafterthreeController::class, 'oneQuestionAfterThree'])->name('oneQuestionAfterThree');
+                Route::post('/postQuestionAfterThree',[QuestionafterthreeController::class, 'postQuestionAfterThree'])->name('postQuestionAfterThree');
                 // Route::get('/thanksPageQuestion',[ThankPageController::class, 'index'])->name('thankspage');
                 Route::get('/thanks', [ThankPageController::class, 'thanks'])->name('thanks.question');
             });

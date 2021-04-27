@@ -15,7 +15,6 @@ class ConfirmController extends Controller
 {
     public function index()
     {
-
         $dataInfor = session()->get('dataInfor');
         return view('client.confirm.infor',compact('dataInfor'));
     }
@@ -51,52 +50,149 @@ class ConfirmController extends Controller
 
     public function postConfirmquestion(Request $request)
     {
+
         $dataQuestion1 = $request->session()->get('answerArr');
         $dataQuestion2 = $request->session()->get('answerArr2');
         $dataQuestion3 = $request->session()->get('answerArr3');
-        Auth::user()->update([
-            'status_view' => 1
-        ]);
-        try {
-            foreach( $dataQuestion1 as $questionId=>$item ) {
-                foreach( $item as $itemId=>$value ) {
-                    Question::create([
-                        'user_id' => Auth::user()->id,
-                        'question_id' => $questionId,
-                        'item_id' => $itemId,
-                        'value' => $value,
-                        'group_question' => 1
-                    ]);
+        if ( Auth::user()->status_view == null) {
+            try {
+                Auth::user()->update([
+                    'status_view' => 1
+                ]);
+                foreach( $dataQuestion1 as $questionId=>$item ) {
+                    foreach( $item as $itemId=>$value ) {
+                        Question::create([
+                            'user_id' => Auth::user()->id,
+                            'question_id' => $questionId,
+                            'item_id' => $itemId,
+                            'value' => $value,
+                            'group_question' => 1
+                        ]);
+                    }
                 }
-            }
-            foreach( $dataQuestion2 as $questionId=>$item ) {
-                foreach( $item as $itemId=>$value ) {
-                    Question::create([
-                        'user_id' => Auth::user()->id,
-                        'question_id' => $questionId,
-                        'item_id' => $itemId,
-                        'value' => $value,
-                        'group_question' => 2
-                    ]);
+                foreach( $dataQuestion2 as $questionId=>$item ) {
+                    foreach( $item as $itemId=>$value ) {
+                        Question::create([
+                            'user_id' => Auth::user()->id,
+                            'question_id' => $questionId,
+                            'item_id' => $itemId,
+                            'value' => $value,
+                            'group_question' => 2
+                        ]);
+                    }
                 }
-            }
-            foreach( $dataQuestion3 as $questionId=>$item ) {
-                foreach( $item as $itemId=>$value ) {
-                    Question::create([
-                        'user_id' => Auth::user()->id,
-                        'question_id' => $questionId,
-                        'item_id' => $itemId,
-                        'value' => $value,
-                        'group_question' => 3
-                    ]);
+                foreach( $dataQuestion3 as $questionId=>$item ) {
+                    foreach( $item as $itemId=>$value ) {
+                        Question::create([
+                            'user_id' => Auth::user()->id,
+                            'question_id' => $questionId,
+                            'item_id' => $itemId,
+                            'value' => $value,
+                            'group_question' => 3
+                        ]);
+                    }
                 }
+                Toastr::success('The answer was sent successfully', 'Fitness Daily Announcement');
+                return redirect()->route('thanks.question');
+            } catch (Exception $e) {
+                Log::info($e);
+                Toastr::error('Please answer the question。', 'Fitness Daily');
+                return back();
             }
-            Toastr::success('The answer was sent successfully', 'Fitness Daily Announcement');
-            return redirect()->route('thanks.question');
-        } catch (Exception $e) {
-            Log::info($e);
-            Toastr::error('Please answer the question。', 'Fitness Daily');
-            return back();
+        }
+
+        if ( Auth::user()->status_view == 1) {
+            try {
+                Auth::user()->update([
+                    'status_view' => 2
+                ]);
+                foreach( $dataQuestion1 as $questionId=>$item ) {
+                    foreach( $item as $itemId=>$value ) {
+                        Question::create([
+                            'user_id' => Auth::user()->id,
+                            'question_id' => $questionId,
+                            'item_id' => $itemId,
+                            'value' => $value,
+                            'group_question' => 1
+                        ]);
+                    }
+                }
+                foreach( $dataQuestion2 as $questionId=>$item ) {
+                    foreach( $item as $itemId=>$value ) {
+                        Question::create([
+                            'user_id' => Auth::user()->id,
+                            'question_id' => $questionId,
+                            'item_id' => $itemId,
+                            'value' => $value,
+                            'group_question' => 2
+                        ]);
+                    }
+                }
+                foreach( $dataQuestion3 as $questionId=>$item ) {
+                    foreach( $item as $itemId=>$value ) {
+                        Question::create([
+                            'user_id' => Auth::user()->id,
+                            'question_id' => $questionId,
+                            'item_id' => $itemId,
+                            'value' => $value,
+                            'group_question' => 3
+                        ]);
+                    }
+                }
+                Toastr::success('The answer was sent successfully', 'Fitness Daily Announcement');
+                return redirect()->route('thanks.question');
+            } catch (Exception $e) {
+                Log::info($e);
+                Toastr::error('Please answer the question。', 'Fitness Daily');
+                return back();
+            }
+        }
+
+        if ( Auth::user()->status_view == 2) {
+            try {
+                Auth::user()->update([
+                    'status_view' => 3
+                ]);
+                foreach( $dataQuestion1 as $questionId=>$item ) {
+                    foreach( $item as $itemId=>$value ) {
+                        Question::create([
+                            'user_id' => Auth::user()->id,
+                            'question_id' => $questionId,
+                            'item_id' => $itemId,
+                            'value' => $value,
+                            'group_question' => 1
+                        ]);
+                    }
+                }
+                foreach( $dataQuestion2 as $questionId=>$item ) {
+                    foreach( $item as $itemId=>$value ) {
+                        Question::create([
+                            'user_id' => Auth::user()->id,
+                            'question_id' => $questionId,
+                            'item_id' => $itemId,
+                            'value' => $value,
+                            'group_question' => 2
+                        ]);
+                    }
+                }
+                foreach( $dataQuestion3 as $questionId=>$item ) {
+                    foreach( $item as $itemId=>$value ) {
+                        Question::create([
+                            'user_id' => Auth::user()->id,
+                            'question_id' => $questionId,
+                            'item_id' => $itemId,
+                            'value' => $value,
+                            'group_question' => 3
+                        ]);
+                    }
+                }
+                Toastr::success('The answer was sent successfully', 'Fitness Daily Announcement');
+                return redirect()->route('thanks.question');
+            } catch (Exception $e) {
+                Log::info($e);
+                Toastr::error('Please answer the question。', 'Fitness Daily');
+                return back();
+            }
         }
     }
 }
