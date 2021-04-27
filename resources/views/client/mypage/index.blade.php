@@ -82,7 +82,7 @@
                                     公開前
                                 </a>
                             @else 
-                                @if (Auth::user()->status_view !== 1 && Auth::user()->status_view < 2)
+                                @if (Auth::user()->status_view == null && Auth::user()->status_view < 2)
                                 <a href="{{ route('zero.one.question') }}" class="wrapLinkQuestion" id="oneMonths">
                                     回答する
                                 </a>

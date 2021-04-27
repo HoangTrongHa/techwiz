@@ -41,13 +41,7 @@ class QuestionController extends Controller
     }
 
     public function zeroMonthPageOne() {
-        $check1 = Question::where('group_question',1)->first();
-        $check2 = Question::where('group_question',2)->first();
-        $check3 = Question::where('group_question',3)->first();
-        if(!empty($check1) && !empty($check2) && !empty($check3)) {
-            Toastr::warning('Answered the question', 'Fitness Daily Announcement');
-            return redirect()->route('myPage');
-        }
+      
         return view('client.question.page-one');
     }
 
