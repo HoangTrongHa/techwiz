@@ -25,7 +25,7 @@
                             <table class="table table-bordered hide-on-mb">
                                 <thead>
                                     <tr>
-                                        <td rowspan="2" class="question-w-40"></td>\
+                                        <td rowspan="2" class="question-w-40"></td>
                                         @foreach (Config::get('dataquestion.page_question_3.optionAnswer') as $item)
                                         <td class="table-w">{{ $item }}</td>
                                         @endforeach

@@ -3299,7 +3299,9 @@ input[type=button].btn-block {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
+    margin-bottom: 0;
 }
+
 .input-group > .form-control,
 .input-group > .form-control-plaintext,
 .input-group > .custom-select,
