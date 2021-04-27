@@ -8,25 +8,25 @@
     <section class="content">
         <div class="container">
             <div class="content-header">
-                <div class="content-header-top">
-                    <img src="{{ asset('assets/images/icon-banner.jpg') }}" alt="">
-                    <h1 class="content-title" >
-                        Fitness Daily
-                    </h1>
-                </div>
+
                 <p class="content-header-desc" style="text-align: center ;color: #00afec ">
                     Healthcare today gives me a brighter hope of tomorrow.
                 </p>
                 <div class="content-header-icon">
                     <div class="item">
-                        <img src="{{ asset('assets/images/smile.png') }}" alt="">
-                    </div>
-                    <div class="item item-small">
-                        <span></span>
-                        <span></span>
+                        <i class="fas fa-dumbbell" style="font-size: 89px;"></i>
                     </div>
                     <div class="item">
-                        <img src="{{ asset('assets/images/smile.png') }}" alt="">
+                        <i class="fas fa-plus" style="font-size: 60px;padding: 0px 30px 82px 30px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-hamburger" style="font-size: 89px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-equals" style="font-size: 60px;padding: 0px 30px 82px 30px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-smile-beam" style="font-size: 89px;"></i>
                     </div>
                 </div>
             </div>
